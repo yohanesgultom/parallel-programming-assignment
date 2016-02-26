@@ -1,4 +1,5 @@
-# parallel-programming-assignment
+# Parallel Programming Assignment
 
-Presentation http://1drv.ms/1THKxSy
-Report http://1drv.ms/1THKsOR
+## Files ##
+* Presentation http://1drv.ms/1THKxSy
+* Report http://1drv.ms/1THKsOR
