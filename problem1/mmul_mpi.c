@@ -27,7 +27,7 @@ void multiply_two_arrays(int x, int n, int y, int size, int rank)
   int **matrix1;  //declared matrix1[x][n]
   int **matrix2; //declare matrix2[n][y]
   int **mat_res; //resultant matrix become mat_res[x][y]
-  double t1,t2,result;
+  double t,tc;
   MPI_Status status;
 
   /*----------------------------------------------------*/
@@ -65,7 +65,7 @@ void multiply_two_arrays(int x, int n, int y, int size, int rank)
     }
   }
   MPI_Barrier(MPI_COMM_WORLD);
-  if(rank == 0) t1 = MPI_Wtime();
+  if(rank == 0) t -= MPI_Wtime();
   // divide the task in multiple processes
   // size = number of process.
   // -- if size == 1 (minimum) then that single process will calculate all row * column operations
@@ -92,6 +92,7 @@ void multiply_two_arrays(int x, int n, int y, int size, int rank)
 
   if(rank == 0)
   {
+    tc -= MPI_Wtime();
     for(j = 1; j < size; j++)
     {
       for(i = j; i < x; i = i+size)
@@ -99,12 +100,12 @@ void multiply_two_arrays(int x, int n, int y, int size, int rank)
         MPI_Recv(&mat_res[i][0], y, MPI_INT, j, 10+i, MPI_COMM_WORLD, &status);//receive calculated rows from respective process
       }
     }
+    tc += MPI_Wtime();
   }
   MPI_Barrier(MPI_COMM_WORLD);
-  if(rank == 0) t2 = MPI_Wtime();
-  result = t2 - t1;
   if(rank == 0)
   {
+    t += MPI_Wtime();
     // // print input matrices
     // print_array(matrix1, x, n);
     // printf("\n*\n\n");
@@ -113,7 +114,7 @@ void multiply_two_arrays(int x, int n, int y, int size, int rank)
     // printf("\n=\n\n");
     // print_array(mat_res, x, y);
     // printf("\nTime taken = %f seconds\n",result); //time taken
-    printf("%d\ta[%d][%d]*[%d][%d]\t%f\n", size, x, n, n, y, result);
+    printf("%d\ta[%d][%d]*[%d][%d]\t%f\t%f\n", size, x, n, n, y, tc, t);
   }
 
   // free memory

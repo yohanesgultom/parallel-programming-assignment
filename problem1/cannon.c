@@ -127,13 +127,13 @@ int main(int argc, char** argv) {
           }
         }
       }
-      timeComm = -1 * MPI_Wtime();
+      timeComm -= MPI_Wtime();
       MPI_Cart_shift(comm2d,1,-1,&fuente,&destino);
       MPI_Sendrecv_replace(subm_A,(tam_subM*tam_subM),MPI_FLOAT,destino,1,fuente,1,comm2d,&statusA);
 
       MPI_Cart_shift(comm2d,0,-1,&fuente,&destino);
       MPI_Sendrecv_replace(subm_B,(tam_subM*tam_subM),MPI_FLOAT,destino,2,fuente,2,comm2d,&statusB);
-      timeComm = timeComm + MPI_Wtime();
+      timeComm += MPI_Wtime();
     }
     //printf("PROCESO 0 MATRIZ C FINAL:\n");
     //imprimirSubMatriz(subm_C);
