@@ -1,3 +1,8 @@
+/**
+ * Small program to print hostname of the MPI processor
+ * By yohanes.gultom@gmail.com
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <mpi.h>

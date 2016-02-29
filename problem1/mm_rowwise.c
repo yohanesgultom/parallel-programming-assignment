@@ -114,7 +114,9 @@ void multiply_two_arrays(int x, int n, int y, int size, int rank)
     // printf("\n=\n\n");
     // print_array(mat_res, x, y);
     // printf("\nTime taken = %f seconds\n",result); //time taken
-    printf("%d\ta[%d][%d]*[%d][%d]\t%f\t%f\n", size, x, n, n, y, tc, t);
+    //printf("%d\ta[%d][%d]*[%d][%d]\t%f\t%f\n", size, x, n, n, y, tc, t);
+    // assuming square matrix
+    printf("%d\t%d\t%f\t%f\n", size, x, tc, t);
   }
 
   // free memory
@@ -143,25 +145,16 @@ void multiply_two_arrays(int x, int n, int y, int size, int rank)
  */
 int main(int argc , char **argv)
 {
-  // read from file
-  int x, n, y = 0;
   int size,rank = 0;
-  char line[1000]; // read only 1000 char per line
-  char *filename = argv[1];
+  int x = atoi(argv[1]);
+  int n = atoi(argv[2]);
+  int y = atoi(argv[3]);
 
   MPI_Init(&argc, &argv);
   MPI_Comm_size(MPI_COMM_WORLD, &size);
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
-  FILE *fp = fopen(filename, "r");
-  while (fgets(line, sizeof line, fp)) {
-      if (*line == '#') {
-          continue;
-      } else {
-          sscanf(line, "%d %d %d", &x, &n, &y);
-          multiply_two_arrays(x, n, y, size, rank);
-      }
-  }
+  multiply_two_arrays(x, n, y, size, rank);
 
   MPI_Finalize();
   return 0;

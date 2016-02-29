@@ -70,7 +70,7 @@ LOCAL_MATRIX_T*  temp_mat;
                      GRID_INFO_T* grid);
 */
 /*********************************************************/
-main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) {
     int              p;			//number of processes
     int              q;			//sqrt(p)
     int              my_rank;		//rank of process
