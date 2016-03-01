@@ -1,3 +1,7 @@
+/**
+ * Source: https://computing.llnl.gov/tutorials/mpi/samples/C/mpi_mm.c​
+ */
+
 #include"stdio.h"
 #include"stdlib.h"
 #include"mpi.h"

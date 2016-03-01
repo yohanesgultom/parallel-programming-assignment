@@ -14,15 +14,4 @@ mpiexec -np 4 $exe 500 >> $out &&
 mpiexec -np 4 $exe 500 >> $out &&
 mpiexec -np 4 $exe 500 >> $out &&
 mpiexec -np 4 $exe 500 >> $out &&
-mpiexec -np 4 $exe 500 >> $out &&
-mpiexec -np 9 $exe 500 >> $out &&
-mpiexec -np 9 $exe 500 >> $out &&
-mpiexec -np 9 $exe 500 >> $out &&
-mpiexec -np 9 $exe 500 >> $out &&
-mpiexec -np 9 $exe 500 >> $out &&
-mpiexec -np 16 $exe 500 >> $out &&
-mpiexec -np 16 $exe 500 >> $out &&
-mpiexec -np 16 $exe 500 >> $out &&
-mpiexec -np 16 $exe 500 >> $out &&
-mpiexec -np 16 $exe 500 >> $out &&
-mpiexec -np 16 $exe 500 >> $out
+mpiexec -np 4 $exe 500 >> $out
