@@ -5,12 +5,17 @@ exe="$name.o"
 out="$name.rocks.result"
 clear && mpicc -o $exe $prog -lm &&
 echo "NP\tData\tComm Time\tProcess Time" > $out &&
-mpirun -machinefile ~/machines -np 2 $exe 1000 1000 1000 >> $out &&
-mpirun -machinefile ~/machines -np 2 $exe 1000 1000 1000 >> $out &&
-mpirun -machinefile ~/machines -np 2 $exe 1000 1000 1000 >> $out &&
-mpirun -machinefile ~/machines -np 2 $exe 1000 1000 1000 >> $out &&
-mpirun -machinefile ~/machines -np 4 $exe 1000 1000 1000 >> $out &&
-mpirun -machinefile ~/machines -np 4 $exe 1000 1000 1000 >> $out &&
-mpirun -machinefile ~/machines -np 4 $exe 1000 1000 1000 >> $out &&
-mpirun -machinefile ~/machines -np 4 $exe 1000 1000 1000 >> $out &&
-mpirun -machinefile ~/machines -np 4 $exe 1000 1000 1000 >> $out
+mpirun -machinefile ~/machines -np 4 $exe 360 360 360 >> $out &&
+mpirun -machinefile ~/machines -np 4 $exe 360 360 360 >> $out &&
+mpirun -machinefile ~/machines -np 4 $exe 360 360 360 >> $out &&
+mpirun -machinefile ~/machines -np 4 $exe 360 360 360 >> $out &&
+mpirun -machinefile ~/machines -np 4 $exe 360 360 360 >> $out &&
+mpirun -machinefile ~/machines -np 2 $exe 1600 1600 1600 >> $out &&
+mpirun -machinefile ~/machines -np 2 $exe 1600 1600 1600 >> $out &&
+mpirun -machinefile ~/machines -np 2 $exe 1600 1600 1600 >> $out &&
+mpirun -machinefile ~/machines -np 2 $exe 1600 1600 1600 >> $out &&
+mpirun -machinefile ~/machines -np 4 $exe 1600 1600 1600 >> $out &&
+mpirun -machinefile ~/machines -np 4 $exe 1600 1600 1600 >> $out &&
+mpirun -machinefile ~/machines -np 4 $exe 1600 1600 1600 >> $out &&
+mpirun -machinefile ~/machines -np 4 $exe 1600 1600 1600 >> $out &&
+mpirun -machinefile ~/machines -np 4 $exe 1600 1600 1600 >> $out
