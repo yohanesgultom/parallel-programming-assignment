@@ -41,8 +41,7 @@ void multiply_two_arrays(int NRA, int NCA, int NCB, int numworkers, int procid) 
     b[NCA][NCB],   /* matrix B to be multiplied */
     c[NRA][NCB];   /* result matrix C */
     // int **a, **b, **c;
-    double tstart,
-    tend;
+    double tstart, tend, tcomm = 0;
 
 
     /******* master process ***********/
@@ -65,6 +64,7 @@ void multiply_two_arrays(int NRA, int NCA, int NCB, int numworkers, int procid) 
         extra = NRA%numworkers;
         offset = 0;
         mtype = FROM_MASTER;
+        tcomm -= MPI_Wtime();
         for (dest=1; dest<=numworkers; dest++) {
             rows = (dest <= extra) ? averow+1 : averow;
             MPI_Send(&offset,1,MPI_INT,dest,mtype,MPI_COMM_WORLD);
@@ -75,9 +75,11 @@ void multiply_two_arrays(int NRA, int NCA, int NCB, int numworkers, int procid) 
             MPI_Send(&b,count,MPI_INT,dest,mtype,MPI_COMM_WORLD);
             offset = offset + rows;
         }
+        tcomm += MPI_Wtime();
 
         /* wait for results from all worker processes */
         mtype = FROM_WORKER;
+        tcomm -= MPI_Wtime();
         for (i=1; i<=numworkers; i++) {
             source = i;
             MPI_Recv(&offset,1,MPI_INT,source,mtype,MPI_COMM_WORLD, &status);
@@ -85,11 +87,12 @@ void multiply_two_arrays(int NRA, int NCA, int NCB, int numworkers, int procid) 
             count = rows*NCB;
             MPI_Recv(&c[offset][0],count,MPI_INT,source,mtype,MPI_COMM_WORLD, &status);
         }
+        tcomm += MPI_Wtime();
 
         // printmatrix(NRA, NCB, c);
 
         tend = MPI_Wtime();
-        printf("\n%d\ta[%d][%d] x b[%d][%d]\t%lf\n", numworkers+1, NRA, NCA, NCA, NCB, (tend - tstart));
+        printf("\n%d\ta[%d][%d] x b[%d][%d]\t%lf\t%lf\n", numworkers+1, NRA, NCA, NCA, NCB, tcomm, (tend - tstart));
 
     } /* end of master */
 
