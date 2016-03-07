@@ -24,4 +24,9 @@ mpiexec -np 16 $exe 360 >> $out &&
 mpiexec -np 16 $exe 360 >> $out &&
 mpiexec -np 16 $exe 360 >> $out &&
 mpiexec -np 16 $exe 360 >> $out &&
-mpiexec -np 16 $exe 360 >> $out
+mpiexec -np 16 $exe 360 >> $out &&
+mpiexec -np 36 $exe 360 >> $out &&
+mpiexec -np 36 $exe 360 >> $out &&
+mpiexec -np 36 $exe 360 >> $out &&
+mpiexec -np 36 $exe 360 >> $out &&
+mpiexec -np 36 $exe 360 >> $out
