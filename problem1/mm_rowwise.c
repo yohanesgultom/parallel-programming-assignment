@@ -41,7 +41,7 @@ void multiply_two_arrays(int NRA, int NCA, int NCB, int numworkers, int procid) 
     b[NCA][NCB],   /* matrix B to be multiplied */
     c[NRA][NCB];   /* result matrix C */
     // int **a, **b, **c;
-    double tstart, tend, tcomm = 0;
+    double texec, tcomm = 0;
 
 
     /******* master process ***********/
@@ -59,40 +59,40 @@ void multiply_two_arrays(int NRA, int NCA, int NCB, int numworkers, int procid) 
         // printmatrix(NCA, NCB, b);
 
         /* send matrix data to the worker processes */
-        tstart = MPI_Wtime();
         averow = NRA/numworkers;
         extra = NRA%numworkers;
         offset = 0;
         mtype = FROM_MASTER;
-        tcomm -= MPI_Wtime();
+        texec -= MPI_Wtime();
         for (dest=1; dest<=numworkers; dest++) {
             rows = (dest <= extra) ? averow+1 : averow;
+            tcomm -= MPI_Wtime();
             MPI_Send(&offset,1,MPI_INT,dest,mtype,MPI_COMM_WORLD);
             MPI_Send(&rows,1,MPI_INT,dest,mtype,MPI_COMM_WORLD);
             count = rows*NCA;
             MPI_Send(&a[offset][0],count,MPI_INT,dest,mtype,MPI_COMM_WORLD);
             count = NCA*NCB;
             MPI_Send(&b,count,MPI_INT,dest,mtype,MPI_COMM_WORLD);
+            tcomm += MPI_Wtime();
             offset = offset + rows;
         }
-        tcomm += MPI_Wtime();
 
         /* wait for results from all worker processes */
         mtype = FROM_WORKER;
-        tcomm -= MPI_Wtime();
         for (i=1; i<=numworkers; i++) {
             source = i;
+            tcomm -= MPI_Wtime();
             MPI_Recv(&offset,1,MPI_INT,source,mtype,MPI_COMM_WORLD, &status);
             MPI_Recv(&rows,1,MPI_INT,source,mtype,MPI_COMM_WORLD, &status);
             count = rows*NCB;
             MPI_Recv(&c[offset][0],count,MPI_INT,source,mtype,MPI_COMM_WORLD, &status);
+            tcomm += MPI_Wtime();
         }
-        tcomm += MPI_Wtime();
 
         // printmatrix(NRA, NCB, c);
 
-        tend = MPI_Wtime();
-        printf("\n%d\t%d\t%lf\t%lf\n", numworkers+1, NRA, tcomm, (tend - tstart));
+        texec += MPI_Wtime();
+        printf("%d\t%d\t%lf\t%lf\n", numworkers+1, NRA, tcomm, texec);
 
     } /* end of master */
 
