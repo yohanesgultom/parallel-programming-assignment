@@ -123,7 +123,7 @@ void multiply_two_arrays(int NRA, int NCA, int NCB, int numworkers, int procid) 
 		// printmatrix(NRA, NCB, c);
 
         tend = MPI_Wtime();
-        printf("\n%d\ta[%d][%d] x b[%d][%d]\t%lf\t%lf\n", numworkers+1, NRA, NCA, NCA, NCB, tcomm, (tend - tstart));
+        printf("\n%d\t%d\t%lf\t%lf\n", numworkers+1, NRA, tcomm, (tend - tstart));
 
     } /* end of master */
 
