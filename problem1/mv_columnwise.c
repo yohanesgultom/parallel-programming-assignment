@@ -1,89 +1,205 @@
-/* 
- *	Matrix - Vector Multiplication, Version 2
- *      Columnwise block-striped decomposition
- */
+/*
+Matrix vector multiplication (column-wise)
+Source: http://sites.google.com/site/heshanhome/resources/MPI_matrix_multiplication.c
+*/
 
-// Source: http://www.math.utep.edu/Faculty/pmdelgado2/courses/parallel/ch08/mvmult2.c
+#include "stdio.h"
+#include "stdlib.h"
+#include "mpi.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <mpi.h>
-#include "MyMPI.h"
+#define MASTER 0       /* id of the first process */
+#define FROM_MASTER 1  /* setting a message type */
+#define FROM_WORKER 2  /* setting a message type */
 
-// change the next two lines to adapt code to different data types
-// Ex: int, float, double, etc...
+MPI_Status status;
 
-typedef float dtype;
-#define mpitype MPI_FLOAT
 
-int main (int argc, char **argv)
+void printmatrix(int row, int col, int matrix[row][col])
 {
-// Note:  A * x = b
-dtype **A; 		// the input matrix A
-dtype *x;  		// the input vector x
-dtype *b;  		// the output vector b
-dtype *b_part_out;	// Partial sums, sent
-dtype *b_part_in;	// Partial sums, received
-int *cnt_out;		// number of elements sent to each processor
-int *cnt_in;		// # of elements received by each processor
-int *disp_out;		// indices of sent elements
-int *disp_in;		// indices of received elements
-int i, j;  		// loop indices
-int id;			// process id #
-int p;			// total # of processes
-int local_els;		// Columns of matrix A and elements of vector x
-			// held by this process.
-int m,n;		// # of rows, columns, respectively, of matrix A
-int nprime;		// size of the vector
-dtype *storage;		// This process's portion of matrix A.
-
-MPI_Init(&argc, &argv);
-MPI_Comm_size(MPI_COMM_WORLD, &p);
-MPI_Comm_rank(MPI_COMM_WORLD, &id);
-
-read_col_striped_matrix(argv[1], (void ***) &A, (void **) &storage,
-		        mpitype, &m, &n, MPI_COMM_WORLD);
-if (!id) printf("A=\n");
-print_col_striped_matrix((void **) A, mpitype, m,n, MPI_COMM_WORLD);
-
-read_block_vector(argv[2], (void **) &x, mpitype, &nprime, MPI_COMM_WORLD);
-if (!id) printf("x=\n");
-print_block_vector( (void *) x, mpitype, nprime, MPI_COMM_WORLD);
-
-// Now, each process multiplies its columns of A with vector x, resulting
-// in a partial sum of the product 'b'.
-
-b_part_out=(dtype *) my_malloc(id, n * sizeof(dtype));
-local_els = BLOCK_SIZE(id,p,n); // divide columns to each of the 
-				// processors
-
-
-for (i=0; i<n; i++) {
-	b_part_out[i] = 0.0;
-	for (j=0; j<local_els; j++)
-		b_part_out[i] += A[i][j] * x[j];	
+    int i, j = 0;
+    for(i = 0; i < row; i++)
+    {
+        for(j = 0; j < col; j++)
+        {
+            printf("%d\t",matrix[i][j]);
+        }
+        printf("\n");
+    }
 }
 
-
-
-create_mixed_xfer_arrays(id, p, n, &cnt_out, &disp_out);
-create_uniform_xfer_arrays(id, p, n, &cnt_in, &disp_in);
-
-b_part_in = (dtype *) my_malloc(id, p*local_els*sizeof(dtype));
-MPI_Alltoallv (b_part_out, cnt_out, disp_out, mpitype, b_part_in, 
-		cnt_in, disp_in, mpitype, MPI_COMM_WORLD);
-
-b= (dtype *) my_malloc(id, local_els * sizeof(dtype));
-for (i=0; i<local_els; i++) {
-	b[i]=0.0;
-	for (j=0; j<p; j++)
-		b[i] += b_part_in[i +j*local_els];
+void printarray(int len, int a[len])
+{
+    int i = 0;
+    for(i = 0; i < len; i++)
+    {
+        printf("%d\t",a[i]);
+    }
+	printf("\n");
 }
 
-if (!id) printf("A x = b\nb=\n");
-print_block_vector ((void *) b, mpitype, n, MPI_COMM_WORLD);
+void multiply_two_arrays(int NRA, int NCA, int NCB, int numworkers, int procid) {
 
-MPI_Finalize();
-return 0;
+    int source,         /* process id of message source */
+    dest,           /* process id of message destination */
+    nbytes,         /* number of bytes in message */
+    mtype,          /* message type */
+    cols,           /* cols of A sent to each worker */
+    avecol, extra, offset,
+    i, j, k, n, count;
+
+    int a[NRA][NCA],   /* matrix A to be multiplied */
+    b[NCA][NCB],   /* matrix B to be multiplied */
+	c_tmp[NRA][NCB],   /* tmp matrix before sum */
+    c[NRA][NCB];   /* result matrix C */
+    // int **a, **b, **c;
+    double tstart, tend, tcomm = 0;
+
+
+    /******* master process ***********/
+    if (procid == MASTER) {
+
+        // inits
+        for (i=0; i<NRA; i++)
+            for (j=0; j<NCA; j++)
+                a[i][j]= 1;
+
+        for (i=0; i<NCA; i++)
+            for (j=0; j<NCB; j++)
+                b[i][j]= 2;
+
+		for (i=0; i<NRA; i++)
+            for (j=0; j<NCB; j++)
+                c[i][j]= 0;
+
+        /* send matrix data to the worker processes */
+        tstart = MPI_Wtime();
+        avecol = NCA/numworkers;
+        extra = NCA%numworkers;
+        offset = 0;
+        mtype = FROM_MASTER;
+		tcomm -= MPI_Wtime();
+        for (dest=1; dest<=numworkers; dest++) {
+            cols = (dest <= extra) ? avecol+1 : avecol;
+			// printf("dest: %d cols: %d\n", dest, cols);
+            MPI_Send(&cols,1,MPI_INT,dest,mtype,MPI_COMM_WORLD);
+            count = cols*NRA;
+			// cols to array
+			int tmp[count];
+			k = 0;
+			for (i = offset; i < offset + cols; i++) {
+				for (j = 0; j < NRA; j++) {
+					tmp[k] = a[j][i];
+					k++;
+				}
+			}
+			// printarray(count, tmp);
+			// send columns
+            MPI_Send(&tmp,count,MPI_INT,dest,mtype,MPI_COMM_WORLD);
+			// send a row
+            MPI_Send(&b[0],NCB,MPI_INT,dest,mtype,MPI_COMM_WORLD);
+            offset = offset + cols;
+        }
+		tcomm += MPI_Wtime();
+
+        /* wait for results from all worker processes */
+        mtype = FROM_WORKER;
+		tcomm -= MPI_Wtime();
+        for (i = 1; i <= numworkers; i++) {
+            source = i;
+			// receive tmp matrix from each process
+            MPI_Recv(&c_tmp,NRA*NCB,MPI_INT,source,mtype,MPI_COMM_WORLD, &status);
+			// add matrix
+			int j, k = 0;
+			for(j = 0; j < NRA; j++)
+			{
+				for(k = 0; k < NCB; k++)
+				{
+					c[j][k] += c_tmp[j][k];
+				}
+			}
+        }
+		tcomm += MPI_Wtime();
+
+		// printmatrix(NRA, NCB, c);
+
+        tend = MPI_Wtime();
+        printf("\n%d\ta[%d][%d] x b[%d][%d]\t%lf\t%lf\n", numworkers+1, NRA, NCA, NCA, NCB, tcomm, (tend - tstart));
+
+    } /* end of master */
+
+    /************ worker process *************/
+    if (procid > MASTER) {
+
+        mtype = FROM_MASTER;
+        source = MASTER;
+
+        MPI_Recv(&cols,1,MPI_INT,source,mtype,MPI_COMM_WORLD,&status);
+		// printf("proc:%d cols:%d\n", procid, cols);
+        count = cols*NRA;
+		int tmp[count];
+        MPI_Recv(&tmp,count,MPI_INT,source,mtype,MPI_COMM_WORLD,&status);
+		// printf("tmp %d: ", procid);
+		// printarray(count, tmp);
+		int tmp_row[NCB];
+        MPI_Recv(&tmp_row,NCB,MPI_INT,source,mtype,MPI_COMM_WORLD,&status);
+		// printf("tmp_row %d: ", procid);
+		// printarray(NCB, tmp_row);
+
+		// init with zeros
+		for(i = 0; i < NRA; i++)
+        {
+            for(j = 0; j < NCB; j++)
+            {
+                c[i][j] = 0;
+            }
+        }
+
+		// if (procid == 1) {
+		// 	printarray(count, tmp);
+		// 	printarray(NCB, tmp_row);
+		// 	printmatrix(NRA, NCB, c);
+		// }
+
+		// multiply and add (if more than one col)
+		for (n = 0; n < cols; n++) {
+			int start = n * NRA;
+			for (i = 0; i < NRA; i++) {
+				for (j = 0; j < NCB; j++) {
+					c[i][j] = c[i][j] + tmp[start + i] * tmp_row[j];
+					// if (procid == 1) printf("c[%d][%d]=%d\n", i, j, c[i][j]);
+				}
+			}
+		}
+
+		// if (procid == 1) {
+		// 	printmatrix(NRA, NCB, c);
+		// }
+
+        mtype = FROM_WORKER;
+        MPI_Send(&c,NRA*NCB,MPI_INT,MASTER,mtype,MPI_COMM_WORLD);
+
+    }
 }
 
+int main(int argc, char **argv) {
+
+    int numprocs,   /* number of processes in partition */
+    procid,         /* a process identifier */
+    numworkers,     /* number of worker processes */
+    NRA, NCA, NCB;
+
+    NRA = atoi(argv[1]);
+    NCA = NRA;
+    NCB = 1;
+
+    MPI_Init(&argc, &argv);
+    MPI_Comm_rank(MPI_COMM_WORLD, &procid);
+    MPI_Comm_size(MPI_COMM_WORLD, &numprocs);
+    numworkers = numprocs-1;
+
+    multiply_two_arrays(NRA, NCA, NCB, numworkers, procid);
+
+    MPI_Finalize();
+
+    return 0;
+} /* of main */

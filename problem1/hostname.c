@@ -21,13 +21,10 @@ int main(int argc, char* argv[]) {
   int col = 3;
   int m[row][col];
   int n[col];
-  // m = (int **)malloc(row * sizeof(int*));
+  int c[col];
+
   if (rank == 0)
   {
-    //   for(i = 0; i < row; i++)
-    //   {
-    //       m[i]=(int *)malloc(col * sizeof(int));
-    //   }
 
       for(i = 0; i < row; i++)
       {
@@ -36,23 +33,6 @@ int main(int argc, char* argv[]) {
               m[i][j] = i * col + j;
           }
       }
-
-    //   for(i = 0; i < row; i++)
-    //   {
-    //       for(j = 0; j < col; j++)
-    //       {
-    //           printf("%d ", m[i][j]);
-    //       }
-    //       printf("\n");
-    //   }
-
-      MPI_Send(&m, row*col, MPI_INT, 1, 99, MPI_COMM_WORLD);
-      MPI_Send(&m[0], col, MPI_INT, 1, 99, MPI_COMM_WORLD);
-  }
-  else if (rank == 1)
-  {
-      MPI_Recv(&m, row*col, MPI_INT, 0, 99, MPI_COMM_WORLD, &status);
-      MPI_Recv(&n, col, MPI_INT, 0, 99, MPI_COMM_WORLD, &status);
       for(i = 0; i < row; i++)
       {
           for(j = 0; j < col; j++)
@@ -62,11 +42,32 @@ int main(int argc, char* argv[]) {
           printf("\n");
       }
       printf("\n");
-      for(i = 0; i < row; i++)
-      {
-          printf("%d ", n[i]);
-      }
-      printf("\n");
+
+      // send matrix
+      MPI_Send(&m, row*col, MPI_INT, 1, 99, MPI_COMM_WORLD);
+      // send row
+    //   MPI_Send(&m[0], col, MPI_INT, 1, 99, MPI_COMM_WORLD);
+    //   // send col
+    //   int col_i = 0;
+    //   for (i = 0; i < row; i++) {
+    //       c[i] = m[i][col_i];
+    //   }
+    //   MPI_Send(&c[0], row, MPI_INT, 1, 99, MPI_COMM_WORLD);
+    //   for(i = 0; i < row; i++)
+    //   {
+    //       printf("%d\n", c[i]);
+    //   }
+  }
+  else if (rank == 1)
+  {
+      MPI_Recv(&m, row*col, MPI_INT, 0, 99, MPI_COMM_WORLD, &status);
+    //   MPI_Recv(&n, col, MPI_INT, 0, 99, MPI_COMM_WORLD, &status);
+    //   MPI_Recv(&c, row, MPI_INT, 0, 99, MPI_COMM_WORLD, &status);
+    //   for(i = 0; i < row; i++)
+    //   {
+    //       printf("%d\n", c[i]);
+    //   }
+    //   printf("\n");
   }
 
   // gethostname(hostname, 1023);
