@@ -1,6 +1,7 @@
 /*
 Matrix vector multiplication (column-wise)
-Source: http://sites.google.com/site/heshanhome/resources/MPI_matrix_multiplication.c
+Author: yohanes.gultom@gmail.com
+Baseline: http://sites.google.com/site/heshanhome/resources/MPI_matrix_multiplication.c
 */
 
 #include "stdio.h"
@@ -52,7 +53,7 @@ void multiply_two_arrays(int NRA, int NCA, int NCB, int numworkers, int procid) 
 	c_tmp[NRA][NCB],   /* tmp matrix before sum */
     c[NRA][NCB];   /* result matrix C */
     // int **a, **b, **c;
-    double tstart, tend, tcomm = 0;
+    double texec = 0, tcomm = 0;
 
 
     /******* master process ***********/
@@ -72,16 +73,17 @@ void multiply_two_arrays(int NRA, int NCA, int NCB, int numworkers, int procid) 
                 c[i][j]= 0;
 
         /* send matrix data to the worker processes */
-        tstart = MPI_Wtime();
+        texec -= MPI_Wtime();
         avecol = NCA/numworkers;
         extra = NCA%numworkers;
         offset = 0;
         mtype = FROM_MASTER;
-		tcomm -= MPI_Wtime();
         for (dest=1; dest<=numworkers; dest++) {
             cols = (dest <= extra) ? avecol+1 : avecol;
 			// printf("dest: %d cols: %d\n", dest, cols);
+            tcomm -= MPI_Wtime();
             MPI_Send(&cols,1,MPI_INT,dest,mtype,MPI_COMM_WORLD);
+            tcomm += MPI_Wtime();
             count = cols*NRA;
 			// cols to array
 			int tmp[count];
@@ -94,20 +96,22 @@ void multiply_two_arrays(int NRA, int NCA, int NCB, int numworkers, int procid) 
 			}
 			// printarray(count, tmp);
 			// send columns
+            tcomm -= MPI_Wtime();
             MPI_Send(&tmp,count,MPI_INT,dest,mtype,MPI_COMM_WORLD);
 			// send a row
             MPI_Send(&b[0],NCB,MPI_INT,dest,mtype,MPI_COMM_WORLD);
+            tcomm += MPI_Wtime();
             offset = offset + cols;
         }
-		tcomm += MPI_Wtime();
 
         /* wait for results from all worker processes */
         mtype = FROM_WORKER;
-		tcomm -= MPI_Wtime();
         for (i = 1; i <= numworkers; i++) {
             source = i;
 			// receive tmp matrix from each process
+            tcomm -= MPI_Wtime();
             MPI_Recv(&c_tmp,NRA*NCB,MPI_INT,source,mtype,MPI_COMM_WORLD, &status);
+            tcomm += MPI_Wtime();
 			// add matrix
 			int j, k = 0;
 			for(j = 0; j < NRA; j++)
@@ -118,12 +122,11 @@ void multiply_two_arrays(int NRA, int NCA, int NCB, int numworkers, int procid) 
 				}
 			}
         }
-		tcomm += MPI_Wtime();
 
 		// printmatrix(NRA, NCB, c);
 
-        tend = MPI_Wtime();
-        printf("\n%d\t%d\t%lf\t%lf\n", numworkers+1, NRA, tcomm, (tend - tstart));
+        texec += MPI_Wtime();
+        printf("%d\t%d\t%lf\t%lf\n", numworkers+1, NRA, tcomm, texec);
 
     } /* end of master */
 

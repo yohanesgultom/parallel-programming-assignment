@@ -1,5 +1,5 @@
 #!/bin/bash
-name="mv_rowwise"
+name="mv_columnwise"
 prog="$name.c"
 exe="$name.o"
 out="$name.rocks.result"
