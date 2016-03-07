@@ -1,165 +1,147 @@
-/**
- * Source: https://computing.llnl.gov/tutorials/mpi/samples/C/mpi_mm.c​
- */
+/*
+Square matrix multiplication
+Source: http://sites.google.com/site/heshanhome/resources/MPI_matrix_multiplication.c
+*/
 
-#include"stdio.h"
-#include"stdlib.h"
-#include"mpi.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "mpi.h"
 
-/**
- * Print multidimensional array
- */
-void print_array(int **matrix, int row, int col)
+#define MASTER 0       /* id of the first process */
+#define FROM_MASTER 1  /* setting a message type */
+#define FROM_WORKER 2  /* setting a message type */
+
+MPI_Status status;
+
+// void printmatrix(int row, int col, int **matrix)
+void printmatrix(int row, int col, int matrix[row][col])
 {
-  int i, j = 0;
-  for(i = 0; i < row; i++)
-  {
-    for(j = 0; j < col; j++)
+    int i, j = 0;
+    for(i = 0; i < row; i++)
     {
-      printf("%d\t",matrix[i][j]);
+        for(j = 0; j < col; j++)
+        {
+            printf("%d\t",matrix[i][j]);
+        }
+        printf("\n");
     }
-    printf("\n");
-  }
 }
 
-/**
- * multiply two arrays
- */
-void multiply_two_arrays(int x, int n, int y, int size, int rank)
-{
-  int i, j, k, sum=0;
-  int **matrix1;  //declared matrix1[x][n]
-  int **matrix2; //declare matrix2[n][y]
-  int **mat_res; //resultant matrix become mat_res[x][y]
-  double t,tc;
-  MPI_Status status;
+void multiply_two_arrays(int NRA, int NCA, int NCB, int numworkers, int procid) {
 
-  /*----------------------------------------------------*/
-  //create array of pointers(Rows)
-  matrix1 =(int **)malloc(x * sizeof(int*));
-  matrix2 =(int **)malloc(n * sizeof(int*));
-  mat_res=(int **)malloc(x * sizeof(int*));
-  /*----------------------------------------------------*/
+    int source,         /* process id of message source */
+    dest,           /* process id of message destination */
+    nbytes,         /* number of bytes in message */
+    mtype,          /* message type */
+    rows,           /* rows of A sent to each worker */
+    averow, extra, offset,
+    i, j, k, count;
 
-  /*--------------------------------------------------------------------------------*/
-  //allocate memory for each Row pointer
-  for(i = 0; i < x; i++)
-  {
-    matrix1[i]=(int *)malloc(n * sizeof(int));
-    mat_res[i]=(int *)malloc(y * sizeof(int));
-  }
+    int a[NRA][NCA],   /* matrix A to be multiplied */
+    b[NCA][NCB],   /* matrix B to be multiplied */
+    c[NRA][NCB];   /* result matrix C */
+    // int **a, **b, **c;
+    double tstart,
+    tend;
 
-  for(i = 0; i < n; i++)
-  matrix2[i]=(int *)malloc(y*sizeof(int));
-  /*--------------------------------------------------------------------------------*/
 
-  for(i = 0; i < x; i++)
-  {
-    for(j = 0; j < n; j++)
-    {
-      matrix1[i][j] = 1; //initialize 1 to matrix1 for all processes
+    /******* master process ***********/
+    if (procid == MASTER) {
+
+        // inits
+        for (i=0; i<NRA; i++)
+            for (j=0; j<NCA; j++)
+                a[i][j]= 1;
+        // printmatrix(NRA, NCA, a);
+
+        for (i=0; i<NCA; i++)
+            for (j=0; j<NCB; j++)
+                b[i][j]= 2;
+        // printmatrix(NCA, NCB, b);
+
+        /* send matrix data to the worker processes */
+        tstart = MPI_Wtime();
+        averow = NRA/numworkers;
+        extra = NRA%numworkers;
+        offset = 0;
+        mtype = FROM_MASTER;
+        for (dest=1; dest<=numworkers; dest++) {
+            rows = (dest <= extra) ? averow+1 : averow;
+            MPI_Send(&offset,1,MPI_INT,dest,mtype,MPI_COMM_WORLD);
+            MPI_Send(&rows,1,MPI_INT,dest,mtype,MPI_COMM_WORLD);
+            count = rows*NCA;
+            MPI_Send(&a[offset][0],count,MPI_INT,dest,mtype,MPI_COMM_WORLD);
+            count = NCA*NCB;
+            MPI_Send(&b,count,MPI_INT,dest,mtype,MPI_COMM_WORLD);
+            offset = offset + rows;
+        }
+
+        /* wait for results from all worker processes */
+        mtype = FROM_WORKER;
+        for (i=1; i<=numworkers; i++) {
+            source = i;
+            MPI_Recv(&offset,1,MPI_INT,source,mtype,MPI_COMM_WORLD, &status);
+            MPI_Recv(&rows,1,MPI_INT,source,mtype,MPI_COMM_WORLD, &status);
+            count = rows*NCB;
+            MPI_Recv(&c[offset][0],count,MPI_INT,source,mtype,MPI_COMM_WORLD, &status);
+        }
+
+        // printmatrix(NRA, NCB, c);
+
+        tend = MPI_Wtime();
+        printf("\n%d\ta[%d][%d] x b[%d][%d]\t%lf\n", numworkers+1, NRA, NCA, NCA, NCB, (tend - tstart));
+
+    } /* end of master */
+
+    /************ worker process *************/
+    if (procid > MASTER) {
+
+        mtype = FROM_MASTER;
+        source = MASTER;
+
+        MPI_Recv(&offset,1,MPI_INT,source,mtype,MPI_COMM_WORLD,&status);
+        MPI_Recv(&rows,1,MPI_INT,source,mtype,MPI_COMM_WORLD,&status);
+        count = rows*NCA;
+        MPI_Recv(&a,count,MPI_INT,source,mtype,MPI_COMM_WORLD,&status);
+        count = NCA*NCB;
+        MPI_Recv(&b,count,MPI_INT,source,mtype,MPI_COMM_WORLD,&status);
+
+        for (k=0; k<NCB; k++) {       /* multiply our part */
+            for (i=0; i<rows; i++) {
+                c[i][k] = 0.0;
+                for (j=0; j<NCA; j++){
+                    c[i][k] = c[i][k] + a[i][j] * b[j][k];
+                }
+            }
+        }
+
+        mtype = FROM_WORKER;
+        MPI_Send(&offset,1,MPI_INT,MASTER,mtype,MPI_COMM_WORLD);
+        MPI_Send(&rows,1,MPI_INT,MASTER,mtype,MPI_COMM_WORLD);
+        MPI_Send(&c,rows*NCB,MPI_INT,MASTER,mtype,MPI_COMM_WORLD);
+
     }
-  }
-
-  for(i = 0; i < n; i++)
-  {
-    for(j = 0; j < y; j++)
-    {
-      matrix2[i][j] = 2;//initialize 2 to matrix2 for all processes
-    }
-  }
-  MPI_Barrier(MPI_COMM_WORLD);
-  if(rank == 0) t -= MPI_Wtime();
-  // divide the task in multiple processes
-  // size = number of process.
-  // -- if size == 1 (minimum) then that single process will calculate all row * column operations
-  // -- if 1 < size < x then then each process will do (total process / size) operations. Each process will do rows * column with index = rank + size * iteration. eg: process rank n will do rows * column with index = { n, n+size, n+2*size, n+3*size + .. + n+i*size }
-  // -- if size >= x then each process will only calculate one row * one column
-  for(i = rank; i < x; i = i+size)
-  {
-    for(j = 0; j < y; j++)
-    {
-      sum=0;
-      for(k = 0; k < n; k++)
-      {
-        sum = sum + matrix1[i][k] * matrix2[k][j];
-      }
-      mat_res[i][j] = sum;
-    }
-  }
-
-  if(rank != 0)
-  {
-    for(i = rank; i < x; i = i+size)
-    MPI_Send(&mat_res[i][0], y, MPI_INT, 0, 10+i, MPI_COMM_WORLD);//send calculated rows to process with rank 0
-  }
-
-  if(rank == 0)
-  {
-    tc -= MPI_Wtime();
-    for(j = 1; j < size; j++)
-    {
-      for(i = j; i < x; i = i+size)
-      {
-        MPI_Recv(&mat_res[i][0], y, MPI_INT, j, 10+i, MPI_COMM_WORLD, &status);//receive calculated rows from respective process
-      }
-    }
-    tc += MPI_Wtime();
-  }
-  MPI_Barrier(MPI_COMM_WORLD);
-  if(rank == 0)
-  {
-    t += MPI_Wtime();
-    // // print input matrices
-    // print_array(matrix1, x, n);
-    // printf("\n*\n\n");
-    // print_array(matrix2, n, y);
-    // // print result
-    // printf("\n=\n\n");
-    // print_array(mat_res, x, y);
-    // printf("\nTime taken = %f seconds\n",result); //time taken
-    //printf("%d\ta[%d][%d]*[%d][%d]\t%f\t%f\n", size, x, n, n, y, tc, t);
-    // assuming square matrix
-    printf("%d\t%d\t%f\t%f\n", size, x, tc, t);
-  }
-
-  // free memory
-  for(i = 0; i < x; i++)
-  {
-    free(matrix1[i]);
-    free(mat_res[i]);
-    matrix1[i] = NULL;
-    mat_res[i] = NULL;
-  }
-  for(i = 0; i < n; i++)
-  {
-      free(matrix2[i]);
-      matrix2[i] = NULL;
-  }
-  free(matrix1);
-  free(matrix2);
-  free(mat_res);
-  matrix1 = NULL;
-  matrix2 = NULL;
-  mat_res = NULL;
 }
 
-/**
- * main program
- */
-int main(int argc , char **argv)
-{
-  int size,rank = 0;
-  int x = atoi(argv[1]);
-  int n = atoi(argv[2]);
-  int y = atoi(argv[3]);
+int main(int argc, char **argv) {
 
-  MPI_Init(&argc, &argv);
-  MPI_Comm_size(MPI_COMM_WORLD, &size);
-  MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    int numprocs,   /* number of processes in partition */
+    procid,         /* a process identifier */
+    numworkers,     /* number of worker processes */
+    NRA, NCA, NCB;
 
-  multiply_two_arrays(x, n, y, size, rank);
+    NRA = atoi(argv[1]);
+    NCA = atoi(argv[2]);
+    NCB = atoi(argv[3]);
 
-  MPI_Finalize();
-  return 0;
-}
+    MPI_Init(&argc, &argv);
+    MPI_Comm_rank(MPI_COMM_WORLD, &procid);
+    MPI_Comm_size(MPI_COMM_WORLD, &numprocs);
+    numworkers = numprocs-1;
+
+    multiply_two_arrays(NRA, NCA, NCB, numworkers, procid);
+
+    MPI_Finalize();
+
+    return 0;
+} /* of main */

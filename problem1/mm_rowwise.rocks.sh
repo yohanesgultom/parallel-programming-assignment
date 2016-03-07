@@ -10,12 +10,12 @@ mpirun -machinefile ~/machines -np 4 $exe 360 360 360 >> $out &&
 mpirun -machinefile ~/machines -np 4 $exe 360 360 360 >> $out &&
 mpirun -machinefile ~/machines -np 4 $exe 360 360 360 >> $out &&
 mpirun -machinefile ~/machines -np 4 $exe 360 360 360 >> $out &&
-mpirun -machinefile ~/machines -np 2 $exe 1600 1600 1600 >> $out &&
-mpirun -machinefile ~/machines -np 2 $exe 1600 1600 1600 >> $out &&
-mpirun -machinefile ~/machines -np 2 $exe 1600 1600 1600 >> $out &&
-mpirun -machinefile ~/machines -np 2 $exe 1600 1600 1600 >> $out &&
-mpirun -machinefile ~/machines -np 4 $exe 1600 1600 1600 >> $out &&
-mpirun -machinefile ~/machines -np 4 $exe 1600 1600 1600 >> $out &&
-mpirun -machinefile ~/machines -np 4 $exe 1600 1600 1600 >> $out &&
-mpirun -machinefile ~/machines -np 4 $exe 1600 1600 1600 >> $out &&
-mpirun -machinefile ~/machines -np 4 $exe 1600 1600 1600 >> $out
+mpirun -machinefile ~/machines -np 2 $exe 576 576 576 >> $out &&
+mpirun -machinefile ~/machines -np 2 $exe 576 576 576 >> $out &&
+mpirun -machinefile ~/machines -np 2 $exe 576 576 576 >> $out &&
+mpirun -machinefile ~/machines -np 2 $exe 576 576 576 >> $out &&
+mpirun -machinefile ~/machines -np 4 $exe 576 576 576 >> $out &&
+mpirun -machinefile ~/machines -np 4 $exe 576 576 576 >> $out &&
+mpirun -machinefile ~/machines -np 4 $exe 576 576 576 >> $out &&
+mpirun -machinefile ~/machines -np 4 $exe 576 576 576 >> $out &&
+mpirun -machinefile ~/machines -np 4 $exe 576 576 576 >> $out
