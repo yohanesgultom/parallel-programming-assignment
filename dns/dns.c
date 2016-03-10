@@ -45,6 +45,11 @@ struct mesh_info {
 	int k; // the power
 };
 
+struct time_info {
+	double comm_time;
+	double comp_time;
+};
+
 
 void create_topology( struct mesh_info *info , int argc, char *argv[] ) {
 
@@ -153,9 +158,11 @@ void gather_C(struct mesh_info *info, struct matrix *Cred, struct matrix *C) {
    This is the DNS algorithm implementation.
    The multiplied matrix C will only be returned on the root (rank = 0) node.
 */
-void dns_multiply(struct mesh_info *info, struct matrix *C, struct matrix *A, struct matrix *B, int strassen)
+void dns_multiply(struct mesh_info *info, struct matrix *C, struct matrix *A, struct matrix *B, int strassen, struct time_info *time)
 {
 	struct matrix Asub, Bsub, Csub, Cred;
+
+	double comm_start = MPI_Wtime();
 
 	// distribute A along the i-k plane and then in the j direction
 	distribute_matrix(info, A, &Asub, jDIM, 0);
@@ -163,7 +170,11 @@ void dns_multiply(struct mesh_info *info, struct matrix *C, struct matrix *A, st
 	// distribute B along the k-j plane and then in the i direction
 	distribute_matrix(info, B, &Bsub, iDIM, 1);
 
+	double comm_end1 = MPI_Wtime();
+
 	alloc_matrix(&Csub, Asub.n);
+
+	double comp_start = MPI_Wtime();
 
 	// do the serial matrix multiplication
 	bzero(Csub.data, sizeof(*Csub.data)*Csub.n*Csub.n);
@@ -174,12 +185,19 @@ void dns_multiply(struct mesh_info *info, struct matrix *C, struct matrix *A, st
 		naive_matrix_mult_add(&Csub, &Asub, &Bsub);
 	}
 
+	double comp_end = MPI_Wtime();
+
 	// reduce along k dimension to the i-j plane
 	if( info->coords[kDIM] == 0 ) alloc_matrix(&Cred, Csub.n);
 	MPI_Reduce( Csub.data, Cred.data, Csub.n*Csub.n, MPI_INT, MPI_SUM, 0, info->ring_k);
 
+	double comm_end2 = MPI_Wtime();
+
 	// gather on the i-j plane to the root node.
 	if( info->coords[kDIM] == 0 ) gather_C(info, &Cred, C);
+
+	time->comm_time = (comm_end1 - comm_start) + (comm_end2 - comp_end);
+	time->comp_time = (comp_end - comp_start);
 
 }
 
@@ -188,6 +206,7 @@ int main( int argc, char *argv[] ) {
 
 	struct input_params m_in_s, *m_in = &m_in_s;
 	struct mesh_info info;
+	struct time_info time;
 
 	create_topology(&info, argc, argv);
 
@@ -228,7 +247,7 @@ int main( int argc, char *argv[] ) {
 
 	int i;
 	for( i = 1; i < info.k; i++ ) {
-		dns_multiply( &info, &C, &pinfo.X, &B, 0);
+		dns_multiply( &info, &C, &pinfo.X, &B, 0, &time);
 		if( info.myrank == 0 ) {
 			memcpy(B.data, C.data, sizeof(*pinfo.X.data)*pinfo.X.n*pinfo.X.n);
 		}
@@ -251,11 +270,16 @@ int main( int argc, char *argv[] ) {
 			printf("X^%d:\n", pinfo.k);
 			print_matrix(&pinfo.Xpow);
 		}
+		printf("processors: %d\n",info.numprocs);
+		printf("matrix size: %d\n",info.n);
+		printf("power: %d\n",info.k);
 		printf("determinant: %f\n", determinant);
 
 		double elapsed_time = MPI_Wtime() - start_time;
 		printf("data loading time: %f\n", load_time - start_time);
 		printf("matrix multiplication time: %f\n", dns_time - load_time);
+		printf("communication time: %f\n", time.comm_time);
+		printf("computation time: %f\n", time.comp_time);
 		printf("LU time: %f\n", lu_time - dns_time);
 		printf("total time: %f\n", elapsed_time);
 	}
