@@ -225,8 +225,8 @@ void Usage(char prog[]) {
 void Read_matrix_vector(double matrix[], double vector[], int n) {
     int i, j;
 
-    for (i = 0; i < n; i++)
-        for (j = 0; j < n; j++)
+    for (j = 0; j < n; j++)
+        for (i = 0; i < n; i++)
             scanf("%lf", &matrix[i*n+j]);
     for (i = 0; i < n; i++)
         scanf("%lf", &vector[i]);
