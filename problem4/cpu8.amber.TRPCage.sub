@@ -1,0 +1,9 @@
+#$ -V
+#$ -cwd
+#$ -S /bin/bash
+#$ -pe orte 8
+
+module load amber14/gnu
+
+cd $HOME/Amber_GPU_Benchmark_Suite/GB/TRPCage
+mpirun -np 8 $AMBERHOME/bin/sander.MPI -O -o mdout.8CPU -inf mdinfo.8CPU -x mdcrd.8CPU -r restrt.8CPU -ref inpcrd

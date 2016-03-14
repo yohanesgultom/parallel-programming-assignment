@@ -1,0 +1,9 @@
+#$ -V
+#$ -cwd
+#$ -S /bin/bash
+#$ -pe orte 32
+
+module load amber14/gnu
+
+cd $HOME/Amber_GPU_Benchmark_Suite/GB/myoglobin
+mpirun -np 32 $AMBERHOME/bin/sander.MPI -O -o mdout.32CPU -inf mdinfo.32CPU -x mdcrd.32CPU -r restrt.32CPU -ref inpcrd

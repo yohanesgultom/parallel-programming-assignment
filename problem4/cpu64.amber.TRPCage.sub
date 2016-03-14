@@ -1,0 +1,9 @@
+#$ -V
+#$ -cwd
+#$ -S /bin/bash
+#$ -pe orte 64
+
+module load amber14/gnu
+
+cd $HOME/Amber_GPU_Benchmark_Suite/GB/TRPCage
+mpirun -np 64 $AMBERHOME/bin/sander.MPI -O -o mdout.64CPU -inf mdinfo.64CPU -x mdcrd.64CPU -r restrt.64CPU -ref inpcrd
