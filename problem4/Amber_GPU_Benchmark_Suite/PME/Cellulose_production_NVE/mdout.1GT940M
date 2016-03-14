@@ -1,0 +1,283 @@
+
+          -------------------------------------------------------
+          Amber 14 SANDER                              2014
+          -------------------------------------------------------
+
+| PMEMD implementation of SANDER, Release 14
+
+| Run on 12/27/2015 at 18:44:43
+
+|   Executable path: /home/yohanes/amber14/bin/pmemd.cuda
+| Working directory: /home/yohanes/Workspace/advance-parallel-computing-assignment/test5/Amber_GPU_Benchmark_Suite/PME/Cellulose_production_NVE
+|          Hostname: Unknown
+  [-O]verwriting output
+
+File Assignments:
+|   MDIN: mdin                                                                  
+|  MDOUT: mdout.1GT940M                                                         
+| INPCRD: inpcrd                                                                
+|   PARM: prmtop                                                                
+| RESTRT: restrt.1GT940M                                                        
+|   REFC: refc                                                                  
+|  MDVEL: mdvel                                                                 
+|   MDEN: mden                                                                  
+|  MDCRD: mdcrd.1GT940M                                                         
+| MDINFO: mdinfo.1GT940M                                                        
+|  MDFRC: mdfrc                                                                 
+
+
+ Here is the input file:
+
+ Typical Production MD NVE with                                                
+ GOOD energy conservation.                                                     
+ &cntrl                                                                        
+   ntx=5, irest=1,                                                             
+   ntc=2, ntf=2, tol=0.000001,                                                 
+   nstlim=10000,                                                               
+   ntpr=1000, ntwx=1000,                                                       
+   ntwr=10000,                                                                 
+   dt=0.002, cut=8.,                                                           
+   ntt=0, ntb=1, ntp=0,                                                        
+   ioutfm=1,                                                                   
+ /                                                                             
+ &ewald                                                                        
+  dsum_tol=0.000001,                                                           
+ /                                                                             
+                                                                               
+
+
+ 
+|--------------------- INFORMATION ----------------------
+| GPU (CUDA) Version of PMEMD in use: NVIDIA GPU IN USE.
+|                    Version 14.0.1
+| 
+|                      06/20/2014
+| 
+| Implementation by:
+|                    Ross C. Walker     (SDSC)
+|                    Scott Le Grand     (nVIDIA)
+| 
+| CAUTION: The CUDA code is currently experimental.
+|          You use it at your own risk. Be sure to
+|          check ALL results carefully.
+| 
+| Precision model in use:
+|      [SPFP] - Mixed Single/Double/Fixed Point Precision.
+|               (Default)
+| 
+|--------------------------------------------------------
+ 
+|----------------- CITATION INFORMATION -----------------
+|
+|    When publishing work that utilized the CUDA version
+|    of AMBER, please cite the following in addition to
+|    the regular AMBER citations:
+|
+|  - Romelia Salomon-Ferrer; Andreas W. Goetz; Duncan
+|    Poole; Scott Le Grand; Ross C. Walker "Routine
+|    microsecond molecular dynamics simulations with
+|    AMBER - Part II: Particle Mesh Ewald", J. Chem.
+|    Theory Comput., 2013, 9 (9), pp3878-3888,
+|    DOI: 10.1021/ct400314y.
+|
+|  - Andreas W. Goetz; Mark J. Williamson; Dong Xu;
+|    Duncan Poole; Scott Le Grand; Ross C. Walker
+|    "Routine microsecond molecular dynamics simulations
+|    with AMBER - Part I: Generalized Born", J. Chem.
+|    Theory Comput., 2012, 8 (5), pp1542-1555.
+|
+|  - Scott Le Grand; Andreas W. Goetz; Ross C. Walker
+|    "SPFP: Speed without compromise - a mixed precision
+|    model for GPU accelerated molecular dynamics
+|    simulations.", Comp. Phys. Comm., 2013, 184
+|    pp374-380, DOI: 10.1016/j.cpc.2012.09.022
+|
+|--------------------------------------------------------
+ 
+|------------------- GPU DEVICE INFO --------------------
+|
+|            CUDA_VISIBLE_DEVICES: 0
+|   CUDA Capable Devices Detected:      1
+|           CUDA Device ID in use:      0
+|                CUDA Device Name: GeForce 940M
+|     CUDA Device Global Mem Size:   2047 MB
+| CUDA Device Num Multiprocessors:      3
+|           CUDA Device Core Freq:   1.18 GHz
+|
+|--------------------------------------------------------
+ 
+ 
+| Conditional Compilation Defines Used:
+| PUBFFT
+| BINTRAJ
+| CUDA
+| EMIL
+
+| Largest sphere to fit in unit cell has radius =    61.751
+
+| New format PARM file being parsed.
+| Version =    1.000 Date = 05/13/05 Time = 14:32:09
+
+| Note: 1-4 EEL scale factors were NOT found in the topology file.
+|       Using default value of 1.2.
+
+| Note: 1-4 VDW scale factors were NOT found in the topology file.
+|       Using default value of 2.0.
+| Duplicated    0 dihedrals
+
+| Duplicated    0 dihedrals
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+ getting new box info from bottom of inpcrd
+ NATOM  =  408609 NTYPES =       8 NBONH =  360981 MBONA  =   51840
+ NTHETH =   99576 MTHETA =   77652 NPHIH =  181764 MPHIA  =  155196
+ NHPARM =       0 NPARM  =       0 NNB   =  976704 NRES   =  110283
+ NBONA  =   51840 NTHETA =   77652 NPHIA =  155196 NUMBND =       8
+ NUMANG =      14 NPTRA  =      18 NATYP =       8 NPHB   =       1
+ IFBOX  =       1 NMXRS  =      22 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+| Coordinate Index Table dimensions:    57   27   27
+| Direct force subcell size =     4.5479    4.6133    4.5742
+
+     BOX TYPE: RECTILINEAR
+
+--------------------------------------------------------------------------------
+   2.  CONTROL  DATA  FOR  THE  RUN
+--------------------------------------------------------------------------------
+
+                                                                                
+
+General flags:
+     imin    =       0, nmropt  =       0
+
+Nature and format of input:
+     ntx     =       5, irest   =       1, ntrx    =       1
+
+Nature and format of output:
+     ntxo    =       1, ntpr    =    1000, ntrx    =       1, ntwr    =   10000
+     iwrap   =       0, ntwx    =    1000, ntwv    =       0, ntwe    =       0
+     ioutfm  =       1, ntwprt  =       0, idecomp =       0, rbornstat=      0
+
+Potential function:
+     ntf     =       2, ntb     =       1, igb     =       0, nsnb    =      25
+     ipol    =       0, gbsa    =       0, iesp    =       0
+     dielc   =   1.00000, cut     =   8.00000, intdiel =   1.00000
+
+Frozen or restrained atoms:
+     ibelly  =       0, ntr     =       0
+
+Molecular dynamics:
+     nstlim  =     10000, nscm    =      1000, nrespa  =         1
+     t       =   0.00000, dt      =   0.00200, vlimit  =  -1.00000
+
+SHAKE:
+     ntc     =       2, jfastw  =       0
+     tol     =   0.00000
+
+| Intermolecular bonds treatment:
+|     no_intermolecular_bonds =       1
+
+| Energy averages sample interval:
+|     ene_avg_sampling =    1000
+
+Ewald parameters:
+     verbose =       0, ew_type =       0, nbflag  =       1, use_pme =       1
+     vdwmeth =       1, eedmeth =       1, netfrc  =       1
+     Box X =  259.230   Box Y =  124.558   Box Z =  123.502
+     Alpha =   90.000   Beta  =   90.000   Gamma =   90.000
+     NFFT1 =  256       NFFT2 =  128       NFFT3 =  128
+     Cutoff=    8.000   Tol   =0.100E-05
+     Ewald Coefficient =  0.39467
+     Interpolation order =    4
+
+--------------------------------------------------------------------------------
+   3.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
+                                                                                
+ begin time read from input coords =    20.020 ps
+
+ 
+ Number of triangulated 3-point waters found:   105855
+
+     Sum of charges from parm topology file =   0.00000000
+     Forcing neutrality...
+
+| Dynamic Memory, Types Used:
+| Reals            10393427
+| Integers         17339479
+
+| Nonbonded Pairs Initial Allocation:    68247918
+
+| GPU memory information (estimate):
+| KB of GPU memory in use:    883282
+| KB of CPU memory in use:    436108
+
+--------------------------------------------------------------------------------
+   4.  RESULTS
+--------------------------------------------------------------------------------
+
+ ---------------------------------------------------
+ APPROXIMATING switch and d/dx switch using CUBIC SPLINE INTERPOLATION
+ using   5000.0 points per unit in tabled values
+ TESTING RELATIVE ERROR over r ranging from 0.0 to cutoff
+| CHECK switch(x): max rel err =   0.2738E-14   at   2.422500
+| CHECK d/dx switch(x): max rel err =   0.8987E-11   at   2.875760
+ ---------------------------------------------------
+|---------------------------------------------------
+| APPROXIMATING direct energy using CUBIC SPLINE INTERPOLATION
+|  with   50.0 points per unit in tabled values
+| Relative Error Limit not exceeded for r .gt.   2.52
+| APPROXIMATING direct force using CUBIC SPLINE INTERPOLATION
+|  with   50.0 points per unit in tabled values
+| Relative Error Limit not exceeded for r .gt.   2.92
+|---------------------------------------------------
+check COM velocity, temp:        0.000596     0.00(Removed)
+
+ NSTEP =     1000   TIME(PS) =      22.020  TEMP(K) =   299.86  PRESS =     0.0
+ Etot   =   -443239.2764  EKtot   =    257669.5625  EPtot      =   -700908.8389
+ BOND   =     20353.6625  ANGLE   =     54386.4924  DIHED      =     23654.9966
+ 1-4 NB =     21743.4244  1-4 EEL =    742175.6151  VDWAALS    =     96858.6077
+ EELEC  =  -1660081.6375  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ ------------------------------------------------------------------------------
+
+check COM velocity, temp:        0.000032     0.00(Removed)
+
+ NSTEP =     2000   TIME(PS) =      24.020  TEMP(K) =   299.77  PRESS =     0.0
+ Etot   =   -443260.9386  EKtot   =    257591.5938  EPtot      =   -700852.5323
+ BOND   =     20418.2691  ANGLE   =     53865.2130  DIHED      =     23573.1641
+ 1-4 NB =     21832.4987  1-4 EEL =    742162.2310  VDWAALS    =     97236.6190
+ EELEC  =  -1659940.5273  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ ------------------------------------------------------------------------------
+
+check COM velocity, temp:        0.000028     0.00(Removed)
+
+ NSTEP =     3000   TIME(PS) =      26.020  TEMP(K) =   300.18  PRESS =     0.0
+ Etot   =   -443245.6682  EKtot   =    257948.7969  EPtot      =   -701194.4651
+ BOND   =     20439.8139  ANGLE   =     53859.5343  DIHED      =     23664.4405
+ 1-4 NB =     21838.3858  1-4 EEL =    742343.8982  VDWAALS    =     96657.9979
+ EELEC  =  -1659998.5356  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ ------------------------------------------------------------------------------
+
+check COM velocity, temp:        0.000018     0.00(Removed)
+
+ NSTEP =     4000   TIME(PS) =      28.020  TEMP(K) =   299.55  PRESS =     0.0
+ Etot   =   -443233.3535  EKtot   =    257408.5312  EPtot      =   -700641.8848
+ BOND   =     20391.7095  ANGLE   =     54068.9173  DIHED      =     23614.4153
+ 1-4 NB =     21785.3279  1-4 EEL =    742019.2822  VDWAALS    =     95609.5473
+ EELEC  =  -1658131.0842  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ ------------------------------------------------------------------------------
+
+check COM velocity, temp:        0.000041     0.00(Removed)
+
+ NSTEP =     5000   TIME(PS) =      30.020  TEMP(K) =   300.09  PRESS =     0.0
+ Etot   =   -443235.6630  EKtot   =    257867.7969  EPtot      =   -701103.4599
+ BOND   =     20513.2999  ANGLE   =     54098.6728  DIHED      =     23633.6242
+ 1-4 NB =     21692.8043  1-4 EEL =    742055.6218  VDWAALS    =     96276.4574
+ EELEC  =  -1659373.9402  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ ------------------------------------------------------------------------------
+

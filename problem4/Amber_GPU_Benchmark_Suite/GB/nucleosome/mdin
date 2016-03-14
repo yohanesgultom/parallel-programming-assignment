@@ -1,0 +1,18 @@
+Nucleosome GB 2ps.
+ &cntrl
+  imin=0,irest=1,ntx=5,
+  nstlim=1000,dt=0.002,
+  ntf=2,ntc=2,ntb=0,
+  igb=5,cut=9999.0,rgbmax=15.0,
+  ntpr=200,ntwx=200,ntwr=1000,
+  ntr=1,saltcon=0.1,
+  temp0=310.0,
+  ntt=1,tautp=1.0,
+  nscm=0,
+ /
+RESTRAIN DNA
+0.1
+RES 1 294
+END
+END
+

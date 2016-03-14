@@ -8,4 +8,10 @@ echo "NP\tData\tComm Time\tProcess Time" > $out &&
 mpirun -np 3 -machinefile ~/machines $exe 1152 >> $out &&
 mpirun -np 3 -machinefile ~/machines $exe 1152 >> $out &&
 mpirun -np 3 -machinefile ~/machines $exe 1152 >> $out &&
-mpirun -np 3 -machinefile ~/machines $exe 1152 >> $out
+mpirun -np 3 -machinefile ~/machines $exe 1152 >> $out &&
+mpirun -np 3 -machinefile ~/machines $exe 1152 >> $out &&
+mpirun -np 5 -machinefile ~/machines $exe 1152 >> $out &&
+mpirun -np 5 -machinefile ~/machines $exe 1152 >> $out &&
+mpirun -np 5 -machinefile ~/machines $exe 1152 >> $out &&
+mpirun -np 5 -machinefile ~/machines $exe 1152 >> $out &&
+mpirun -np 5 -machinefile ~/machines $exe 1152 >> $out
