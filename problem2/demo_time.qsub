@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+#$ -cwd
+#$ -j y
+#$ -S /bin/bash
+#
+name="demo_time"
+prog="$name.c"
+exe="$name.o"
+out="$name.nbcr.result"
+clear && mpicc -o $exe $prog -lm &&
+echo "NP\tProcess Time" > $out &&
+mpiexec -np 12 $exe >> $out &&
+mpiexec -np 12 $exe >> $out &&
+mpiexec -np 12 $exe >> $out &&
+mpiexec -np 12 $exe >> $out &&
+mpiexec -np 12 $exe >> $out &&
+mpiexec -np 24 $exe >> $out &&
+mpiexec -np 24 $exe >> $out &&
+mpiexec -np 24 $exe >> $out &&
+mpiexec -np 24 $exe >> $out &&
+mpiexec -np 24 $exe >> $out &&
+mpiexec -np 36 $exe >> $out &&
+mpiexec -np 36 $exe >> $out &&
+mpiexec -np 36 $exe >> $out &&
+mpiexec -np 36 $exe >> $out &&
+mpiexec -np 36 $exe >> $out

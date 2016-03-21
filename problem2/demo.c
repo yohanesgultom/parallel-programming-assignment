@@ -10,6 +10,8 @@ int main(int argc, char *argv[]) {
     MPI_Comm vu;
     int dim[2],period[2],reorder;
     int coord[2],id;
+    double exec_time = 0;
+
     MPI_Init(&argc, &argv);
     MPI_Comm_rank(MPI_COMM_WORLD,&rank);
     MPI_Comm_size(MPI_COMM_WORLD, &np);
@@ -18,6 +20,10 @@ int main(int argc, char *argv[]) {
         if (rank == 0) printf("np must be > 9!\n");
         MPI_Finalize();
         return 0;
+    }
+
+    if(rank==0) {
+        exec_time -= MPI_Wtime();
     }
 
     sq = ceil(sqrt(np));
@@ -59,5 +65,9 @@ int main(int argc, char *argv[]) {
         printf("P:%d neighbors (MPI_Cart_shift) are r: %d d:%d 1:%d u:%d\n",rank,right,down,left,up);
     }
     MPI_Finalize();
+    if(rank==0) {
+        exec_time += MPI_Wtime();
+        printf("%d\t%f\n", np, exec_time);
+    }
     return 0;
 }
