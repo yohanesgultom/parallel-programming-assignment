@@ -1,0 +1,32 @@
+#!/bin/bash
+#
+#$ -cwd
+#$ -j y
+#$ -S /bin/bash
+#
+name="mm_cannon"
+prog="$name.c"
+exe="$name.o"
+out="$name.nbcr.result"
+clear && mpicc -o $exe $prog -lm &&
+echo "NP\tData\tComm Time\tProcess Time" > $out &&
+mpiexec -np 4 $exe 360 >> $out &&
+mpiexec -np 4 $exe 360 >> $out &&
+mpiexec -np 4 $exe 360 >> $out &&
+mpiexec -np 4 $exe 360 >> $out &&
+mpiexec -np 4 $exe 360 >> $out &&
+mpiexec -np 9 $exe 360 >> $out &&
+mpiexec -np 9 $exe 360 >> $out &&
+mpiexec -np 9 $exe 360 >> $out &&
+mpiexec -np 9 $exe 360 >> $out &&
+mpiexec -np 9 $exe 360 >> $out &&
+mpiexec -np 16 $exe 360 >> $out &&
+mpiexec -np 16 $exe 360 >> $out &&
+mpiexec -np 16 $exe 360 >> $out &&
+mpiexec -np 16 $exe 360 >> $out &&
+mpiexec -np 16 $exe 360 >> $out &&
+mpiexec -np 36 $exe 360 >> $out &&
+mpiexec -np 36 $exe 360 >> $out &&
+mpiexec -np 36 $exe 360 >> $out &&
+mpiexec -np 36 $exe 360 >> $out &&
+mpiexec -np 36 $exe 360 >> $out
