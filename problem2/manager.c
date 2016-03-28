@@ -37,20 +37,23 @@ int main( int argc, char *argv[] )
     MPI_Bcast( b, SIZE, MPI_DOUBLE, MPI_ROOT, workercomm );
 
     /* send a's row to each process */
-    for ( i = 1; i <= MIN( numworkers, SIZE ); i++ ) {
-        MPI_Send( a[i-1], SIZE, MPI_DOUBLE, (i-1), i, workercomm );
+    numsent = 0;
+    for ( i = 0; i < MIN( numworkers, SIZE ); i++ ) {
+	MPI_Send( a[i], SIZE, MPI_DOUBLE, i, i+1, workercomm );
         numsent++;
     }
 
+    //printf("numsent: %d SIZE: %d\n", numsent, SIZE);
+
     /* receive dot products back from workers */
-    for ( i = 1; i <= SIZE; i++ ) {
+    for ( i = 0; i < SIZE; i++ ) {
         MPI_Recv( &dotp, 1, MPI_DOUBLE, MPI_ANY_SOURCE, MPI_ANY_TAG, workercomm, &status );
         sender = status.MPI_SOURCE;
         row = status.MPI_TAG;
-        c[row] = dotp;
+        c[i] = dotp;
         /* send another row back to this worker if there is one */
         if ( numsent < SIZE ) {
-            MPI_Send( a[numsent], SIZE, MPI_DOUBLE, sender, numsent + 1, workercomm );
+            MPI_Send( a[numsent], SIZE, MPI_DOUBLE, sender, numsent+1, workercomm );
             numsent++;
         } else { /* no more work */
             MPI_Send( MPI_BOTTOM, 0, MPI_DOUBLE, sender, 0, workercomm );
@@ -58,6 +61,7 @@ int main( int argc, char *argv[] )
     }
 
     /* print matrix, vector & result */
+    /*
     for (i = 0; i < SIZE; i++) {
         for (j = 0; j < SIZE; j++) {
             printf("%f ", a[i][j]);
@@ -70,6 +74,7 @@ int main( int argc, char *argv[] )
     printf("\n");
     for (i = 0; i < SIZE; i++)
         printf("%f\n", c[i]);
+    */
 
     MPI_Finalize();
     exec_time += MPI_Wtime();
