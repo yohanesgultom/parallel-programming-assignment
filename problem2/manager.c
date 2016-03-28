@@ -39,7 +39,7 @@ int main( int argc, char *argv[] )
     /* send a's row to each process */
     numsent = 0;
     for ( i = 0; i < MIN( numworkers, SIZE ); i++ ) {
-	MPI_Send( a[i], SIZE, MPI_DOUBLE, i, i+1, workercomm );
+	     MPI_Send( a[i], SIZE, MPI_DOUBLE, i, i+1, workercomm );
         numsent++;
     }
 

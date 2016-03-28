@@ -24,7 +24,7 @@ int main( int argc, char *argv[] )
 
     if ( myrank < SIZE ) {
         MPI_Recv( c, SIZE, MPI_DOUBLE, 0, MPI_ANY_TAG, parentcomm, &status );
-        while ( status.MPI_TAG > 0 ) {            
+        while ( status.MPI_TAG > 0 ) {
             row = status.MPI_TAG - 1;
             dotp = 0.0;
             for ( i = 0; i < SIZE; i++ )
