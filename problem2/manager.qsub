@@ -10,7 +10,7 @@ prog="$name.c"
 prog_worker="$name_worker.c"
 out="$name.nbcr.result"
 clear && mpicc -o $name_worker $prog_worker && mpicc -o $name $prog &&
-echo "Workers\tProcess Time" > $out &&
+echo "Workers\tComm Time\tProcess Time" > $out &&
 mpiexec $name 4 800 >> $out &&
 mpiexec $name 4 800 >> $out &&
 mpiexec $name 4 800 >> $out &&
