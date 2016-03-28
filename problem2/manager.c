@@ -57,19 +57,19 @@ int main( int argc, char *argv[] )
         }
     }
 
-    // /* print matrix, vector & result */
-    // for (i = 0; i < SIZE; i++) {
-    //     for (j = 0; j < SIZE; j++) {
-    //         printf("%f ", a[i][j]);
-    //     }
-    //     printf("\n");
-    // }
-    // printf("\n");
-    // for (i = 0; i < SIZE; i++)
-    //     printf("%f\n", b[i]);
-    // printf("\n");
-    // for (i = 0; i < SIZE; i++)
-    //     printf("%f\n", c[i]);
+    /* print matrix, vector & result */
+    for (i = 0; i < SIZE; i++) {
+        for (j = 0; j < SIZE; j++) {
+            printf("%f ", a[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    for (i = 0; i < SIZE; i++)
+        printf("%f\n", b[i]);
+    printf("\n");
+    for (i = 0; i < SIZE; i++)
+        printf("%f\n", c[i]);
 
     MPI_Finalize();
     exec_time += MPI_Wtime();

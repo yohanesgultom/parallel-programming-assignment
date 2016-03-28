@@ -12,10 +12,9 @@ int main( int argc, char *argv[] )
     MPI_Init( &argc, &argv );
     MPI_Comm_size( MPI_COMM_WORLD, &numprocs );
 
-    // printf("worker %d is up!\n", myrank);
-
     MPI_Comm_get_parent( &parentcomm );
     MPI_Comm_rank( parentcomm, &myrank );
+    printf("worker %d is up!\n", myrank);
 
     MPI_Bcast( &SIZE, 1, MPI_INT, 0, parentcomm );
     // printf("worker %d get SIZE: %d\n", myrank, SIZE);
