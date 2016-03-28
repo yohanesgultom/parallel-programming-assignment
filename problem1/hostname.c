@@ -17,7 +17,7 @@ int main(int argc, char* argv[]) {
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
   MPI_Comm_size(MPI_COMM_WORLD, &p);
 
-  printf("%d\n", p);
+  // printf("%d\n", p);
 
   // int row = 3;
   // int col = 3;
@@ -72,8 +72,8 @@ int main(int argc, char* argv[]) {
   //   //   printf("\n");
   // }
 
-  // gethostname(hostname, 1023);
-  // printf("Hostname: %s\n", hostname);
+  gethostname(hostname, 1023);
+  printf("Hostname: %s\n", hostname);
 
   MPI_Finalize();
 
