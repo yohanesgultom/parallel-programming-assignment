@@ -1,31 +1,33 @@
 \contentsline {chapter}{Daftar Isi}{ii}{figure.caption.1}
 \contentsline {chapter}{Daftar Gambar}{iv}{figure.caption.1}
 \contentsline {chapter}{Daftar Tabel}{v}{figure.caption.1}
-\contentsline {chapter}{\numberline {1}\uppercase {Perkalian Matriks \& Vektor}}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Permasalahan}{1}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Definisi Permasalahan}{1}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Batasan Permasalahan}{1}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Tujuan}{2}{section.1.3}
-\contentsline {section}{\numberline {1.4}Posisi Penelitian}{2}{section.1.4}
-\contentsline {section}{\numberline {1.5}Metodologi Penelitian}{2}{section.1.5}
-\contentsline {chapter}{\numberline {2}\uppercase {Process Topologies \& Dynamic Process Generation}}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}\LaTeX \nobreakspace {}Secara Singkat}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}\LaTeX \nobreakspace {}Kompiler dan IDE}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Bold, Italic, dan Underline}{4}{section.2.3}
-\contentsline {section}{\numberline {2.4}Memasukan Gambar}{5}{section.2.4}
-\contentsline {section}{\numberline {2.5}Membuat Tabel}{5}{section.2.5}
-\contentsline {chapter}{\numberline {3}\uppercase {Conjugate Gradient}}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Satu Persamaan}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Lebih dari Satu Persamaan}{7}{section.3.2}
-\contentsline {chapter}{\numberline {4}\uppercase {Molecular Dynamics: AMBER}}{9}{chapter.4}
-\contentsline {section}{\numberline {4.1}thesis.tex}{9}{section.4.1}
-\contentsline {section}{\numberline {4.2}laporan\_setting.tex}{9}{section.4.2}
-\contentsline {section}{\numberline {4.3}istilah.tex}{9}{section.4.3}
-\contentsline {section}{\numberline {4.4}hype.indonesia.tex}{9}{section.4.4}
-\contentsline {section}{\numberline {4.5}pustaka.tex}{10}{section.4.5}
-\contentsline {section}{\numberline {4.6}bab[1 - 6].tex}{10}{section.4.6}
-\contentsline {chapter}{\numberline {5}\uppercase {Kontribusi}}{11}{chapter.5}
-\contentsline {section}{\numberline {5.1}Kesimpulan}{11}{section.5.1}
-\contentsline {section}{\numberline {5.2}Saran}{11}{section.5.2}
-\contentsline {chapter}{Lampiran 1}{2}{section*.7}
+\contentsline {chapter}{\numberline {1}\uppercase {Lingkungan Percobaan}}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Lingkungan \textit {Cluster}}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Cluster Rocks University of California San Diego (UCSD)}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Cluster Fasilkom Universitas Indonesia (UI)}{1}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Cluster Rocks pada Laptop}{2}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}Lingkungan Pengembangan}{2}{section.1.2}
+\contentsline {chapter}{\numberline {2}\uppercase {Perkalian Matriks \& Vektor}}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Pendahuluan}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Eksperimen}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}Analisis \& Kesimpulan}{3}{section.2.3}
+\contentsline {chapter}{\numberline {3}\uppercase {Process Topologies \& Dynamic Process Generation}}{4}{chapter.3}
+\contentsline {section}{\numberline {3.1}\LaTeX \nobreakspace {}Secara Singkat}{4}{section.3.1}
+\contentsline {section}{\numberline {3.2}\LaTeX \nobreakspace {}Kompiler dan IDE}{5}{section.3.2}
+\contentsline {section}{\numberline {3.3}Bold, Italic, dan Underline}{5}{section.3.3}
+\contentsline {section}{\numberline {3.4}Memasukan Gambar}{6}{section.3.4}
+\contentsline {section}{\numberline {3.5}Membuat Tabel}{6}{section.3.5}
+\contentsline {chapter}{\numberline {4}\uppercase {Conjugate Gradient}}{8}{chapter.4}
+\contentsline {section}{\numberline {4.1}Pendahuluan}{8}{section.4.1}
+\contentsline {section}{\numberline {4.2}Eksperimen}{8}{section.4.2}
+\contentsline {chapter}{\numberline {5}\uppercase {Molecular Dynamics: AMBER}}{10}{chapter.5}
+\contentsline {section}{\numberline {5.1}thesis.tex}{10}{section.5.1}
+\contentsline {section}{\numberline {5.2}laporan\_setting.tex}{10}{section.5.2}
+\contentsline {section}{\numberline {5.3}istilah.tex}{10}{section.5.3}
+\contentsline {section}{\numberline {5.4}hype.indonesia.tex}{10}{section.5.4}
+\contentsline {section}{\numberline {5.5}pustaka.tex}{11}{section.5.5}
+\contentsline {section}{\numberline {5.6}bab[1 - 6].tex}{11}{section.5.6}
+\contentsline {chapter}{\numberline {6}\uppercase {Kontribusi}}{12}{chapter.6}
+\contentsline {section}{\numberline {6.1}Kesimpulan}{12}{section.6.1}
+\contentsline {section}{\numberline {6.2}Saran}{12}{section.6.2}
+\contentsline {chapter}{Lampiran 1}{2}{section*.10}
