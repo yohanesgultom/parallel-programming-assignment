@@ -20,14 +20,8 @@ mpirun -hostfile ~/mpi_hostfile -np 5 $exe 1152 >> $out &&
 mpirun -hostfile ~/mpi_hostfile -np 5 $exe 1152 >> $out &&
 mpirun -hostfile ~/mpi_hostfile -np 5 $exe 1152 >> $out &&
 mpirun -hostfile ~/mpi_hostfile -np 5 $exe 1152 >> $out &&
-mpirun -hostfile ~/mpi_hostfile -np 9 $exe 1152 >> $out &&
-mpirun -hostfile ~/mpi_hostfile -np 9 $exe 1152 >> $out &&
-mpirun -hostfile ~/mpi_hostfile -np 9 $exe 1152 >> $out &&
-mpirun -hostfile ~/mpi_hostfile -np 9 $exe 1152 >> $out &&
-mpirun -hostfile ~/mpi_hostfile -np 9 $exe 1152 >> $out &&
-mpirun -hostfile ~/mpi_hostfile -np 17 $exe 1152 >> $out &&
-mpirun -hostfile ~/mpi_hostfile -np 17 $exe 1152 >> $out &&
-mpirun -hostfile ~/mpi_hostfile -np 17 $exe 1152 >> $out &&
-mpirun -hostfile ~/mpi_hostfile -np 17 $exe 1152 >> $out &&
-mpirun -hostfile ~/mpi_hostfile -np 17 $exe 1152 >> $out &&
-mpirun -hostfile ~/mpi_hostfile -np 17 $exe 1152 >> $out
+mpirun -hostfile ~/mpi_hostfile -np 7 $exe 1152 >> $out &&
+mpirun -hostfile ~/mpi_hostfile -np 7 $exe 1152 >> $out &&
+mpirun -hostfile ~/mpi_hostfile -np 7 $exe 1152 >> $out &&
+mpirun -hostfile ~/mpi_hostfile -np 7 $exe 1152 >> $out &&
+mpirun -hostfile ~/mpi_hostfile -np 7 $exe 1152 >> $out

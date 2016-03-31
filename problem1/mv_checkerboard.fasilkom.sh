@@ -10,13 +10,18 @@ mpiexec -np 5 $exe 360 >> $out &&
 mpiexec -np 5 $exe 360 >> $out &&
 mpiexec -np 5 $exe 360 >> $out &&
 mpiexec -np 5 $exe 360 >> $out &&
+mpiexec -np 3 $exe 1152 >> $out &&
+mpiexec -np 3 $exe 1152 >> $out &&
+mpiexec -np 3 $exe 1152 >> $out &&
+mpiexec -np 3 $exe 1152 >> $out &&
+mpiexec -np 3 $exe 1152 >> $out &&
 mpiexec -np 5 $exe 1152 >> $out &&
 mpiexec -np 5 $exe 1152 >> $out &&
 mpiexec -np 5 $exe 1152 >> $out &&
 mpiexec -np 5 $exe 1152 >> $out &&
 mpiexec -np 5 $exe 1152 >> $out &&
-mpiexec -np 17 $exe 1152 >> $out &&
-mpiexec -np 17 $exe 1152 >> $out &&
-mpiexec -np 17 $exe 1152 >> $out &&
-mpiexec -np 17 $exe 1152 >> $out &&
-mpiexec -np 17 $exe 1152 >> $out
+mpiexec -np 7 $exe 1152 >> $out &&
+mpiexec -np 7 $exe 1152 >> $out &&
+mpiexec -np 7 $exe 1152 >> $out &&
+mpiexec -np 7 $exe 1152 >> $out &&
+mpiexec -np 7 $exe 1152 >> $out

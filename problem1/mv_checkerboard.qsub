@@ -24,9 +24,4 @@ mpiexec -np 17 $exe 1152 >> $out &&
 mpiexec -np 17 $exe 1152 >> $out &&
 mpiexec -np 17 $exe 1152 >> $out &&
 mpiexec -np 17 $exe 1152 >> $out &&
-mpiexec -np 17 $exe 1152 >> $out &&
-mpiexec -np 65 $exe 1152 >> $out &&
-mpiexec -np 65 $exe 1152 >> $out &&
-mpiexec -np 65 $exe 1152 >> $out &&
-mpiexec -np 65 $exe 1152 >> $out &&
-mpiexec -np 65 $exe 1152 >> $out
+mpiexec -np 17 $exe 1152 >> $out
