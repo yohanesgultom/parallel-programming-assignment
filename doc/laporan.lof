@@ -2,11 +2,17 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Perkalian matriks-vektor Row-Wise Decomposition\relax }}{3}{figure.caption.2}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Perkalian matriks-vektor Column-Wise Decomposition\relax }}{4}{figure.caption.3}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Perkalian matriks-vektor Checkerboard Decomposition\relax }}{5}{figure.caption.4}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Perkalian matriks bujursangkar Row-Wise Decomposition\relax }}{5}{figure.caption.5}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Perkalian matriks bujursangkar Cannon\relax }}{6}{figure.caption.6}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Perkalian matriks bujursangkar Fox\relax }}{6}{figure.caption.7}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Perkalian matriks bujursangkar DNS iterasi 1\relax }}{7}{figure.caption.8}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Perkalian matriks bujursangkar DNS iterasi 2\relax }}{8}{figure.caption.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces \textit {Creative Common License 1.0 Generic}.\relax }}{7}{figure.caption.4}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \textit {Creative Common License 1.0 Generic}.\relax }}{11}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Algoritma Conjugate Gradient Method.\relax }}{9}{figure.caption.9}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Hasil eksperimen paralel CG pada cluster Fasilkom.\relax }}{10}{figure.caption.10}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Hasil eksperimen paralel CG pada cluster nbcr-233.ucsd.edu.\relax }}{10}{figure.caption.11}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Algoritma Conjugate Gradient Method.\relax }}{13}{figure.caption.15}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Hasil eksperimen paralel CG pada cluster Fasilkom.\relax }}{14}{figure.caption.16}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Hasil eksperimen paralel CG pada cluster nbcr-233.ucsd.edu.\relax }}{14}{figure.caption.17}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

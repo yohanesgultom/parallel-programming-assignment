@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.8)  31 MAR 2016 23:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.8)  2 APR 2016 18:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -274,6 +274,13 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/pslatex/pslatex.sty
 Package: pslatex 1996/07/24 v1.2 pslatex emulation (DPC)
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 65.
@@ -296,8 +303,8 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
-\symbold=\mathgroup4
-\symitalic=\mathgroup5
+\symbold=\mathgroup6
+\symitalic=\mathgroup7
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 74.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
@@ -524,7 +531,7 @@ Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \openout2 = `sampul.aux'.
 
-(./sampul.tex <pics/makara.png, id=150, 154.86429pt x 154.34807pt>
+(./sampul.tex <pics/makara.png, id=170, 154.86429pt x 154.34807pt>
 File: pics/makara.png Graphic file (type png)
 
 <use pics/makara.png>
@@ -558,6 +565,16 @@ LaTeX Font Info:    Try loading font information for OMX+psycm on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxpsycm.fd
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
@@ -644,7 +661,7 @@ BAB 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/mv_rowwise.jpg, id=305, 562.1pt x 363.3575pt>
+<pics/mv_rowwise.jpg, id=353, 562.1pt x 363.3575pt>
 File: pics/mv_rowwise.jpg Graphic file (type jpg)
  <use pics/mv_rowwise.jpg>
 Package pdftex.def Info: pics/mv_rowwise.jpg used on input line 19.
@@ -655,19 +672,20 @@ Package pdftex.def Info: pics/mv_rowwise.jpg used on input line 19.
 
 
  <./pics/mv_rowwise.jpg>]
-<pics/mv_colwise.jpg, id=313, 740.7675pt x 384.43625pt>
+<pics/mv_colwise.jpg, id=361, 740.7675pt x 384.43625pt>
 File: pics/mv_colwise.jpg Graphic file (type jpg)
 
 <use pics/mv_colwise.jpg>
 Package pdftex.def Info: pics/mv_colwise.jpg used on input line 31.
 (pdftex.def)             Requested size: 358.50229pt x 186.05246pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--44
-\OT1/ptm/m/n/12 Pada bagian ini akan di-je-laskan me-nge-nai de-fi-nisi per-ma-
-sa-lahan yang
- []
+<pics/mv_checkerboard.jpg, id=363, 881.2925pt x 487.8225pt>
+File: pics/mv_checkerboard.jpg Graphic file (type jpg)
 
-)
+<use pics/mv_checkerboard.jpg>
+Package pdftex.def Info: pics/mv_checkerboard.jpg used on input line 51.
+(pdftex.def)             Requested size: 298.75394pt x 165.36618pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
@@ -675,6 +693,67 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4 <./pics/mv_colwise.jpg>]
+<pics/mm_rowwise.jpg, id=375, 489.83pt x 129.283pt>
+File: pics/mm_rowwise.jpg Graphic file (type jpg)
+ <use pics/mm_rowwise.jpg>
+Package pdftex.def Info: pics/mm_rowwise.jpg used on input line 65.
+(pdftex.def)             Requested size: 398.3386pt x 105.13686pt.
+
+<pics/mm_cannon.jpg, id=376, 803.0pt x 366.36874pt>
+File: pics/mm_cannon.jpg Graphic file (type jpg)
+ <use pics/mm_cannon.jpg>
+Package pdftex.def Info: pics/mm_cannon.jpg used on input line 77.
+(pdftex.def)             Requested size: 398.3386pt x 181.7472pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5 <./pics/mv_checkerboard.jpg> <./pics/mm_rowwise.jpg>]
+<pics/mm_fox.jpg, id=383, 667.49374pt x 634.37pt>
+File: pics/mm_fox.jpg Graphic file (type jpg)
+ <use pics/mm_fox.jpg>
+Package pdftex.def Info: pics/mm_fox.jpg used on input line 89.
+(pdftex.def)             Requested size: 298.75394pt x 283.93446pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6 <./pics/mm_cannon.jpg> <./pics/mm_fox.jpg>]
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 98.
+
+<pics/mm_dns1.jpg, id=390, 677.53125pt x 425.59pt>
+File: pics/mm_dns1.jpg Graphic file (type jpg)
+ <use pics/mm_dns1.jpg>
+Package pdftex.def Info: pics/mm_dns1.jpg used on input line 106.
+(pdftex.def)             Requested size: 398.3386pt x 250.22572pt.
+
+<pics/mm_dns2.jpg, id=391, 678.535pt x 414.54875pt>
+File: pics/mm_dns2.jpg Graphic file (type jpg)
+ <use pics/mm_dns2.jpg>
+Package pdftex.def Info: pics/mm_dns2.jpg used on input line 114.
+(pdftex.def)             Requested size: 398.3386pt x 243.36081pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7 <./pics/mm_dns1.jpg>])
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8 <./pics/mm_dns2.jpg>]
 \openout2 = `topik2.aux'.
 
  (./topik2.tex
@@ -698,11 +777,9 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
 
-LaTeX Warning: Citation `latex.intro' on page 5 undefined on input line 9.
+LaTeX Warning: Citation `latex.intro' on page 9 undefined on input line 9.
 
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 41.
-[5
+[9
 
 
 
@@ -713,7 +790,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] <pics/creative_common.png, id=333, 759.83875pt x 645.41125pt>
+[10] <pics/creative_common.png, id=414, 759.83875pt x 645.41125pt>
 File: pics/creative_common.png Graphic file (type png)
 
 <use pics/creative_common.png>
@@ -726,14 +803,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7 <./pics/creative_common.png (PNG copy)>])
+[11 <./pics/creative_common.png (PNG copy)>])
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8]
+[12]
 \openout2 = `topik3.aux'.
 
  (./topik3.tex
@@ -742,24 +819,24 @@ BAB 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/cg_par.png, id=347, 557.08125pt x 393.47pt>
+<pics/cg_par.png, id=428, 557.08125pt x 393.47pt>
 File: pics/cg_par.png Graphic file (type png)
  <use pics/cg_par.png>
 Package pdftex.def Info: pics/cg_par.png used on input line 14.
 (pdftex.def)             Requested size: 298.75394pt x 211.01768pt.
 
-[9
+[13
 
 
 
  <./pics/cg_par.png>]
-<pics/cg_fasilkom.jpg, id=356, 607.26875pt x 341.275pt>
+<pics/cg_fasilkom.jpg, id=436, 607.26875pt x 341.275pt>
 File: pics/cg_fasilkom.jpg Graphic file (type jpg)
 
 <use pics/cg_fasilkom.jpg>
 Package pdftex.def Info: pics/cg_fasilkom.jpg used on input line 29.
 (pdftex.def)             Requested size: 318.67209pt x 179.08873pt.
- <pics/cg_nbcr.jpg, id=357, 607.26875pt x 341.275pt>
+ <pics/cg_nbcr.jpg, id=437, 607.26875pt x 341.275pt>
 File: pics/cg_nbcr.jpg Graphic file (type jpg)
 
 <use pics/cg_nbcr.jpg>
@@ -772,7 +849,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <./pics/cg_fasilkom.jpg> <./pics/cg_nbcr.jpg>]
+[14 <./pics/cg_fasilkom.jpg> <./pics/cg_nbcr.jpg>]
 \openout2 = `topik4.aux'.
 
  (./topik4.tex
@@ -798,9 +875,9 @@ asa In-done-sia.
  []
 
 
-LaTeX Warning: Citation `latex.intro' on page 11 undefined on input line 53.
+LaTeX Warning: Citation `latex.intro' on page 15 undefined on input line 53.
 
-[11
+[15
 
 
 
@@ -811,7 +888,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12]
+[16]
 \openout2 = `kontribusi.aux'.
 
  (./kontribusi.tex
@@ -830,7 +907,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-) [13
+) [17
 
 
 
@@ -855,7 +932,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
 Package rerunfilecheck Info: File `laporan.out' has not changed.
-(rerunfilecheck)             Checksum: 36CCF5ECE8CD9F000AE21326E39BAB89;2577.
+(rerunfilecheck)             Checksum: 342A55DB6973AB493D8D1EF6DA06DCB0;3001.
 
 
 LaTeX Warning: There were undefined references.
@@ -863,13 +940,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
  ) 
 Here is how much of TeX's memory you used:
- 9364 strings out of 495000
- 136967 string characters out of 6181169
- 239781 words of memory out of 5000000
- 12243 multiletter control sequences out of 15000+600000
- 48743 words of font info for 98 fonts, out of 8000000 for 9000
+ 9516 strings out of 495000
+ 139376 string characters out of 6181169
+ 240755 words of memory out of 5000000
+ 12352 multiletter control sequences out of 15000+600000
+ 55742 words of font info for 124 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
- 44i,11n,45p,890b,398s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,11n,45p,890b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -889,17 +966,19 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
-/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on laporan.pdf (19 pages, 255590 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on laporan.pdf (23 pages, 589858 bytes).
 PDF statistics:
- 425 PDF objects out of 1000 (max. 8388607)
- 382 compressed objects within 4 object streams
- 71 named destinations out of 1000 (max. 500000)
- 332 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 515 PDF objects out of 1000 (max. 8388607)
+ 455 compressed objects within 5 object streams
+ 87 named destinations out of 1000 (max. 500000)
+ 402 words of extra memory for PDF output out of 10000 (max. 10000000)
 

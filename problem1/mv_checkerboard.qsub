@@ -20,6 +20,11 @@ mpiexec -np 5 $exe 1152 >> $out &&
 mpiexec -np 5 $exe 1152 >> $out &&
 mpiexec -np 5 $exe 1152 >> $out &&
 mpiexec -np 5 $exe 1152 >> $out &&
+mpiexec -np 10 $exe 1152 >> $out &&
+mpiexec -np 10 $exe 1152 >> $out &&
+mpiexec -np 10 $exe 1152 >> $out &&
+mpiexec -np 10 $exe 1152 >> $out &&
+mpiexec -np 10 $exe 1152 >> $out &&
 mpiexec -np 17 $exe 1152 >> $out &&
 mpiexec -np 17 $exe 1152 >> $out &&
 mpiexec -np 17 $exe 1152 >> $out &&
