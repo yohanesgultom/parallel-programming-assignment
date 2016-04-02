@@ -70,10 +70,8 @@ void multiply_two_arrays(int NRA, int NCA, int NCB, int numworkers, int procid) 
             tcomm -= MPI_Wtime();
             MPI_Send(&offset,1,MPI_INT,dest,mtype,MPI_COMM_WORLD);
             MPI_Send(&rows,1,MPI_INT,dest,mtype,MPI_COMM_WORLD);
-            count = rows*NCA;
-            MPI_Send(&a[offset][0],count,MPI_INT,dest,mtype,MPI_COMM_WORLD);
-            count = NCA*NCB;
-            MPI_Send(&b,count,MPI_INT,dest,mtype,MPI_COMM_WORLD);
+            MPI_Send(&a[offset][0],rows*NCA,MPI_INT,dest,mtype,MPI_COMM_WORLD);
+            MPI_Send(&b,NCA*NCB,MPI_INT,dest,mtype,MPI_COMM_WORLD);
             tcomm += MPI_Wtime();
             offset = offset + rows;
         }
@@ -85,8 +83,7 @@ void multiply_two_arrays(int NRA, int NCA, int NCB, int numworkers, int procid) 
             tcomm -= MPI_Wtime();
             MPI_Recv(&offset,1,MPI_INT,source,mtype,MPI_COMM_WORLD, &status);
             MPI_Recv(&rows,1,MPI_INT,source,mtype,MPI_COMM_WORLD, &status);
-            count = rows*NCB;
-            MPI_Recv(&c[offset][0],count,MPI_INT,source,mtype,MPI_COMM_WORLD, &status);
+            MPI_Recv(&c[offset][0],rows*NCB,MPI_INT,source,mtype,MPI_COMM_WORLD, &status);
             tcomm += MPI_Wtime();
         }
 
