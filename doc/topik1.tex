@@ -139,7 +139,7 @@ Eksperimen dilakukan di \cluster UCSD dan Fasilkom dengan variasi jumlah proseso
 	\centering
 	\includegraphics[width=1\textwidth]
 	{pics/chart_mv_rowwise_nbcr}
-	\caption{Grafik hasil eksperimen Row-Wise Decomposition Cluster UCSD}
+	\caption{Grafik hasil eksperimen Row-Wise Decomposition cluster UCSD}
 	\label{fig:result_mv_rowwise_nbcr}
 \end{figure}  
 
@@ -147,15 +147,13 @@ Eksperimen dilakukan di \cluster UCSD dan Fasilkom dengan variasi jumlah proseso
 	\centering
 	\includegraphics[width=1\textwidth]
 	{pics/chart_mv_rowwise_fasilkom}
-	\caption{Grafik hasil eksperimen Row-Wise Decomposition Cluster Fasilkom UI}
+	\caption{Grafik hasil eksperimen Row-Wise Decomposition cluster Fasilkom UI}
 	\label{fig:result_mv_rowwise_fasilkom}
 \end{figure}  
 
 Pada grafik gambar \ref{fig:result_mv_rowwise_nbcr}, terlihat bahwa pada \cluster UCSD terjadi penurunan waktu eksekusi/komunikasi (\speedup) ketika digunakan 3, 4, 5, 7 prosesor (2, 3, 4, 6 \worker). Tapi ketika digunakan 9 prosesor (8 \worker), waktu yang dibutuhkan malah meningkat (tidak terjadi \speedup). Kami tidak mencoba lebih dari 9 prosesor karena sepertinya hasilnya akan sama (tidak ada \speedup).
 
 Sedangkan pada \cluster Fasilkom UI, kami hanya mencoba 3, 5, 7 prosesor karena masalah \f{permission} yang mengakibatkan hanya satu \node (8 prosesor) yang bisa digunakan. Seperti yang terlihat pada grafik gambar \ref{fig:result_mv_rowwise_fasilkom}, \speedup hanya terjadi pada prosesor 3-5. Sedangkan dari 5-7 prosesor tidak terjadi \speedup (waktu ekskusi hampir sama).
-
-Kami tidak melakukan pengujian pada \cluster Rocks karena keterbatasan jumlah prosesor pada \f{laptop} yang kami gunakan.
 
 \subsubsection{Column-wise Decomposition}
 
@@ -173,7 +171,7 @@ Eksperimen dilakukan di \cluster UCSD dan Fasilkom dengan variasi jumlah proseso
 	\centering
 	\includegraphics[width=1\textwidth]
 	{pics/chart_mv_colwise_nbcr}
-	\caption{Grafik hasil eksperimen Column-Wise Decomposition Cluster UCSD}
+	\caption{Grafik hasil eksperimen Column-Wise Decomposition cluster UCSD}
 	\label{fig:result_mv_colwise_nbcr}
 \end{figure}  
 
@@ -181,15 +179,13 @@ Eksperimen dilakukan di \cluster UCSD dan Fasilkom dengan variasi jumlah proseso
 	\centering
 	\includegraphics[width=1\textwidth]
 	{pics/chart_mv_colwise_fasilkom}
-	\caption{Grafik hasil eksperimen Column-Wise Decomposition Cluster Fasilkom UI}
+	\caption{Grafik hasil eksperimen Column-Wise Decomposition cluster Fasilkom UI}
 	\label{fig:result_mv_colwise_fasilkom}
 \end{figure}  
 
 Pada grafik gambar \ref{fig:result_mv_colwise_nbcr}, terlihat bahwa pada \cluster UCSD terjadi penurunan waktu eksekusi/komunikasi (\speedup) ketika digunakan 4-5 prosesor. Tapi ketika digunakan 3-4, 5-9 prosesor, waktu yang dibutuhkan malah meningkat (tidak terjadi \speedup).
 
 Sedangkan pada \cluster Fasilkom UI, kami hanya mencoba 3, 5, 7 prosesor karena masalah \f{permission} yang mengakibatkan hanya satu \node (8 prosesor) yang bisa digunakan. Seperti yang terlihat pada grafik gambar \ref{fig:result_mv_colwise_fasilkom}, \speedup hanya terjadi pada prosesor 3-5. Sedangkan dari 5-7 prosesor tidak terjadi \speedup (waktu ekskusi meningkat).
-
-Kami tidak melakukan pengujian pada \cluster Rocks karena keterbatasan jumlah prosesor pada \f{laptop} yang kami gunakan.
 
 \subsubsection{Checkerboard Decomposition}
 
@@ -201,13 +197,13 @@ Deskripsi program yang digunakan:
 	\item Waktu eksekusi dan komunikasi dihitung (dalam detik) menggunakan \verb|MPI_Wtime|
 \end{itemize}
 
-Eksperimen dilakukan di \cluster UCSD dan Fasilkom dengan variasi jumlah prosesor di mana waktu yang diukur adalah nilai rata-rata dari lima kali eksekusi.
+Eksperimen dilakukan di \cluster UCSD dan Fasilkom dengan variasi jumlah prosesor di mana waktu yang diukur adalah nilai rata-rata dari lima kali eksekusi. Sedangkan pada \cluster Rocks hanya dilakukan perbandingan algoritma.
 
 \begin{figure}
 	\centering
 	\includegraphics[width=1\textwidth]
 	{pics/chart_mv_checkerboard_nbcr}
-	\caption{Grafik hasil eksperimen Checkerboard Cluster UCSD}
+	\caption{Grafik hasil eksperimen Checkerboard cluster UCSD}
 	\label{fig:result_mv_checkerboard_nbcr}
 \end{figure}  
 
@@ -215,7 +211,7 @@ Eksperimen dilakukan di \cluster UCSD dan Fasilkom dengan variasi jumlah proseso
 	\centering
 	\includegraphics[width=1\textwidth]
 	{pics/chart_mv_checkerboard_fasilkom}
-	\caption{Grafik hasil eksperimen Checkerboard Cluster Fasilkom UI}
+	\caption{Grafik hasil eksperimen Checkerboard cluster Fasilkom UI}
 	\label{fig:result_mv_checkerboard_fasilkom}
 \end{figure}  
 
@@ -223,19 +219,149 @@ Pada grafik gambar \ref{fig:result_mv_checkerboard_nbcr}, terlihat bahwa waktu y
 
 Sedangkan pada \cluster Fasilkom UI, kami hanya mencoba 5 prosesor karena masalah \f{permission} yang mengakibatkan hanya satu \node (8 prosesor) yang bisa digunakan. Seperti yang terlihat pada grafik gambar \ref{fig:result_mv_checkerboard_fasilkom}, kami hanya mencoba melakukan eksekusi dengan ukuran matriks/vektor yang berbeda (360x360 dan 1152x1152).
 
-Kami tidak melakukan pengujian pada \cluster Rocks karena keterbatasan jumlah prosesor pada \f{laptop} yang kami gunakan.
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/chart_mv_comparison_rocks}
+	\caption{Grafik hasil eksperimen di cluster Rocks}
+	\label{fig:result_mv_comparison_rocks}
+\end{figure}  
+
+Pada \cluster Rocks kami mengamati perbandingan kinerja dari tiga algoritma yang sudah di bahas. Sesuai dengan grafik pada gambar \ref{fig:result_mv_comparison_rocks}, hasil tercepat diperoleh dari algoritma \f{row-wise decomposition}. Kami tidak melakukan eksperimen dengan jumlah prosesor yang berbeda pada \cluster Rocks karena keterbatasan jumlah prosesor pada \f{laptop} yang kami gunakan.
 
 \subsection{Perkalian Matriks Bujursangkar} 
 
 \subsubsection{Row-Wise Decomposition}
 
+Deskripsi program yang digunakan:
+\begin{itemize}
+	\item Sumber kode: \texttt{\url{ https://github.com/yohanesgultom/parallel-programming-assignment/blob/master/problem1/mm_rowwise.c}}
+	\item Satu prosesor berlaku sebagai \manager dan sisanya berperan sebagai \worker 
+	\item Tugas \manager adalah menginisialisasi dua buah matriks bujursangkar, mendistribusikannya secara \f{row-wise decomposition} menggunakan \verb|MPI_Send| dan \verb|MPI_Bcast| dan mengumpulkan hasil dari tiap \worker dengan \verb|MPI_Recv|	
+	\item Waktu eksekusi dan komunikasi dihitung (dalam detik) menggunakan \verb|MPI_Wtime|
+\end{itemize}
+
+Eksperimen dilakukan di \cluster UCSD dan Fasilkom dengan variasi jumlah prosesor di mana waktu yang diukur adalah nilai rata-rata dari lima kali eksekusi.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/chart_mm_rowwise_nbcr}
+	\caption{Grafik hasil eksperimen Row-Wise Decomposition cluster UCSD}
+	\label{fig:result_mm_rowwise_nbcr}
+\end{figure}  
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/chart_mm_rowwise_fasilkom}
+	\caption{Grafik hasil eksperimen Row-Wise Decomposition cluster Fasilkom UI}
+	\label{fig:result_mm_rowwise_fasilkom}
+\end{figure}
+
+Pada grafik gambar \ref{fig:result_mm_rowwise_nbcr}, terlihat bahwa pada \cluster UCSD terjadi penurunan waktu eksekusi/komunikasi (\speedup) ketika digunakan 3-9 prosesor (2-7 \worker). Tapi ketika digunakan 17 prosesor (16 \worker), waktu yang dibutuhkan malah meningkat (tidak terjadi \speedup)
+
+Sedangkan pada \cluster Fasilkom UI, kami hanya mencoba 2, 4, 8 prosesor karena masalah \f{permission} yang mengakibatkan hanya satu \node (8 prosesor) yang bisa digunakan. Seperti yang terlihat pada grafik gambar \ref{fig:result_mm_rowwise_fasilkom}, \speedup terjadi di seluruh eksperimen (pada prosesor 2-8).
+
 \subsubsection{Cannon}
+
+Deskripsi program yang digunakan:
+\begin{itemize}
+	\item Sumber kode: \texttt{\url{ https://github.com/yohanesgultom/parallel-programming-assignment/blob/master/problem1/mm_cannon.c}}
+	\item Satu prosesor berlaku sebagai \manager tapi sekaligus \worker sedangkan sisanya hanya berperan sebagai \worker 
+	\item Tugas \manager adalah menginisialisasi dua buah matriks bujursangkar, mempersiapkan topologi proses kartesian dengan \verb|MPI_Cart_create|, mendistribusikan pekerjaan dengan \verb|MPI_Sendrecv_replace| dan \verb|MPI_Cart_shift| untuk menentukan destinasi proses
+	\item Waktu eksekusi dan komunikasi dihitung (dalam detik) menggunakan \verb|MPI_Wtime|
+\end{itemize}
+
+Percobaan hanya dilakukan di \cluster UCSD karena variasi jumlah prosesor harus bersifat \f{perfect square}, yaitu 4, 9, 16 dan 36. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/chart_mm_cannon_nbcr}
+	\caption{Grafik hasil eksperimen algoritma Cannon cluster UCSD}
+	\label{fig:result_mm_cannon_nbcr}
+\end{figure}  
+
+Seperti yang terlihat pada grafik gambar \ref{fig:result_mm_cannon_nbcr}, terjadi \speedup pada penambahan prosesor 4-36. Selain itu juga terlihat bahwa waktu komunikasi memiliki proporsi yang lebih sedikit dibandingkan dengan proporsi pada algoritma \f{row-wise decomposition}.
 
 \subsubsection{Fox}
 
+Deskripsi program yang digunakan:
+\begin{itemize}
+	\item Sumber kode: \texttt{\url{ https://github.com/yohanesgultom/parallel-programming-assignment/blob/master/problem1/mm_fox.c}}
+	\item Satu prosesor berlaku sebagai \manager tapi sekaligus \worker sedangkan sisanya hanya berperan sebagai \worker 
+	\item Tugas \manager adalah menginisialisasi dua buah matriks bujursangkar, mempersiapkan topologi proses kartesian dengan \verb|MPI_Cart_create|, mendistribusikan pekerjaan dengan \verb|MPI_Sendrecv_replace| dan \verb|MPI_Cart_shift| untuk menentukan destinasi proses
+	\item Waktu eksekusi dan komunikasi dihitung (dalam detik) menggunakan \verb|MPI_Wtime|
+\end{itemize}
+
+Percobaan hanya dilakukan di \cluster UCSD karena variasi jumlah prosesor harus bersifat \f{perfect square}, yaitu 4, 9, 16 dan 36. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/chart_mm_cannon_nbcr}
+	\caption{Grafik hasil eksperimen algoritma Fox cluster UCSD}
+	\label{fig:result_mm_fox_nbcr}
+\end{figure}  
+
+Seperti yang terlihat pada grafik gambar \ref{fig:result_mm_fox_nbcr}, terjadi \speedup pada penambahan prosesor 4-36. Selain itu juga terlihat bahwa waktu komunikasi memiliki proporsi yang lebih sedikit dibandingkan dengan proporsi pada algoritma \f{row-wise decomposition}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/chart_mm_comparison_rocks}
+	\caption{Grafik perbandingan algoritma pada cluster Rocks}
+	\label{fig:result_mm_comparison_rocks}
+\end{figure}  
+
+Pada \cluster Rocks, kami mencoba membandingkan waktu proses antara algoritma \f{row-wise decomposition}, Cannon dan Fox dengan 4 prosesor. Hasil percobaan menunjukkan waktu proses dan komunikasi terendah dihasilkan oleh algoritma Cannon.
+
 \subsubsection{DNS}
 
+Deskripsi program yang digunakan:
+\begin{itemize}
+	\item Sumber kode: \texttt{\url{https://github.com/yohanesgultom/parallel-programming-assignment/blob/master/dns/dns.c}}
+	\item Jumlah prosesor ($np$) harus memenuhi $x = \sqrt[3]{np}$ di mana $x \in \mathbb{Z}$
+\end{itemize}
 
+Eksperimen dilakukan dengan prosesor 8, 7 di \cluster UCSD dan 8 prosesor di \cluster Fasilkom UI,
 
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/chart_mm_dns_nbcr_8}
+	\caption{Grafik hasil eksperimen algoritma DNS degan 8 prosesor cluster UCSD}
+	\label{fig:result_dns_nbcr_8}
+\end{figure}  
 
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/chart_mm_dns_nbcr_27}
+	\caption{Grafik hasil eksperimen algoritma DNS degan 27 prosesor cluster UCSD}
+	\label{fig:result_dns_nbcr_27}
+\end{figure}  
+
+Hasil percobaan pada \cluster UCSD yang ditunjukkan oleh grafik pada gambar \ref{fig:result_dns_nbcr_8} dan \ref{fig:result_dns_nbcr_27} menunjukkan bahwa proporsi waktu komunikasi hanya sedikit meningkat ketika ukuran matriks diperbesar. Dengan membandingkan dua grafik tersebut kita juga melihat adanya \speedup, khususnya pada ukuran matriks di atas 2048.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/chart_mm_dns_fasilkom_8}
+	\caption{Grafik hasil eksperimen algoritma DNS degan 8 prosesor cluster Fasilkom UI}
+	\label{fig:result_dns_fasilkom_8}
+\end{figure}  
+
+\section{Kesimpulan}
+
+Berdasarkan seluruh eksperimen pada topik ini, kami mengambil beberapa kesimpulan:
+
+\begin{enumerate}
+	\item Algoritma paralel dapat mengurangi waktu komputasi total (terjadi \speedup) khususnya pada algoritma yang proporsi waktu komunikasinya sedikit (Cannon, Fox, DNS)
+	\item \Speedup akan semakin terlihat jika jumlah data semakin besar
+	\item Pembagian bobot pekerjaan (\f{load balancing}) mempengaruhi kinerja algoritma paralel karena itu perlu disesuaikan perbandingan ukuran data dan jumlah prosesor yang digunakan
+	\item Jika jumlah prosesor terus ditingkatkan, algoritma paralel akan mencapai titik jenuh (tidak terjadi \speedup lagi)
+	\item Terdapat algoritma paralel didesain untuk kasus spesifik (matriks bujursangkar, matriks \f{dense/sparse}, jumlah prosesor \f{perfect square}) 
+\end{enumerate}
 

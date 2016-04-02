@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.8)  2 APR 2016 21:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.8)  3 APR 2016 03:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -420,8 +420,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \openout2 = `hype.indonesia.aux'.
 
 (./hype.indonesia.tex) (./istilah.tex) (./laporan.aux (./sampul.aux)
-(./lingkungan.aux) (./topik1.aux) (./topik2.aux) (./topik3.aux) (./topik4.aux)
-(./kontribusi.aux) (./lampiran.aux))
+(./lingkungan.aux) (./topik1.aux) (./topik2.aux
+
+LaTeX Warning: Label `fig:result_mm_cannon_nbcr' multiply defined.
+
+) (./topik3.aux) (./topik4.aux) (./kontribusi.aux))
 \openout1 = `laporan.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -531,7 +534,7 @@ Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \openout2 = `sampul.aux'.
 
-(./sampul.tex <pics/makara.png, id=203, 154.86429pt x 154.34807pt>
+(./sampul.tex <pics/makara.png, id=187, 154.86429pt x 154.34807pt>
 File: pics/makara.png Graphic file (type png)
 
 <use pics/makara.png>
@@ -548,38 +551,38 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
  (./laporan.toc
-LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 5.
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 4.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 5.
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 4.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptmcm.fd
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+psycm on input line 5.
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 4.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxpsycm.fd
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
  [2
 
 
@@ -599,30 +602,36 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 [3] (./laporan.lof
 Underfull \hbox (badness 10000) in paragraph at lines 12--12
  [][] [][]\OT1/ptm/m/n/12 Grafik hasil eksper-i-men Row-Wise De-com-po-si-tion 
-Clus-ter 
+clus-ter 
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 14--14
+Underfull \hbox (badness 2495) in paragraph at lines 14--14
  [][] [][]\OT1/ptm/m/n/12 Grafik hasil eksper-i-men Column-Wise De-com-po-si-ti
-on Clus-ter 
+on clus-ter 
  []
 
-)
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ [][] [][]\OT1/ptm/m/n/12 Grafik hasil eksper-i-men Row-Wise De-com-po-si-tion 
+clus-ter 
+ []
+
+[4
+
+
+])
 \tf@lof=\write5
 \openout5 = `laporan.lof'.
 
- [4
 
 
-] (./laporan.lot)
-\tf@lot=\write6
-\openout6 = `laporan.lot'.
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
- [5
-
-
-]
+[5]
 \openout2 = `lingkungan.aux'.
 
  (./lingkungan.tex
@@ -673,7 +682,7 @@ BAB 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/mv_rowwise.jpg, id=421, 562.1pt x 363.3575pt>
+<pics/mv_rowwise.jpg, id=435, 562.1pt x 363.3575pt>
 File: pics/mv_rowwise.jpg Graphic file (type jpg)
  <use pics/mv_rowwise.jpg>
 Package pdftex.def Info: pics/mv_rowwise.jpg used on input line 19.
@@ -684,14 +693,14 @@ Package pdftex.def Info: pics/mv_rowwise.jpg used on input line 19.
 
 
  <./pics/mv_rowwise.jpg>]
-<pics/mv_colwise.jpg, id=429, 740.7675pt x 384.43625pt>
+<pics/mv_colwise.jpg, id=444, 740.7675pt x 384.43625pt>
 File: pics/mv_colwise.jpg Graphic file (type jpg)
 
 <use pics/mv_colwise.jpg>
 Package pdftex.def Info: pics/mv_colwise.jpg used on input line 31.
 (pdftex.def)             Requested size: 358.50229pt x 186.05246pt.
 
-<pics/mv_checkerboard.jpg, id=431, 881.2925pt x 487.8225pt>
+<pics/mv_checkerboard.jpg, id=446, 881.2925pt x 487.8225pt>
 File: pics/mv_checkerboard.jpg Graphic file (type jpg)
 
 <use pics/mv_checkerboard.jpg>
@@ -705,13 +714,13 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4 <./pics/mv_colwise.jpg>]
-<pics/mm_rowwise.jpg, id=443, 489.83pt x 129.283pt>
+<pics/mm_rowwise.jpg, id=458, 489.83pt x 129.283pt>
 File: pics/mm_rowwise.jpg Graphic file (type jpg)
  <use pics/mm_rowwise.jpg>
 Package pdftex.def Info: pics/mm_rowwise.jpg used on input line 65.
 (pdftex.def)             Requested size: 398.3386pt x 105.13686pt.
 
-<pics/mm_cannon.jpg, id=444, 803.0pt x 366.36874pt>
+<pics/mm_cannon.jpg, id=459, 803.0pt x 366.36874pt>
 File: pics/mm_cannon.jpg Graphic file (type jpg)
  <use pics/mm_cannon.jpg>
 Package pdftex.def Info: pics/mm_cannon.jpg used on input line 77.
@@ -724,7 +733,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5 <./pics/mv_checkerboard.jpg> <./pics/mm_rowwise.jpg>]
-<pics/mm_fox.jpg, id=452, 667.49374pt x 634.37pt>
+<pics/mm_fox.jpg, id=466, 667.49374pt x 634.37pt>
 File: pics/mm_fox.jpg Graphic file (type jpg)
  <use pics/mm_fox.jpg>
 Package pdftex.def Info: pics/mm_fox.jpg used on input line 89.
@@ -740,13 +749,13 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 98.
 
-<pics/mm_dns1.jpg, id=459, 677.53125pt x 425.59pt>
+<pics/mm_dns1.jpg, id=473, 677.53125pt x 425.59pt>
 File: pics/mm_dns1.jpg Graphic file (type jpg)
  <use pics/mm_dns1.jpg>
 Package pdftex.def Info: pics/mm_dns1.jpg used on input line 106.
 (pdftex.def)             Requested size: 398.3386pt x 250.22572pt.
 
-<pics/mm_dns2.jpg, id=460, 678.535pt x 414.54875pt>
+<pics/mm_dns2.jpg, id=474, 678.535pt x 414.54875pt>
 File: pics/mm_dns2.jpg Graphic file (type jpg)
  <use pics/mm_dns2.jpg>
 Package pdftex.def Info: pics/mm_dns2.jpg used on input line 114.
@@ -776,7 +785,7 @@ Underfull \hbox (badness 1917) in paragraph at lines 133--134
 ng-gu-nakan
  []
 
-<pics/chart_mv_rowwise_nbcr.jpg, id=466, 419.31656pt x 255.95625pt>
+<pics/chart_mv_rowwise_nbcr.jpg, id=480, 419.31656pt x 255.95625pt>
 File: pics/chart_mv_rowwise_nbcr.jpg Graphic file (type jpg)
 
 <use pics/chart_mv_rowwise_nbcr.jpg>
@@ -791,7 +800,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8 <./pics/mm_dns2.jpg>]
-<pics/chart_mv_rowwise_fasilkom.jpg, id=475, 455.45157pt x 255.95625pt>
+<pics/chart_mv_rowwise_fasilkom.jpg, id=489, 455.45157pt x 255.95625pt>
 File: pics/chart_mv_rowwise_fasilkom.jpg Graphic file (type jpg)
 
 <use pics/chart_mv_rowwise_fasilkom.jpg>
@@ -806,43 +815,43 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9 <./pics/chart_mv_rowwise_nbcr.jpg> <./pics/chart_mv_rowwise_fasilkom.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 []\OT1/ptm/m/n/12 Sumber kode: []$\OT1/pcr/m/n/12 https : / / github . com / yo
 hanesgultom /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 \OT1/pcr/m/n/12 parallel-[]programming-[]assignment / blob / master / problem1 
 / mv _
  []
 
 
-Underfull \hbox (badness 3547) in paragraph at lines 166--167
+Underfull \hbox (badness 3547) in paragraph at lines 164--165
 []\OT1/ptm/m/n/12 Tugas \OT1/ptm/m/it/12 man-ager \OT1/ptm/m/n/12 adalah mengin
 -isial-isasi ma-triks dan vek-tor, mendis-
  []
 
 
-Underfull \hbox (badness 1917) in paragraph at lines 167--168
+Underfull \hbox (badness 1917) in paragraph at lines 165--166
 []\OT1/ptm/m/n/12 Waktu ek-sekusi dan ko-mu-nikasi di-hi-tung (dalam de-tik) me
 ng-gu-nakan
  []
 
-<pics/chart_mv_colwise_nbcr.jpg, id=483, 419.31656pt x 255.95625pt>
+<pics/chart_mv_colwise_nbcr.jpg, id=497, 419.31656pt x 255.95625pt>
 File: pics/chart_mv_colwise_nbcr.jpg Graphic file (type jpg)
 
 <use pics/chart_mv_colwise_nbcr.jpg>
-Package pdftex.def Info: pics/chart_mv_colwise_nbcr.jpg used on input line 175.
+Package pdftex.def Info: pics/chart_mv_colwise_nbcr.jpg used on input line 173.
 
 (pdftex.def)             Requested size: 398.3386pt x 243.14923pt.
 
-<pics/chart_mv_colwise_fasilkom.jpg, id=484, 455.45157pt x 255.95625pt>
+<pics/chart_mv_colwise_fasilkom.jpg, id=498, 455.45157pt x 255.95625pt>
 File: pics/chart_mv_colwise_fasilkom.jpg Graphic file (type jpg)
 
 <use pics/chart_mv_colwise_fasilkom.jpg>
 Package pdftex.def Info: pics/chart_mv_colwise_fasilkom.jpg used on input line 
-183.
+181.
 (pdftex.def)             Requested size: 398.3386pt x 223.86351pt.
 
 
@@ -852,25 +861,25 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10 <./pics/chart_mv_colwise_nbcr.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 []\OT1/ptm/m/n/12 Sumber kode: []$\OT1/pcr/m/n/12 https : / / github . com / yo
 hanesgultom /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 \OT1/pcr/m/n/12 parallel-[]programming-[]assignment / blob / master / problem1 
 / mv _
  []
 
 
-Underfull \hbox (badness 3471) in paragraph at lines 200--201
+Underfull \hbox (badness 3471) in paragraph at lines 196--197
 \OT1/ptm/m/n/12 nya se-cara \OT1/ptm/m/it/12 checker-board de-com-po-si-tion \O
 T1/ptm/m/n/12 meng-gu-nakan []\OT1/pcr/m/n/12 MPI_Send \OT1/ptm/m/n/12 dan
  []
 
 
-Underfull \hbox (badness 1917) in paragraph at lines 201--202
+Underfull \hbox (badness 1917) in paragraph at lines 197--198
 []\OT1/ptm/m/n/12 Waktu ek-sekusi dan ko-mu-nikasi di-hi-tung (dalam de-tik) me
 ng-gu-nakan
  []
@@ -882,23 +891,23 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11 <./pics/chart_mv_colwise_fasilkom.jpg>]
-<pics/chart_mv_checkerboard_nbcr.jpg, id=500, 419.31656pt x 255.95625pt>
+<pics/chart_mv_checkerboard_nbcr.jpg, id=514, 419.31656pt x 255.95625pt>
 File: pics/chart_mv_checkerboard_nbcr.jpg Graphic file (type jpg)
 
 <use pics/chart_mv_checkerboard_nbcr.jpg>
 Package pdftex.def Info: pics/chart_mv_checkerboard_nbcr.jpg used on input line
- 209.
+ 205.
 (pdftex.def)             Requested size: 398.3386pt x 243.14923pt.
 
-<pics/chart_mv_checkerboard_fasilkom.jpg, id=501, 485.56406pt x 295.85532pt>
+<pics/chart_mv_checkerboard_fasilkom.jpg, id=515, 485.56406pt x 295.85532pt>
 File: pics/chart_mv_checkerboard_fasilkom.jpg Graphic file (type jpg)
 
 <use pics/chart_mv_checkerboard_fasilkom.jpg>
 Package pdftex.def Info: pics/chart_mv_checkerboard_fasilkom.jpg used on input 
-line 217.
+line 213.
 (pdftex.def)             Requested size: 398.3386pt x 242.70674pt.
 
-Underfull \hbox (badness 1584) in paragraph at lines 222--223
+Underfull \hbox (badness 1584) in paragraph at lines 218--219
 []\OT1/ptm/m/n/12 Pada grafik gam-bar []2.13[], ter-li-hat bahwa waktu yang dib
 u-tuhkan malah
  []
@@ -910,14 +919,196 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12 <./pics/chart_mv_checkerboard_nbcr.jpg> <./pics/chart_mv_checkerboard_fasil
-kom.jpg>])
+kom.jpg>]
+<pics/chart_mv_comparison_rocks.jpg, id=522, 394.47375pt x 301.8778pt>
+File: pics/chart_mv_comparison_rocks.jpg Graphic file (type jpg)
+
+<use pics/chart_mv_comparison_rocks.jpg>
+Package pdftex.def Info: pics/chart_mv_comparison_rocks.jpg used on input line 
+225.
+(pdftex.def)             Requested size: 398.3386pt x 304.83429pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+[]\OT1/ptm/m/n/12 Sumber kode: []$\OT1/pcr/m/n/12 https : / / github . com / yo
+hanesgultom /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+\OT1/pcr/m/n/12 parallel-[]programming-[]assignment / blob / master / problem1 
+/ mm _
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[13 <./pics/chart_mv_comparison_rocks.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+\OT1/ptm/m/n/12 mendis-tribusikan-nya se-cara \OT1/ptm/m/it/12 row-wise de-com-
+po-si-tion \OT1/ptm/m/n/12 meng-gu-nakan
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 240--241
+[]\OT1/pcr/m/n/12 MPI_Send \OT1/ptm/m/n/12 dan []\OT1/pcr/m/n/12 MPI_Bcast \OT1
+/ptm/m/n/12 dan mengumpulkan hasil dari tiap \OT1/ptm/m/it/12 worker
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 241--242
+[]\OT1/ptm/m/n/12 Waktu ek-sekusi dan ko-mu-nikasi di-hi-tung (dalam de-tik) me
+ng-gu-nakan
+ []
+
+<pics/chart_mm_rowwise_nbcr.jpg, id=529, 419.31656pt x 255.95625pt>
+File: pics/chart_mm_rowwise_nbcr.jpg Graphic file (type jpg)
+
+<use pics/chart_mm_rowwise_nbcr.jpg>
+Package pdftex.def Info: pics/chart_mm_rowwise_nbcr.jpg used on input line 249.
+
+(pdftex.def)             Requested size: 398.3386pt x 243.14923pt.
+
+<pics/chart_mm_rowwise_fasilkom.jpg, id=530, 455.45157pt x 255.95625pt>
+File: pics/chart_mm_rowwise_fasilkom.jpg Graphic file (type jpg)
+
+<use pics/chart_mm_rowwise_fasilkom.jpg>
+Package pdftex.def Info: pics/chart_mm_rowwise_fasilkom.jpg used on input line 
+257.
+(pdftex.def)             Requested size: 398.3386pt x 223.86351pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14 <./pics/chart_mm_rowwise_nbcr.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+[]\OT1/ptm/m/n/12 Sumber kode: []$\OT1/pcr/m/n/12 https : / / github . com / yo
+hanesgultom /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+\OT1/pcr/m/n/12 parallel-[]programming-[]assignment / blob / master / problem1 
+/ mm _
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 273--274
+[]\OT1/ptm/m/n/12 Waktu ek-sekusi dan ko-mu-nikasi di-hi-tung (dalam de-tik) me
+ng-gu-nakan
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15 <./pics/chart_mm_rowwise_fasilkom.jpg>]
+<pics/chart_mm_cannon_nbcr.jpg, id=547, 422.32782pt x 255.95625pt>
+File: pics/chart_mm_cannon_nbcr.jpg Graphic file (type jpg)
+
+<use pics/chart_mm_cannon_nbcr.jpg>
+Package pdftex.def Info: pics/chart_mm_cannon_nbcr.jpg used on input line 281.
+(pdftex.def)             Requested size: 398.3386pt x 241.42297pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+[]\OT1/ptm/m/n/12 Sumber kode: []$\OT1/pcr/m/n/12 https : / / github . com / yo
+hanesgultom /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+\OT1/pcr/m/n/12 parallel-[]programming-[]assignment / blob / master / problem1 
+/ mm _
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 295--296
+[]\OT1/ptm/m/n/12 Waktu ek-sekusi dan ko-mu-nikasi di-hi-tung (dalam de-tik) me
+ng-gu-nakan
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <./pics/chart_mm_cannon_nbcr.jpg>]
+File: pics/chart_mm_cannon_nbcr.jpg Graphic file (type jpg)
+ <use pics/chart_mm_cannon_nbcr.jpg>
+Package pdftex.def Info: pics/chart_mm_cannon_nbcr.jpg used on input line 303.
+(pdftex.def)             Requested size: 398.3386pt x 241.42297pt.
+
+<pics/chart_mm_comparison_rocks.jpg, id=558, 395.22656pt x 302.63063pt>
+File: pics/chart_mm_comparison_rocks.jpg Graphic file (type jpg)
+
+<use pics/chart_mm_comparison_rocks.jpg>
+Package pdftex.def Info: pics/chart_mm_comparison_rocks.jpg used on input line 
+313.
+(pdftex.def)             Requested size: 398.3386pt x 305.01726pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
+[]\OT1/ptm/m/n/12 Sumber kode: []$\OT1/pcr/m/n/12 https : / / github . com / yo
+hanesgultom /
+ []
+
+<pics/chart_mm_dns_nbcr_8.jpg, id=564, 607.26875pt x 341.275pt>
+File: pics/chart_mm_dns_nbcr_8.jpg Graphic file (type jpg)
+
+<use pics/chart_mm_dns_nbcr_8.jpg>
+Package pdftex.def Info: pics/chart_mm_dns_nbcr_8.jpg used on input line 333.
+(pdftex.def)             Requested size: 398.3386pt x 223.86221pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18 <./pics/chart_mm_comparison_rocks.jpg>]
+<pics/chart_mm_dns_nbcr_27.jpg, id=570, 607.26875pt x 341.275pt>
+File: pics/chart_mm_dns_nbcr_27.jpg Graphic file (type jpg)
+
+<use pics/chart_mm_dns_nbcr_27.jpg>
+Package pdftex.def Info: pics/chart_mm_dns_nbcr_27.jpg used on input line 341.
+(pdftex.def)             Requested size: 398.3386pt x 223.86221pt.
+
+<pics/chart_mm_dns_fasilkom_8.jpg, id=573, 607.26875pt x 341.275pt>
+File: pics/chart_mm_dns_fasilkom_8.jpg Graphic file (type jpg)
+
+<use pics/chart_mm_dns_fasilkom_8.jpg>
+Package pdftex.def Info: pics/chart_mm_dns_fasilkom_8.jpg used on input line 35
+1.
+(pdftex.def)             Requested size: 398.3386pt x 223.86221pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19 <./pics/chart_mm_dns_nbcr_8.jpg> <./pics/chart_mm_dns_nbcr_27.jpg>])
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20 <./pics/chart_mm_dns_fasilkom_8.jpg>]
 \openout2 = `topik2.aux'.
 
  (./topik2.tex
@@ -926,40 +1117,68 @@ BAB 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
-
-LaTeX Warning: Citation `latex.intro' on page 14 undefined on input line 9.
-
-[14
+[21
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+[]\OT1/ptm/m/n/12 Kode sum-ber []$\OT1/pcr/m/n/12 https : / / github . com / yo
+hanesgultom /
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 50--51
+\OML/ptmcm/m/it/12 axb$ \OT1/ptm/m/n/12 de-ngan fungsi []\OT1/pcr/m/n/12 MPI_Ca
+rt_create\OT1/ptm/m/n/12 , menc-etak rank pros-esor (\OT1/ptm/m/it/12 print\OT1
+/ptm/m/n/12 )
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 53--54
+[]\OT1/ptm/m/n/12 Dengan pro-gram ini kami in-gin menga-mati per-i-laku fungsi-
+fungsi dasar
+ []
+
+<pics/process_topologies_demo.jpg, id=599, 983.675pt x 318.18875pt>
+File: pics/process_topologies_demo.jpg Graphic file (type jpg)
+
+<use pics/process_topologies_demo.jpg>
+Package pdftex.def Info: pics/process_topologies_demo.jpg used on input line 58
+.
+(pdftex.def)             Requested size: 398.3386pt x 128.85117pt.
+
+<pics/process_topologies_creation_nbcr.jpg, id=600, 941.5175pt x 518.93875pt>
+File: pics/process_topologies_creation_nbcr.jpg Graphic file (type jpg)
+
+<use pics/process_topologies_creation_nbcr.jpg>
+Package pdftex.def Info: pics/process_topologies_creation_nbcr.jpg used on inpu
+t line 66.
+(pdftex.def)             Requested size: 398.3386pt x 219.55229pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15] <pics/creative_common.png, id=526, 759.83875pt x 645.41125pt>
-File: pics/creative_common.png Graphic file (type png)
+[22 <./pics/process_topologies_demo.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+[]\OT1/ptm/m/n/12 Sumber kode: []$\OT1/pcr/m/n/12 https : / / github . com / yo
+hanesgultom /
+ []
 
-<use pics/creative_common.png>
-Package pdftex.def Info: pics/creative_common.png used on input line 118.
-(pdftex.def)             Requested size: 199.1693pt x 169.17186pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+\OT1/pcr/m/n/12 parallel-[]programming-[]assignment / blob / master / problem2 
+/ mm _
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 81--82
+[]\OT1/ptm/m/n/12 Waktu ek-sekusi dan ko-mu-nikasi di-hi-tung (dalam de-tik) me
+ng-gu-nakan
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -967,14 +1186,75 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16 <./pics/creative_common.png (PNG copy)>])
+[23 <./pics/process_topologies_creation_nbcr.jpg>]
+File: pics/chart_mm_cannon_nbcr.jpg Graphic file (type jpg)
+
+<use pics/chart_mm_cannon_nbcr.jpg>
+Package pdftex.def Info: pics/chart_mm_cannon_nbcr.jpg used on input line 87.
+(pdftex.def)             Requested size: 398.3386pt x 241.42297pt.
+
+Underfull \hbox (badness 1253) in paragraph at lines 100--101
+[]\OT1/ptm/m/n/12 Terdapat 2 buah supro-gram yaitu \OT1/ptm/m/it/12 man-ager \O
+T1/ptm/m/n/12 dan \OT1/ptm/m/it/12 worker \OT1/ptm/m/n/12 yang bertu-gas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+[][]$\OT1/pcr/m/n/12 https : / / github . com / yohanesgultom /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\OT1/pcr/m/n/12 parallel-[]programming-[]assignment / blob / master / problem2 
+/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+[][]$\OT1/pcr/m/n/12 https : / / github . com / yohanesgultom /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+\OT1/pcr/m/n/12 parallel-[]programming-[]assignment / blob / master / problem2 
+/
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
+[24] <pics/dynamic_process_demo.jpg, id=629, 1020.81375pt x 380.42125pt>
+File: pics/dynamic_process_demo.jpg Graphic file (type jpg)
+
+<use pics/dynamic_process_demo.jpg>
+Package pdftex.def Info: pics/dynamic_process_demo.jpg used on input line 111.
+(pdftex.def)             Requested size: 398.3386pt x 148.45074pt.
+
+<pics/dynamic_process_multicore.jpg, id=630, 641.39626pt x 464.73625pt>
+File: pics/dynamic_process_multicore.jpg Graphic file (type jpg)
+
+<use pics/dynamic_process_multicore.jpg>
+Package pdftex.def Info: pics/dynamic_process_multicore.jpg used on input line 
+119.
+(pdftex.def)             Requested size: 398.3386pt x 288.62988pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25 <./pics/dynamic_process_demo.jpg> <./pics/dynamic_process_multicore.jpg>])
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26]
 \openout2 = `topik3.aux'.
 
  (./topik3.tex
@@ -983,24 +1263,24 @@ BAB 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/cg_par.png, id=540, 557.08125pt x 393.47pt>
+<pics/cg_par.png, id=645, 557.08125pt x 393.47pt>
 File: pics/cg_par.png Graphic file (type png)
  <use pics/cg_par.png>
 Package pdftex.def Info: pics/cg_par.png used on input line 14.
 (pdftex.def)             Requested size: 298.75394pt x 211.01768pt.
 
-[18
+[27
 
 
 
  <./pics/cg_par.png>]
-<pics/cg_fasilkom.jpg, id=547, 607.26875pt x 341.275pt>
+<pics/cg_fasilkom.jpg, id=652, 607.26875pt x 341.275pt>
 File: pics/cg_fasilkom.jpg Graphic file (type jpg)
 
 <use pics/cg_fasilkom.jpg>
 Package pdftex.def Info: pics/cg_fasilkom.jpg used on input line 29.
 (pdftex.def)             Requested size: 318.67209pt x 179.08873pt.
- <pics/cg_nbcr.jpg, id=548, 607.26875pt x 341.275pt>
+ <pics/cg_nbcr.jpg, id=653, 607.26875pt x 341.275pt>
 File: pics/cg_nbcr.jpg Graphic file (type jpg)
 
 <use pics/cg_nbcr.jpg>
@@ -1013,7 +1293,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19 <./pics/cg_fasilkom.jpg> <./pics/cg_nbcr.jpg>]
+[28 <./pics/cg_fasilkom.jpg> <./pics/cg_nbcr.jpg>]
 \openout2 = `topik4.aux'.
 
  (./topik4.tex
@@ -1022,37 +1302,38 @@ BAB 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-
-Underfull \hbox (badness 1484) in paragraph at lines 36--41
-\OT1/ptm/m/n/12 Berkas ini berisi cara pe-meng-galan be-be-rapa kata dalam ba-h
-asa In-done-sia.
- []
-
-
-LaTeX Warning: Citation `latex.intro' on page 20 undefined on input line 53.
-
-[20
+[29
 
 
 
-])
+] <pics/amber_all.jpg, id=675, 878.28125pt x 544.0325pt>
+File: pics/amber_all.jpg Graphic file (type jpg)
+
+<use pics/amber_all.jpg>
+Package pdftex.def Info: pics/amber_all.jpg used on input line 43.
+(pdftex.def)             Requested size: 398.3386pt x 246.74655pt.
+
+<pics/amber_nucleosome.jpg, id=678, 878.28125pt x 544.0325pt>
+File: pics/amber_nucleosome.jpg Graphic file (type jpg)
+
+<use pics/amber_nucleosome.jpg>
+Package pdftex.def Info: pics/amber_nucleosome.jpg used on input line 53.
+(pdftex.def)             Requested size: 398.3386pt x 246.74655pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]
+[30 <./pics/amber_all.jpg>])
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31 <./pics/amber_nucleosome.jpg>]
 \openout2 = `kontribusi.aux'.
 
  (./kontribusi.tex
@@ -1062,55 +1343,37 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) [22
-
-
-
-]
-\openout2 = `lampiran.aux'.
-
- (./lampiran.tex)pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.111 	\include{lampiran}
-                          [2
+) [32
 
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
- (./laporan.aux (./sampul.aux) (./lingkungan.aux)
-(./topik1.aux) (./topik2.aux) (./topik3.aux) (./topik4.aux) (./kontribusi.aux)
-(./lampiran.aux))
+ (./laporan.aux (./sampul.aux) (./lingkungan.aux) (./topik1.aux)
+(./topik2.aux) (./topik3.aux) (./topik4.aux) (./kontribusi.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
 Package rerunfilecheck Info: File `laporan.out' has not changed.
-(rerunfilecheck)             Checksum: CB2356ACB1D07C659F5AD564FD53CAD9;3711.
+(rerunfilecheck)             Checksum: 99B2A21BB8F925C09F90CF4D3BF19F31;3503.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
  ) 
 Here is how much of TeX's memory you used:
- 9582 strings out of 495000
- 141169 string characters out of 6181169
- 242379 words of memory out of 5000000
- 12393 multiletter control sequences out of 15000+600000
- 55742 words of font info for 124 fonts, out of 8000000 for 9000
+ 9656 strings out of 495000
+ 143508 string characters out of 6181169
+ 240083 words of memory out of 5000000
+ 12423 multiletter control sequences out of 15000+600000
+ 43659 words of font info for 97 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
- 44i,11n,45p,890b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,45p,890b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1139,10 +1402,10 @@ blic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on laporan.pdf (28 pages, 710426 bytes).
+Output written on laporan.pdf (37 pages, 1153300 bytes).
 PDF statistics:
- 629 PDF objects out of 1000 (max. 8388607)
- 557 compressed objects within 6 object streams
- 106 named destinations out of 1000 (max. 500000)
- 496 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 772 PDF objects out of 1000 (max. 8388607)
+ 671 compressed objects within 7 object streams
+ 151 named destinations out of 1000 (max. 500000)
+ 529 words of extra memory for PDF output out of 10000 (max. 10000000)
 
