@@ -125,110 +125,116 @@ Algoritma yang diberi nama berdasarkan nama pembuatnya (Dekel, Nassimi and Aahni
 
 \subsubsection{Row-Wise Decomposition}
 
-Algoritma paralel perkalian matriks-vektor yang paling sederhana, yaitu memecah proses perkalian berdasarkan baris matriks (\f{row-wise}). Setiap prosesor akan bertanggung jawab untuk mengalikan sebuah baris matriks dan vektor pada satu waktu. Jika jumlah prosesor ($np$) lebih sedikit dari jumlah baris matriks ($r$) maka setiap prosesor bertugas mengalikan $n = \frac{r}{np}$ secara sekuensial.
+Deskripsi program yang digunakan:
+\begin{itemize}
+	\item Sumber kode: \texttt{\url{ https://github.com/yohanesgultom/parallel-programming-assignment/blob/master/problem1/mv_rowwise.c}}
+	\item Satu prosesor berlaku sebagai \manager dan sisanya berperan sebagai \worker 
+	\item Tugas \manager adalah menginisialisasi matriks dan vektor, mendistribusikannya secara \f{row-wise decomposition} menggunakan \verb|MPI_Send| dan \verb|MPI_Bcast| dan mengumpulkan hasil dari tiap \worker dengan \verb|MPI_Recv|	
+	\item Waktu eksekusi dan komunikasi dihitung (dalam detik) menggunakan \verb|MPI_Wtime|
+\end{itemize}
+
+Eksperimen dilakukan di \cluster UCSD dan Fasilkom dengan variasi jumlah prosesor di mana waktu yang diukur adalah nilai rata-rata dari lima kali eksekusi.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.75\textwidth]
-	{pics/mv_rowwise}
-	\caption{Perkalian matriks-vektor Row-Wise Decomposition}
-	\label{fig:mv_rowwise}
+	\includegraphics[width=1\textwidth]
+	{pics/chart_mv_rowwise_nbcr}
+	\caption{Grafik hasil eksperimen Row-Wise Decomposition Cluster UCSD}
+	\label{fig:result_mv_rowwise_nbcr}
 \end{figure}  
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/chart_mv_rowwise_fasilkom}
+	\caption{Grafik hasil eksperimen Row-Wise Decomposition Cluster Fasilkom UI}
+	\label{fig:result_mv_rowwise_fasilkom}
+\end{figure}  
+
+Pada grafik gambar \ref{fig:result_mv_rowwise_nbcr}, terlihat bahwa pada \cluster UCSD terjadi penurunan waktu eksekusi/komunikasi (\speedup) ketika digunakan 3, 4, 5, 7 prosesor (2, 3, 4, 6 \worker). Tapi ketika digunakan 9 prosesor (8 \worker), waktu yang dibutuhkan malah meningkat (tidak terjadi \speedup). Kami tidak mencoba lebih dari 9 prosesor karena sepertinya hasilnya akan sama (tidak ada \speedup).
+
+Sedangkan pada \cluster Fasilkom UI, kami hanya mencoba 3, 5, 7 prosesor karena masalah \f{permission} yang mengakibatkan hanya satu \node (8 prosesor) yang bisa digunakan. Seperti yang terlihat pada grafik gambar \ref{fig:result_mv_rowwise_fasilkom}, \speedup hanya terjadi pada prosesor 3-5. Sedangkan dari 5-7 prosesor tidak terjadi \speedup (waktu ekskusi hampir sama).
+
+Kami tidak melakukan pengujian pada \cluster Rocks karena keterbatasan jumlah prosesor pada \f{laptop} yang kami gunakan.
 
 \subsubsection{Column-wise Decomposition}
 
-Algoritma perkalian matriks-vektor ini merupakan alternatif dari \f{row-wise decomposition} di mana pemecahan proses perkalian dilakukan berdasarkan kolom matriks. Setiap proses akan mengalikan sebuah kolom matriks dan sebuah elemen vektor pada satu waktu. Mirip dengan algoritma \f{row-wise decomposition}, jika jumlah prosesor ($np$) lebih sedikit dari jumlah kolom matriks ($c$) maka setiap prosesor bertugas mengalikan $n = \frac{c}{np}$ secara sekuensial.
+Deskripsi program yang digunakan:
+\begin{itemize}
+	\item Sumber kode: \texttt{\url{ https://github.com/yohanesgultom/parallel-programming-assignment/blob/master/problem1/mv_columnwise.c}}
+	\item Satu prosesor berlaku sebagai \manager dan sisanya berperan sebagai \worker 
+	\item Tugas \manager adalah menginisialisasi matriks dan vektor, mendistribusikannya secara \f{column-wise decomposition} menggunakan \verb|MPI_Send| dan \verb|MPI_Bcast| dan mengumpulkan hasil dari tiap \worker dengan \verb|MPI_Recv|	
+	\item Waktu eksekusi dan komunikasi dihitung (dalam detik) menggunakan \verb|MPI_Wtime|
+\end{itemize}
+
+Eksperimen dilakukan di \cluster UCSD dan Fasilkom dengan variasi jumlah prosesor di mana waktu yang diukur adalah nilai rata-rata dari lima kali eksekusi.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.9\textwidth]
-	{pics/mv_colwise}
-	\caption{Perkalian matriks-vektor Column-Wise Decomposition}
-	\label{fig:mv_colwise}
+	\includegraphics[width=1\textwidth]
+	{pics/chart_mv_colwise_nbcr}
+	\caption{Grafik hasil eksperimen Column-Wise Decomposition Cluster UCSD}
+	\label{fig:result_mv_colwise_nbcr}
 \end{figure}  
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/chart_mv_colwise_fasilkom}
+	\caption{Grafik hasil eksperimen Column-Wise Decomposition Cluster Fasilkom UI}
+	\label{fig:result_mv_colwise_fasilkom}
+\end{figure}  
+
+Pada grafik gambar \ref{fig:result_mv_colwise_nbcr}, terlihat bahwa pada \cluster UCSD terjadi penurunan waktu eksekusi/komunikasi (\speedup) ketika digunakan 4-5 prosesor. Tapi ketika digunakan 3-4, 5-9 prosesor, waktu yang dibutuhkan malah meningkat (tidak terjadi \speedup).
+
+Sedangkan pada \cluster Fasilkom UI, kami hanya mencoba 3, 5, 7 prosesor karena masalah \f{permission} yang mengakibatkan hanya satu \node (8 prosesor) yang bisa digunakan. Seperti yang terlihat pada grafik gambar \ref{fig:result_mv_colwise_fasilkom}, \speedup hanya terjadi pada prosesor 3-5. Sedangkan dari 5-7 prosesor tidak terjadi \speedup (waktu ekskusi meningkat).
+
+Kami tidak melakukan pengujian pada \cluster Rocks karena keterbatasan jumlah prosesor pada \f{laptop} yang kami gunakan.
 
 \subsubsection{Checkerboard Decomposition}
 
-Algoritma perkalian matriks-vektor \f{checkerboard decomposition} ini membagi matriks menjadi submatriks dengan ukuran yang sama dan mengalikannya dengan subvektor yang sesuai. Hasil perkalian tersebut kemudian akan dijumlahkan dan dipetakan ke vektor hasil.
+Deskripsi program yang digunakan:
+\begin{itemize}
+	\item Sumber kode: \texttt{\url{ https://github.com/yohanesgultom/parallel-programming-assignment/blob/master/problem1/mv_checkerboard.c}}
+	\item Satu prosesor berlaku sebagai \manager dan sisanya berperan sebagai \worker 
+	\item Tugas \manager adalah menginisialisasi matriks dan vektor, mendistribusikannya secara \f{checkerboard decomposition} menggunakan \verb|MPI_Send| dan \verb|MPI_Bcast| dan mengumpulkan hasil dari tiap \worker dengan \verb|MPI_Recv|	
+	\item Waktu eksekusi dan komunikasi dihitung (dalam detik) menggunakan \verb|MPI_Wtime|
+\end{itemize}
 
-Prekondisi dari algoritma ini adalah jumlah elemen matriks ($n$) harus bisa dibagi rata ke sejumlah prosesor ($np$) atau dengan kata lain memenuhi persamaan \ref{eq:mv_checkerboard}. Hasil pembagian ini ($x$) akan menjadi ukuran submatriks (dan subvektor) yang dikerjakan di tiap proses secara paralel.
-
-\begin{equation}
-x = \sqrt{\frac{n}{np}},\text{ where } x \in \mathbb{Z}
-\label{eq:mv_checkerboard}
-\end{equation}
-
+Eksperimen dilakukan di \cluster UCSD dan Fasilkom dengan variasi jumlah prosesor di mana waktu yang diukur adalah nilai rata-rata dari lima kali eksekusi.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.75\textwidth]
-	{pics/mv_checkerboard}
-	\caption{Perkalian matriks-vektor Checkerboard Decomposition}
-	\label{fig:mv_checkerboard}
+	\includegraphics[width=1\textwidth]
+	{pics/chart_mv_checkerboard_nbcr}
+	\caption{Grafik hasil eksperimen Checkerboard Cluster UCSD}
+	\label{fig:result_mv_checkerboard_nbcr}
 \end{figure}  
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/chart_mv_checkerboard_fasilkom}
+	\caption{Grafik hasil eksperimen Checkerboard Cluster Fasilkom UI}
+	\label{fig:result_mv_checkerboard_fasilkom}
+\end{figure}  
+
+Pada grafik gambar \ref{fig:result_mv_checkerboard_nbcr}, terlihat bahwa waktu yang dibutuhkan malah meningkat (tidak terjadi \speedup) ketika kami meningkatkan jumlah prosesor dari 5-7. Kami tidak mencoba prosesor yang lebih banyak karena melihat pola yang sama (tidak ada \speedup).
+
+Sedangkan pada \cluster Fasilkom UI, kami hanya mencoba 5 prosesor karena masalah \f{permission} yang mengakibatkan hanya satu \node (8 prosesor) yang bisa digunakan. Seperti yang terlihat pada grafik gambar \ref{fig:result_mv_checkerboard_fasilkom}, kami hanya mencoba melakukan eksekusi dengan ukuran matriks/vektor yang berbeda (360x360 dan 1152x1152).
+
+Kami tidak melakukan pengujian pada \cluster Rocks karena keterbatasan jumlah prosesor pada \f{laptop} yang kami gunakan.
 
 \subsection{Perkalian Matriks Bujursangkar} 
 
 \subsubsection{Row-Wise Decomposition}
 
-Mirip dengan algoritma perkalian matriks-vektor \f{row-wise decomposition}, algortima ini juga membagi pekerjaan berdasarkan baris dari matriks pertama seperti yang diilustrasikan pada gambar \ref{fig:mm_rowwise}. Setiap prosesor akan mengalikan sebuah baris dari matriks pertama $A$ dengan seluruh kolom dari matriks kedua $B$. Hasil dari seluruh prosesor kemudian dikonkatenasi menjadi matriks baru $C$.
-
-\begin{figure}
-	\centering
-	\includegraphics[width=1\textwidth]
-	{pics/mm_rowwise}
-	\caption{Perkalian matriks bujursangkar Row-Wise Decomposition}
-	\label{fig:mm_rowwise}
-\end{figure}
-
 \subsubsection{Cannon}
-
-Algoritma Cannon menggunakan dekomposisi seperti algortima matriks-vektor \f{checkerboard decomposition} di mana matriks $A$ dan $B$ dibagi menjadi menjadi submatriks bujursangkar. Perbedaan pada algoritma Cannon adalah prekondisi di mana jumlah proses ($np$) harus merupakan bujursangkar sempurna (\f{perfect square}). Tujuan utama dari algoritma ini adalah untuk meningkatkan efisiensi penggunaan memori pada proses paralel.
-
-\begin{figure}
-	\centering
-	\includegraphics[width=1\textwidth]
-	{pics/mm_cannon}
-	\caption{Perkalian matriks bujursangkar Cannon}
-	\label{fig:mm_cannon}
-\end{figure}
 
 \subsubsection{Fox}
 
-Algoritma Fox memiliki kemiripan dengan algoritma Cannon dalam hal dekomposisi matriks menjadi submatriks bujursangkar dan pemetaan prosesor yang harus dapat membentuk bujursangkar sempurna (\f{perfect square}). Yang membedakan algoritma Fox dan Cannon adalah skema distribusi awal submatriks ke prosesor
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.75\textwidth]
-	{pics/mm_fox}
-	\caption{Perkalian matriks bujursangkar Fox}
-	\label{fig:mm_fox}
-\end{figure}
-
 \subsubsection{DNS}
 
-Algoritma yang diberi nama berdasarkan nama pembuatnya (Dekel, Nassimi and Aahni) ini, diajukan dalam rangka meningkatkan lagi efisiensi penggunaan memori pada perkalian matriks bujursangkar secara paralel. Karakteristik algoritma ini adalah:
-\begin{itemize}
-	\item Berdasarkan partisi \f{intermediate data}
-	\item Melakukan perkalian skalar $n^3$ sehingga membutuhkan proses sebanyak $n \times n \times n$
-	\item Membutuhkan waktu komputasi $O(\log n)$ dengan menggunakan $O(\frac{n^3}{\log n})$
-\end{itemize}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=1\textwidth]
-	{pics/mm_dns1}
-	\caption{Perkalian matriks bujursangkar DNS iterasi 1}
-	\label{fig:mm_dns1}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=1\textwidth]
-	{pics/mm_dns2}
-	\caption{Perkalian matriks bujursangkar DNS iterasi 2}
-	\label{fig:mm_dns2}
-\end{figure}
 
 
 
