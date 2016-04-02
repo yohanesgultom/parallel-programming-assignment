@@ -1,0 +1,21 @@
+[H[J[compute-0-4.local:32484] *** An error occurred in MPI_Send
+[compute-0-4.local:32484] *** on communicator 
+[compute-0-4.local:32484] *** MPI_ERR_TAG: invalid tag
+[compute-0-4.local:32484] *** MPI_ERRORS_ARE_FATAL: your MPI job will now abort
+[compute-0-4.local][[30667,2],3][btl_tcp_frag.c:215:mca_btl_tcp_frag_recv] mca_btl_tcp_frag_recv: readv failed: Connection reset by peer (104)
+--------------------------------------------------------------------------
+mpiexec has exited due to process rank 0 with PID 32484 on
+node compute-0-4.local exiting improperly. There are two reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpiexec (as reported here).
+--------------------------------------------------------------------------
