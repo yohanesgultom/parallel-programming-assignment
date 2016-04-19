@@ -1,0 +1,24 @@
+#$ -V
+#$ -cwd
+#$ -S /bin/bash
+#$ -pe orte 16
+
+module load amber14/gnu
+
+cd $HOME/Amber_GPU_Benchmark_Suite/PME/JAC_production_NVE
+mpirun -np 16 $AMBERHOME/bin/sander.MPI -O -o mdout.16CPU -inf mdinfo.16CPU -x mdcrd.16CPU -r restrt.16CPU
+
+cd $HOME/Amber_GPU_Benchmark_Suite/PME/FactorIX_production_NVE
+mpirun -np 16 $AMBERHOME/bin/sander.MPI -O -o mdout.16CPU -inf mdinfo.16CPU -x mdcrd.16CPU -r restrt.16CPU
+
+cd $HOME/Amber_GPU_Benchmark_Suite/PME/Cellulose_production_NVE
+mpirun -np 16 $AMBERHOME/bin/sander.MPI -O -o mdout.16CPU -inf mdinfo.16CPU -x mdcrd.16CPU -r restrt.16CPU
+
+cd $HOME/Amber_GPU_Benchmark_Suite/GB/TRPCage
+mpirun -np 16 $AMBERHOME/bin/sander.MPI -O -o mdout.16CPU -inf mdinfo.16CPU -x mdcrd.16CPU -r restrt.16CPU -ref inpcrd
+
+cd $HOME/Amber_GPU_Benchmark_Suite/GB/myoglobin
+mpirun -np 16 $AMBERHOME/bin/sander.MPI -O -o mdout.16CPU -inf mdinfo.16CPU -x mdcrd.16CPU -r restrt.16CPU -ref inpcrd
+
+cd $HOME/Amber_GPU_Benchmark_Suite/GB/nucleosome
+mpirun -np 16 $AMBERHOME/bin/sander.MPI -O -o mdout.16CPU -inf mdinfo.16CPU -x mdcrd.16CPU -r restrt.16CPU -ref inpcrd

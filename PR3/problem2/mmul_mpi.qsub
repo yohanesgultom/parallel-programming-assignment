@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+#$ -cwd
+#$ -j y
+#$ -S /bin/bash
+#
+mpicc -o mmul_mpi.o mmul_mpi.c &&
+mpirun -np 2 mmul_mpi.o mmul_mpi.input
