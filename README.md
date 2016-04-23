@@ -1,5 +1,6 @@
 # Parallel Programming Assignment
 
+## PR1
 Experiments on parallel programming using MPI
 * Problem 1: 
   * Matrix-vector multiplication: row-wise, column-wise, checkerboard decomposition algorithm
@@ -11,6 +12,14 @@ Experiments on parallel programming using MPI
   * Conjugate Gradient Method
 * Problem 4:
   * Molecular dynamic with AMBER
+
+## PR2
+Parallel programming experiments with:
+* OpenCL
+* R
+
+## PR3
+GPU programming. TODO
 
 ## Files ##
 * Presentation (Indonesian) http://1drv.ms/1THKxSy
