@@ -156,7 +156,8 @@ int main(int argc, char** argv)
     cudaFree(d_B);
     cudaFree(d_C);
 
-    printf("Exec time: %f s\n", ((float)(clock() - t0) / CLOCKS_PER_SEC));
+    t0 = ((float)(clock() - t0) / CLOCKS_PER_SEC);
+    printf("%d\t%d\t%f\n", WA, BLOCK_SIZE, t0);
 
     return 0;
 }

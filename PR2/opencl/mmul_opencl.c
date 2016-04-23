@@ -152,7 +152,6 @@ int main(int argc, char** argv)
     d_A = clCreateBuffer(clGPUContext, CL_MEM_READ_WRITE | CL_MEM_COPY_HOST_PTR, mem_size_A, h_A, &errcode);
     d_B = clCreateBuffer(clGPUContext, CL_MEM_READ_WRITE | CL_MEM_COPY_HOST_PTR, mem_size_B, h_B, &errcode);
 
-
     // 6. Load and build OpenCL kernel
     char *clMatrixMul = oclLoadProgSource(kernel_filename, kernel_comment, &kernelLength);
     // shrCheckError(clMatrixMul != NULL, CL_SUCCESS);
@@ -242,7 +241,8 @@ int main(int argc, char** argv)
     clReleaseProgram(clProgram);
     clReleaseCommandQueue(clCommandQue);
 
-    printf("Exec time: %f s\n", ((float)(clock() - t0) / CLOCKS_PER_SEC));
+    t0 = ((float)(clock() - t0) / CLOCKS_PER_SEC);
+    printf("%d\t%d\t%f\n", WA, local_size, t0);
 
     return 0;
 }
