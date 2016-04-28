@@ -14,7 +14,8 @@ __kernel void matrixMul(__global float* C, __global float* A, __global float* B,
    // value stores the element that is
    // computed by the thread
    float value = 0;
-   for (int k = 0; k < wA; ++k)
+   int k;
+   for (k = 0; k < wA; ++k)
    {
       float elementA = A[ty * wA + k];
       float elementB = B[k * wB + tx];

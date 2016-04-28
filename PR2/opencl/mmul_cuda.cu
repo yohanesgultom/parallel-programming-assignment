@@ -30,7 +30,8 @@ __global__ void matrixMul( float* C, float* A, float* B, int wA, int wB)
     // value stores the element that is
     // computed by the thread
     float value = 0;
-    for (int i = 0; i < wA; ++i)
+    int i;
+    for (i = 0; i < wA; ++i)
     {
         float elementA = A[ty * wA + i];
         float elementB = B[i * wB + tx];
@@ -45,13 +46,15 @@ __global__ void matrixMul( float* C, float* A, float* B, int wA, int wB)
 // Allocates a matrix with random float entries.
 void randomInit(float* data, int size)
 {
-    for (int i = 0; i < size; ++i)
+    int i;
+    for (i = 0; i < size; ++i)
     data[i] = rand() / (float)RAND_MAX;
 }
 
 void init(float* data, int size, float val)
 {
-    for (int i = 0; i < size; ++i)
+    int i;
+    for (i = 0; i < size; ++i)
     data[i] = val;
 }
 
@@ -64,7 +67,7 @@ int main(int argc, char** argv)
 {
     float t0 = clock();
 
-    int HA, WA, HB, WB, HC, WC;
+    int i, HA, WA, HB, WB, HC, WC;
     HA = atoi(argv[1]);
     WA = HA; HB = HA; WB = HA; HC = HA; WC = HA;
     int BLOCK_SIZE = atoi(argv[2]);
@@ -123,7 +126,7 @@ int main(int argc, char** argv)
     // print out matrices
     if (print == 1) {
         printf("\n\nMatrix A\n");
-        for(int i = 0; i < size_A; i++)
+        for(i = 0; i < size_A; i++)
         {
             printf("%f ", h_A[i]);
             if(((i + 1) % WA) == 0)
@@ -131,7 +134,7 @@ int main(int argc, char** argv)
         }
 
         printf("\n\nMatrix B\n");
-        for(int i = 0; i < size_B; i++)
+        for(i = 0; i < size_B; i++)
         {
             printf("%f ", h_B[i]);
             if(((i + 1) % WB) == 0)
@@ -139,7 +142,7 @@ int main(int argc, char** argv)
         }
 
         printf("\n\nMatrix C (Results)\n");
-        for(int i = 0; i < size_C; i++)
+        for(i = 0; i < size_C; i++)
         {
             printf("%f ", h_C[i]);
             if(((i + 1) % WC) == 0)
