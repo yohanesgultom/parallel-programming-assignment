@@ -105,7 +105,7 @@ int main(void) {
     clStatus = clFinish(command_queue);
 
     // Display the result to the screen
-    // for(i = 0; i < VECTOR_SIZE; i++) printf("%f * %f + %f = %f\n", alpha, A[i], B[i], C[i]);
+    for(i = 0; i < VECTOR_SIZE; i++) printf("%f * %f + %f = %f\n", alpha, A[i], B[i], C[i]);
 
     // Finally release all OpenCL allocated objects and host buffers.
     clStatus = clReleaseKernel(kernel);
