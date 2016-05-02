@@ -6,7 +6,7 @@
 #define TILE_WIDTH 10
 
 // create random matrix row-major-format
-float* create_flat_matrix(int row, int col, int max)
+float* create_flat_matrix_rand(int row, int col, int max)
 {
     float* m = (float*)malloc(row*col*sizeof(float));
     int i, j = 0;
@@ -19,6 +19,19 @@ float* create_flat_matrix(int row, int col, int max)
     return m;
 }
 
+float* create_flat_matrix(int row, int col, float val)
+{
+    float* m = (float*)malloc(row*col*sizeof(float));
+    int i, j = 0;
+    for (i = 0; i < row; i++) {
+        for (j = 0; j < col; j++) {
+            m[col * i + j] = val;
+        }
+    }
+    return m;
+}
+
+
 // print matrix row-major-format
 void print_flat_matrix(float *m, int row, int col)
 {
@@ -28,21 +41,6 @@ void print_flat_matrix(float *m, int row, int col)
             printf("%.2f ", m[col * i + j]);
         }
         printf("\n");
-    }
-}
-
-void mmul(float *first, int m, int p, float *second, int q, float *multiply)
-{
-    int c, d, k = 0;
-    float sum = .0f;
-    for (c = 0; c < m; c++) {
-        for (d = 0; d < q; d++) {
-            for (k = 0; k < p; k++) {
-                sum = sum + first[c*m+k] * second[k*q+d];
-            }
-            multiply[c*q+d] = sum;
-            sum = 0;
-        }
     }
 }
 
@@ -111,21 +109,21 @@ __global__ void matrixMultiply(float * A, float * B, float * C,
 int main(int argc, char** argv)
 {
     if (argc < 6) {
-        printf("insufficient args. for A x B = C, required args: [row num A] [col num A OR row num B] [col num B] [cuda block size] [reps] [optimized]\n");
+        printf("insufficient args. for A x B = C, required args: [row num A] [col num A/row num B] [col num B] [cuda block size] [reps] [optimized] [compare]\n");
         return EXIT_FAILURE;
     }
 
-    int m, n, p, q, max = 0;
+    int m, n, p, q = 0;
     m = atoi(argv[1]);
     n = atoi(argv[2]);
     p = n;
     q = atoi(argv[3]);
     int blockSize = atoi(argv[4]);
-    int nBlocks = (m * n) / blockSize + ((m * n) % blockSize == 0 ? 0 : 1);
+    int nBlocks = (blockSize > 0) ? (m * n) / blockSize + ((m * n) % blockSize == 0 ? 0 : 1) : 0;
     int reps = atoi(argv[5]);
-    max = 10;
     // optimized = ignore blockSize and nBlocks
-    int optimized = (argc >= 7) ? 1:0;
+    int optimized = (argc >= 7) ? atoi(argv[6]):0;
+    int compare  = (argc >= 8) ? atoi(argv[7]):0;
     //@@ Initialize the optimized grid and block dimensions here
     dim3 dimGrid((q-1)/TILE_WIDTH+1, (m-1)/TILE_WIDTH+1, 1);
     dim3 dimBlock(TILE_WIDTH, TILE_WIDTH, 1);
@@ -137,15 +135,9 @@ int main(int argc, char** argv)
     double total_time = 0.0f;
     for (i = 0; i < reps; i++) {
         double exec_time = ((double) clock()) * -1;
-        first = create_flat_matrix(m, n, max);
-        second = create_flat_matrix(p, q, max);
+        first = create_flat_matrix(m, n, 1);
+        second = create_flat_matrix(p, q, 2);
         multiply = create_flat_matrix(m, q, 0);
-
-        // printf("first:\n");
-        // print_flat_matrix(first, m, n);
-        //
-        // printf("second:\n");
-        // print_flat_matrix(second, p, q);
 
         cudaMalloc((void **) &first_d, m * n * sizeof(float));
         cudaMalloc((void **) &second_d, p * q * sizeof(float));
@@ -154,9 +146,7 @@ int main(int argc, char** argv)
         cudaMemcpy(first_d, first, m * n * sizeof(float), cudaMemcpyHostToDevice);
         cudaMemcpy(second_d, second, p * q * sizeof(float), cudaMemcpyHostToDevice);
 
-        if (blockSize <= 1) {
-            mmul_d <<< 1, 1 >>> (first_d, m, n, second_d, q, multiply_d);
-        } else if (optimized == 1) {
+        if (optimized == 1) {
             matrixMultiply<<<dimGrid, dimBlock>>>(first_d, second_d, multiply_d, m, n, p, q, m, q);
         } else {
             mmul_d_thread <<< nBlocks, blockSize >>> (first_d, m, n, second_d, q, multiply_d);
@@ -164,8 +154,14 @@ int main(int argc, char** argv)
 
         cudaMemcpy(multiply, multiply_d, m * q * sizeof(float), cudaMemcpyDeviceToHost);
 
-        // printf("multiply:\n");
-        // print_flat_matrix(multiply, m, q);
+        if (compare == 1) {
+            printf("first:\n");
+            print_flat_matrix(first, m, n);
+            printf("second:\n");
+            print_flat_matrix(second, p, q);
+            printf("multiply:\n");
+            print_flat_matrix(multiply, m, q);
+        }
 
         free(multiply); free(second); free(first);
         cudaFree(first_d); cudaFree(second_d); cudaFree(multiply_d);
