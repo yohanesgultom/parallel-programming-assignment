@@ -37,7 +37,7 @@ int main()
     char string[MEM_SIZE];
 
     FILE *fp;
-    char fileName[] = "./hello.cl";
+    char *fileName = "hello.cl";
     char *source_str;
     size_t source_size;
 
@@ -100,8 +100,6 @@ int main()
     ret = clReleaseContext(context);
 
     free(source_str);
-
-    printf("Exec time: %f s\n", ((float)(clock() - t0) / CLOCKS_PER_SEC));
 
     return 0;
 }

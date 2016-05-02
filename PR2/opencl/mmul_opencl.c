@@ -1,4 +1,5 @@
 // Multiply two matrices A * B = C
+// Original source: http://gpgpu-computing4.blogspot.co.id/2009/10/matrix-multiplication-3-opencl.html
 
 #include <stdlib.h>
 #include <stdio.h>
