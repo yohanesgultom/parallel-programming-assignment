@@ -136,7 +136,7 @@ int main(int argc, char** argv)
     checkError(errcode, "clCreateContext");
 
     // clGPUContext = clCreateContextFromType(0, CL_DEVICE_TYPE_GPU, NULL, NULL, &errcode);
-    // shrCheckError(errcode, CL_SUCCESS);
+    
     checkError(errcode, "clCreateContextFromType");
 
     // get the list of GPU devices associated
@@ -144,11 +144,11 @@ int main(int argc, char** argv)
     errcode = clGetContextInfo(clGPUContext, CL_CONTEXT_DEVICES, 0, NULL, &dataBytes);
     cl_device_id *clDevices = (cl_device_id *) malloc(dataBytes);
     errcode |= clGetContextInfo(clGPUContext, CL_CONTEXT_DEVICES, dataBytes, clDevices, NULL);
-    // shrCheckError(errcode, CL_SUCCESS);
+
 
     //Create a command-queue
     clCommandQue = clCreateCommandQueue(clGPUContext, clDevices[0], 0, &errcode);
-    // shrCheckError(errcode, CL_SUCCESS);
+
 
     // Setup device memory
     d_C = clCreateBuffer(clGPUContext, CL_MEM_READ_WRITE, mem_size_A, NULL, &errcode);
@@ -160,15 +160,15 @@ int main(int argc, char** argv)
     // shrCheckError(clMatrixMul != NULL, CL_SUCCESS);
 
     clProgram = clCreateProgramWithSource(clGPUContext, 1, (const char **)&clMatrixMul, &kernelLength, &errcode);
-    // shrCheckError(errcode, CL_SUCCESS);
+
     checkError(errcode, "clCreateProgramWithSource");
 
     errcode = clBuildProgram(clProgram, 0, NULL, NULL, NULL, NULL);
-    // shrCheckError(errcode, CL_SUCCESS);
+
     checkError(errcode, "clBuildProgram");
 
     clKernel = clCreateKernel(clProgram, "matrixMul", &errcode);
-    // shrCheckError(errcode, CL_SUCCESS);
+
     checkError(errcode, "clCreateKernel");
 
     // 7. Launch OpenCL kernel
@@ -181,7 +181,7 @@ int main(int argc, char** argv)
     errcode |= clSetKernelArg(clKernel, 2, sizeof(cl_mem), (void *)&d_B);
     errcode |= clSetKernelArg(clKernel, 3, sizeof(int), (void *)&wA);
     errcode |= clSetKernelArg(clKernel, 4, sizeof(int), (void *)&wC);
-    // shrCheckError(errcode, CL_SUCCESS);
+
 
     // localWorkSize[0] = 16;
     // localWorkSize[1] = 16;
@@ -193,11 +193,11 @@ int main(int argc, char** argv)
     globalWorkSize[1] = WA;
 
     errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);
-    // shrCheckError(errcode, CL_SUCCESS);
+
 
     // 8. Retrieve result from device
     errcode = clEnqueueReadBuffer(clCommandQue, d_C, CL_TRUE, 0, mem_size_C, h_C, 0, NULL, NULL);
-    // shrCheckError(errcode, CL_SUCCESS);
+
 
     // print out matrices
     if (print == 1) {
