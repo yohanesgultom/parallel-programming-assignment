@@ -1,3 +1,9 @@
+// device_query.c
+// yohanes.gultom@gmail.com
+// Original source:
+// * http://stackoverflow.com/questions/17240071/what-is-the-right-way-to-call-clgetplatforminfo
+// * Banger, R, Bhattacharyya .K. "OpenCL Programming by Example". 2013. Packt publishing​. p43
+
 #include <stdio.h>
 #include <stdlib.h>
 #ifdef __APPLE__
