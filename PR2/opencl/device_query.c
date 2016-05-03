@@ -64,7 +64,7 @@ int main(void) {
     num_attributes = NELEMS(attributeTypes);
     // printf("\nAttribute Count = %d ", num_attributes);
     for (i = 0; i < num_platforms; i++) {
-        printf("\nPlatform - %d\n", i+1);
+        printf("Platform - %d\n", i+1);
         for (j = 0; j < num_attributes; j++) {
             // get platform attribute value size
             clGetPlatformInfo(platforms[i], attributeTypes[j], 0, NULL, &infoSize);
