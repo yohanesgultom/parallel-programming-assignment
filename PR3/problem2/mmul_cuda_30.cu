@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <time.h>
 
-#define TILE_WIDTH 10
+#define TILE_WIDTH 30
 
 // create random matrix row-major-format
 float* create_flat_matrix_rand(int row, int col, int max)
