@@ -82,6 +82,7 @@ int main(int argc, char** argv) {
 	int nr_rows_C = nr_cols_A;
 	int nr_cols_C = nr_rows_B;
 	int reps = atoi(argv[4]);
+    int print = (argc >= 6) ? atoi(argv[5]) : 0;
 
 	// // for simplicity we are going to use square arrays
 	// nr_rows_A = nr_cols_A = nr_rows_B = nr_cols_B = nr_rows_C = nr_cols_C = 3;
@@ -93,47 +94,35 @@ int main(int argc, char** argv) {
 	for (i = 0; i < reps; i++) {
 		double exec_time = ((double) clock()) * -1;
 
-		// h_A = (float *)malloc(nr_rows_A * nr_cols_A * sizeof(float));
-		// h_B = (float *)malloc(nr_rows_B * nr_cols_B * sizeof(float));
-		// h_C = (float *)malloc(nr_rows_C * nr_cols_C * sizeof(float));
 		h_A = create_flat_matrix(nr_rows_A, nr_cols_A, 1);
 		h_B = create_flat_matrix(nr_rows_B, nr_cols_B, 2);
 		h_C = create_flat_matrix(nr_rows_C, nr_cols_C, 0);
-
 		// Allocate 3 arrays on GPU
 		cudaMalloc(&d_A,nr_rows_A * nr_cols_A * sizeof(float));
 		cudaMalloc(&d_B,nr_rows_B * nr_cols_B * sizeof(float));
 		cudaMalloc(&d_C,nr_rows_C * nr_cols_C * sizeof(float));
-
 		// If you already have useful values in A and B you can copy them in GPU:
 		cudaMemcpy(d_A,h_A,nr_rows_A * nr_cols_A * sizeof(float),cudaMemcpyHostToDevice);
 		cudaMemcpy(d_B,h_B,nr_rows_B * nr_cols_B * sizeof(float),cudaMemcpyHostToDevice);
-
-		// Fill the arrays A and B on GPU with random numbers
-		// GPU_fill_rand(d_A, nr_rows_A, nr_cols_A);
-		// GPU_fill_rand(d_B, nr_rows_B, nr_cols_B);
-
 		// Optionally we can copy the data back on CPU and print the arrays
 		cudaMemcpy(h_A,d_A,nr_rows_A * nr_cols_A * sizeof(float),cudaMemcpyDeviceToHost);
 		cudaMemcpy(h_B,d_B,nr_rows_B * nr_cols_B * sizeof(float),cudaMemcpyDeviceToHost);
-		// printf("A:\n");
-		// print_matrix(h_A, nr_rows_A, nr_cols_A);
-		// printf("B:\n");
-		// print_matrix(h_B, nr_rows_B, nr_cols_B);
-
 		// Multiply A and B on GPU
 		gpu_blas_mmul(d_A, d_B, d_C, nr_rows_A, nr_cols_A, nr_cols_B);
-
 		// Copy (and print) the result on host memory
 		cudaMemcpy(h_C,d_C,nr_rows_C * nr_cols_C * sizeof(float),cudaMemcpyDeviceToHost);
-		// printf("C:\n");
-		// print_matrix(h_C, nr_rows_C, nr_cols_C);
-
+        if (print == 1) {
+            printf("A:\n");
+    		print_matrix(h_A, nr_rows_A, nr_cols_A);
+    		printf("B:\n");
+    		print_matrix(h_B, nr_rows_B, nr_cols_B);
+    		printf("C:\n");
+    		print_matrix(h_C, nr_rows_C, nr_cols_C);
+        }
 		//Free GPU memory
 		cudaFree(d_A);
 		cudaFree(d_B);
 		cudaFree(d_C);
-
 		// Free CPU memory
 		free(h_A);
 		free(h_B);
