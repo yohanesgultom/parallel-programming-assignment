@@ -75,7 +75,6 @@ __global__ void mmul_d_thread(float *first, int m, int p, float *second, int q, 
 
 // Compute C = A * B
 __global__ void matrixMultiply(float * A, float * B, float * C, int numARows, int numAColumns, int numBRows, int numBColumns, int numCRows, int numCColumns) {
-    //@@ Insert code to implement matrix multiplication here
     __shared__ float ds_M[TILE_WIDTH][TILE_WIDTH];
     __shared__ float ds_N[TILE_WIDTH][TILE_WIDTH];
     int bx = blockIdx.x, by = blockIdx.y,
@@ -93,7 +92,7 @@ __global__ void matrixMultiply(float * A, float * B, float * C, int numARows, in
           ds_N[ty][tx] = B[(m*TILE_WIDTH+ty)*numBColumns+Col];
        else
           ds_N[ty][tx] = 0;
-
+       // block level sync
        __syncthreads();
        for (int k = 0; k < TILE_WIDTH; ++k)
           Pvalue += ds_M[ty][k] * ds_N[k][tx];
@@ -102,6 +101,35 @@ __global__ void matrixMultiply(float * A, float * B, float * C, int numARows, in
     if (Row < numCRows && Col < numCColumns)
        C[Row*numCColumns+Col] = Pvalue;
 }
+
+__global__ void matrixMultiplyGlobalMem(float * A, float * B, float * C, int numARows, int numAColumns, int numBRows, int numBColumns, int numCRows, int numCColumns) {
+    float ds_M[TILE_WIDTH][TILE_WIDTH];
+    float ds_N[TILE_WIDTH][TILE_WIDTH];
+    int bx = blockIdx.x, by = blockIdx.y,
+       tx = threadIdx.x, ty = threadIdx.y,
+       Row = by * TILE_WIDTH + ty,
+       Col = bx * TILE_WIDTH + tx;
+    float Pvalue = 0;
+
+    for (int m = 0; m < (numAColumns-1)/TILE_WIDTH+1; ++m) {
+       if (Row < numARows && m*TILE_WIDTH+tx < numAColumns)
+          ds_M[ty][tx] = A[Row*numAColumns + m*TILE_WIDTH+tx];
+       else
+          ds_M[ty][tx] = 0;
+       if (Col < numBColumns && m*TILE_WIDTH+ty < numBRows)
+          ds_N[ty][tx] = B[(m*TILE_WIDTH+ty)*numBColumns+Col];
+       else
+          ds_N[ty][tx] = 0;
+       // block level sync
+       __syncthreads();
+       for (int k = 0; k < TILE_WIDTH; ++k)
+          Pvalue += ds_M[ty][k] * ds_N[k][tx];
+       __syncthreads();
+    }
+    if (Row < numCRows && Col < numCColumns)
+       C[Row*numCColumns+Col] = Pvalue;
+}
+
 
 int main(int argc, char** argv)
 {
@@ -116,7 +144,7 @@ int main(int argc, char** argv)
     p = n;
     q = atoi(argv[3]);
     int blockSize = atoi(argv[4]);
-    int nBlocks = (blockSize > 0) ? (m * n) / blockSize + ((m * n) % blockSize == 0 ? 0 : 1) : 0;
+    // int nBlocks = (blockSize > 0) ? (m * n) / blockSize + ((m * n) % blockSize == 0 ? 0 : 1) : 0;
     int reps = atoi(argv[5]);
     // optimized = ignore blockSize and nBlocks
     int optimized = (argc >= 7) ? atoi(argv[6]):0;
@@ -146,7 +174,8 @@ int main(int argc, char** argv)
         if (optimized == 1) {
             matrixMultiply<<<dimGrid, dimBlock>>>(first_d, second_d, multiply_d, m, n, p, q, m, q);
         } else {
-            mmul_d_thread <<< nBlocks, blockSize >>> (first_d, m, n, second_d, q, multiply_d);
+            matrixMultiplyGlobalMem<<<dimGrid, dimBlock>>>(first_d, second_d, multiply_d, m, n, p, q, m, q);
+            // mmul_d_thread <<< nBlocks, blockSize >>> (first_d, m, n, second_d, q, multiply_d);
         }
 
         cudaMemcpy(multiply, multiply_d, m * q * sizeof(float), cudaMemcpyDeviceToHost);
