@@ -1,0 +1,8 @@
+\contentsline {chapter}{Daftar Isi}{ii}{figure.caption.1}
+\contentsline {chapter}{Daftar Gambar}{iii}{figure.caption.1}
+\contentsline {chapter}{\numberline {1}\uppercase {Lingkungan Percobaan}}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}\uppercase {R}}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}Pendahuluan}{2}{section.2.1}
+\contentsline {chapter}{\numberline {3}\uppercase {OpenCL}}{3}{chapter.3}
+\contentsline {section}{\numberline {3.1}Pendahuluan}{3}{section.3.1}
+\contentsline {chapter}{\numberline {4}\uppercase {Kontribusi}}{4}{chapter.4}

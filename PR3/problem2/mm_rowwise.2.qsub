@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+#$ -cwd
+#$ -j y
+#$ -S /bin/bash
+#
+name="mm_rowwise"
+prog="$name.c"
+exe="$name.o"
+out="$name.2.nbcr.result"
+clear && mpicc -o $exe $prog -lm &&
+echo "NP\tData\tComm Time\tProcess Time" > $out &&
+mpiexec -np 25 $exe 1000 1000 1000 >> $out &&
+mpiexec -np 25 $exe 2000 2000 2000 >> $out &&
+mpiexec -np 25 $exe 3000 3000 3000 >> $out &&
+mpiexec -np 25 $exe 4000 4000 4000 >> $out &&
+mpiexec -np 25 $exe 5000 5000 5000 >> $out
