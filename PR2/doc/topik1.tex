@@ -6,4 +6,82 @@
 \section{Pendahuluan}
 %-----------------------------------------------------------------------------%
 
+Bahasa Pemrograman R adalah salah satu bahasa pemrograman yang digunakan untuk Komputasi Statistik dan Graphics. R banyak digunakan oleh Data Scientist untuk membuat software untuk mengolah data. R dibuat oleh Ross Ihaka dan Robert Gentleman di University of Auckland. Nama  R kemudian diambil dari huruf pertama  dua pembuat R.
+Pada Bahasa R terdapat library statistik seperti linear dan non linear model, classification, time-series­ analysis, dan lain-lain. Selain itu, R didesain agar pengguna mudah dalam memberikan kontribusi bagi pengembangannya, di mana pengguna dapat membuat package yang dapat digunakan oleh komunitas R lainnya.
+R didukung oleh banyak repository package  yang digunakan untuk data manipulasi, perhitungan, visualisas. Dalam suatu package terdapat fungsi-fungsi untuk memproses data, penyimpanan, operator untuk menghitung array atau matriks. Bahasa R juga dilengkapi dengan fungsi-fungsi dasar pemrograman lainnya seperti perulangan, rekursif, percabangan dan lain-lain. 
 
+%-----------------------------------------------------------------------------%
+\section{Fitur Bahasa R}
+%-----------------------------------------------------------------------------%
+
+Bahasa R didukung oleh berbagai fitur diantaranya adalah :
+\begin{itemize} 
+\item Intrepeted language (dapat dioperasikan menggunakan command line).
+\item Dukungan terhadap beberapa jenis struktur data seperti vector, matriks, array, dan data frame yang merupakan struktur data menyerupai matrik yang mampu menyimpan data dengan tipe data yang berbeda.
+\item Mendukung fungsi pemrograman prosedural dan berorientasi obyek.
+\item Memiliki performa komputasi statistik yang setara dengan Matlab dan Octave.
+\item Didukung dengan IDE, beberapa yang populer adalah Rstudio dan Visual Studio.
+\end{itemize}
+
+%-----------------------------------------------------------------------------%
+\section{Instalasi Bahasa R}
+%-----------------------------------------------------------------------------%
+
+%-----------------------------------------------------------------------------%
+\subsection{Instalasi Bahasa R pada Linux}
+%-----------------------------------------------------------------------------%
+
+Untuk menginstal Bahasa Pemrograman R pada Linux  cukup dengan menuliskan perintah pada terminal seperti berikut
+
+Jika proses instalasi telah selesai, pada terminal linux, silahkan mengetikan command “R” untuk memulai menulis program R.
+Untuk menggunakan IDE Rstudio pada Ubuntu, RStudio dapat diunduh pada situs https://www.rstudio.com dan di instal pada Ubuntu.
+
+%-----------------------------------------------------------------------------%
+\subsection{Instalasi Bahasa R pada Windows}
+%-----------------------------------------------------------------------------%
+
+Untuk Bahasa R pada Windows, Silahkan download file instalasi pada situs https://cran.r-project.org/bin/windows/base/ dan instal R-3.x.x-win.exe sebagaimana menginstal software seperti biasa.
+
+%-----------------------------------------------------------------------------%
+\subsection{Instalasi Package Bahasa R}
+%-----------------------------------------------------------------------------%
+Packages pada R berisi fungsi-fungsi komputasi statistik tertentu, fungsi grafik, analisa,dan lain-lain yang ditulis menggunakan bahasa R dan dapat juga diintegrasikan dengan bahasa pemrograman laiinya seperti, Java, C, C++, FORTRAN. Jumlah package yang tedapat repository cran adalah 7.801 (January 2016).  Dengan jumlah package yang sangat besar dan bervariasi, CRAN repository membagi dalam beberapa Task atau bidang agar mempermudah pengguna dalam memilih dan menggunakan package yang sesuai dengan pekerjaannya.
+
+Cara memasang package yang ingin diinstal pada bahasa R, yaitu dengan mengetikan syntax “install.packages(“\_nama\_package\_”)” pada command line R, atau dapat juga dengan mengunduh file package terlebih dahulu dan dengan perintah install.packages(“directory\_package”), tunggu hingga proses instalasi selesai. Setelah proses instalasi selesai untuk memanggil package yang telah terpasang, gunakan perintah library(\_nama\_package\_), maka fungsi-fungsi yang terdapat pada package tersebut sudah dapat digunakan. 
+%-----------------------------------------------------------------------------%
+\section{Komputasi Paralel pada Bahasa R}
+%-----------------------------------------------------------------------------%
+
+%-----------------------------------------------------------------------------%
+\subsection{Komputasi Paralel dengan GPU pada Bahasa R}
+%-----------------------------------------------------------------------------%
+
+GPU atau Graphical Processing Unit, adalah merupakan single-chip processor yang melakukan komputasi khusus untuk aplikasi 3D.  Berbeda dengan CPU yang hanya memiliki beberapa core pada satu chip, GPU memiliki ratusan-bahkan ribuan core dalam satu chip. Karena sebagian besar proses komputasi pada GPU mencakup operasi vektor dan matriks, maka GPU dapat digunakan untuk mengeksekusi proses lain yang berbeda dengan pemrosesan pada graphics. Dalam hal ini GPU digunakan untuk melakukan komputasi non-graphical process, seperti menjalankan algoritma, komputasi FFT, persamaan linear.
+
+Untuk mengakses GPU menggunakan R, terdapat dua cara yaitu :
+
+\begin{itemize}
+\item Menggunakan package yang tersedia oleh CRAN.
+\item Mengakses GPU melalui CUDA Library / CUDA Accelerated Programming Language C, C++, FORTRAN.
+\end{itemize}
+
+Untuk menggunakan package yang mendukung komputasi GPU dapat menggunakan package pada tabel berikut.
+
+Contoh program R menggunakan GPU :
+
+Simulasi program diatas menggunakan package gputools, dengan melakukan deklarasi fungsi untuk melakukan perkalian matriks. Fungsi tersebut memberikan output berupa hasil waktu CPU dan GPU yang dibutuhkan untuk melakukan perkalian matriks. Dengan menggunakan fungsi gpuMatMul(A,B) pada package gputools, proses perkalian matriks A dan B dilakukan dengan menggunakan GPU.
+
+Hasil eksekusi program terlihat bahwa, untuk ukuran matriks yang kecil, CPU melakukan komputasi  lebih baik dari GPU, namun untuk ukuran matriks yang lebih besar dari 2000, maka terlihat GPU jauh lebih cepat dibandingkan CPU.
+
+%-----------------------------------------------------------------------------%
+\subsection{CUDA pada Bahasa R}
+%-----------------------------------------------------------------------------%
+
+Mengakses GPU dengan menggunakan library CUDA dengan mengintegrasikan menggukan bahasa C, pastikan bahwa pada komputer anda dilengkapi dengan hardware GPU Nvidia, dan telah terinstal CUDA. Langkah-Langkah untuk menggunakan library CUDA adalah sebagai berikut :
+
+\begin{itemize}
+\item Membuat interface sebagai penghubung antara R dan library CUDA.
+\item Compile dan membuat link shared object. Shared object berisi fungsi-fungsi pada bahasa C yang akan diakses oleh R.
+\item Load shared object.
+\item Eksekusi dan tes.
+\end{itemize}
