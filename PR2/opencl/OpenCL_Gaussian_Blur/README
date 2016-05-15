@@ -1,0 +1,17 @@
+This is the code that support the "Playing with OpenCL: Gaussian Blurring" tutorial at
+http://blog.refu.co/?p=663
+
+In order to properly compile and run it you should download the OpenCL SDK and link against the OpenCL library and headers.
+
+Additionally you need to add the "include" directory to the compiler's include path
+
+For your convenience there is a simple makefile included.
+
+After compiling the usage of the program is pretty simple. The legal arguments you can pass to it are:
+-h		Displays this help message
+-i		The name of the input image for blurring
+-g		The size of the gaussian kernel. Default is 3
+-s		The sigma parameter of the gaussian. Default is 0.8
+
+For any questions/comments/feedback contact me at lefteris *At* refu *DOT* co
+
