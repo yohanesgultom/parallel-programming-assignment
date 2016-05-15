@@ -219,18 +219,18 @@ main.o:main.cpp
 
 conjugateGradient: main.o
 	$(NVCC) $(ALL_LDFLAGS) $(GENCODE_FLAGS) -o $@ $+ $(LIBRARIES)
-	mkdir -p ../../bin/$(TARGET_ARCH)/$(TARGET_OS)/$(BUILD_TYPE)
-	cp $@ ../../bin/$(TARGET_ARCH)/$(TARGET_OS)/$(BUILD_TYPE)
+	mkdir -p bin/$(TARGET_ARCH)/$(TARGET_OS)/$(BUILD_TYPE)
+	cp $@ bin/$(TARGET_ARCH)/$(TARGET_OS)/$(BUILD_TYPE)
 
 run: build
-	./conjugateGradient "../../../dataset/bcsstk14.mtx"
-	./conjugateGradient "../../../dataset/bcsstk15.mtx"
-	./conjugateGradient "../../../dataset/bcsstk16.mtx"
-	./conjugateGradient "../../../dataset/bcsstk17.mtx"
-	./conjugateGradient "../../../dataset/bcsstk18.mtx"
+	./conjugateGradient "../dataset/bcsstk14.mtx"
+	./conjugateGradient "../dataset/bcsstk15.mtx"
+	./conjugateGradient "../dataset/bcsstk16.mtx"
+	./conjugateGradient "../dataset/bcsstk17.mtx"
+	./conjugateGradient "../dataset/bcsstk18.mtx"
 
 clean:
 	rm -f conjugateGradient main.o
-	rm -rf ../../bin/$(TARGET_ARCH)/$(TARGET_OS)/$(BUILD_TYPE)/conjugateGradient
+	rm -rf bin/$(TARGET_ARCH)/$(TARGET_OS)/$(BUILD_TYPE)/conjugateGradient
 
 clobber: clean
