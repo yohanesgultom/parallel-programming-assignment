@@ -1,3 +1,5 @@
+Author: Lefteris Karapetsas http://lefteris.refu.co/
+
 This is the code that support the "Playing with OpenCL: Gaussian Blurring" tutorial at
 http://blog.refu.co/?p=663
 
@@ -14,4 +16,3 @@ After compiling the usage of the program is pretty simple. The legal arguments y
 -s		The sigma parameter of the gaussian. Default is 0.8
 
 For any questions/comments/feedback contact me at lefteris *At* refu *DOT* co
-

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.11)  14 MAY 2016 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.11)  15 MAY 2016 20:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -420,7 +420,12 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \openout2 = `hype.indonesia.aux'.
 
 (./hype.indonesia.tex) (./istilah.tex) (./laporan.aux (./sampul.aux)
-(./lingkungan.aux) (./topik1.aux) (./topik2.aux) (./kontribusi.aux))
+(./lingkungan.aux) (./topik1.aux) (./topik2.aux) (./kontribusi.aux)
+(./pustaka.aux
+
+LaTeX Warning: Label `opencl.mygemm' multiply defined.
+
+))
 \openout1 = `laporan.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -432,8 +437,7 @@ LaTeX Font Info:    ... okay on input line 30.
 LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 30.
 LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 30
 .
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspzccm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
 LaTeX Font Info:    ... okay on input line 30.
@@ -530,7 +534,7 @@ Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \openout2 = `sampul.aux'.
 
-(./sampul.tex <pics/makara.png, id=55, 154.86429pt x 154.34807pt>
+(./sampul.tex <pics/makara.png, id=38, 154.86429pt x 154.34807pt>
 File: pics/makara.png Graphic file (type png)
 
 <use pics/makara.png>
@@ -547,38 +551,38 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
  (./laporan.toc
-LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 4.
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 5.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 4.
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 5.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptmcm.fd
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+psycm on input line 4.
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 5.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxpsycm.fd
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 )
 \tf@toc=\write4
 \openout4 = `laporan.toc'.
@@ -602,6 +606,8 @@ BAB 1.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 8.
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -651,62 +657,88 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 8.
 ) [4
 
 
 
 ]
+\openout2 = `pustaka.aux'.
+
+ (./pustaka.tex
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+\OT1/ptm/m/it/12 drivers?\OT1/ptm/m/n/12 . 10 Ok-to-ber 2014. []$http : / / ask
+ubuntu . com / questions / 541114 /
+ []
+
+
+Underfull \hbox (badness 3428) in paragraph at lines 14--15
+[]\OT1/ptm/m/n/12 Zaius. \OT1/ptm/m/it/12 Ma-trix Mul-ti-pli-ca-tion 1 (OpenCL)
+\OT1/ptm/m/n/12 . 22 Septem-ber 2009. []$http : / /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+[]\OT1/ptm/m/n/12 Stackoverflow. \OT1/ptm/m/it/12 What is the right way to call
+ clGet-Plat-formInfo?\OT1/ptm/m/n/12 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+\OT1/ptm/m/n/12 21 Juni 2013. []$http : / / stackover^^Mow . com / questions / 
+17240071 /
+ []
+
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ‹ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ‹ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ‹ in font ptmr7t!
+) [5
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.opencl.m
+ygemm}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.101 \include{pustaka}
+                       ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
- (./laporan.aux (./sampul.aux) (./lingkungan.aux) (./topik1.aux)
-(./topik2.aux) (./kontribusi.aux))
+ (./laporan.aux (./sampul.aux) (./lingkungan.aux)
+(./topik1.aux) (./topik2.aux) (./kontribusi.aux) (./pustaka.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
+Package rerunfilecheck Info: File `laporan.out' has not changed.
+(rerunfilecheck)             Checksum: 12F3B85B7BB4432BA6567B40EF7AAFA6;465.
 
 
-Package rerunfilecheck Warning: File `laporan.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: Checksums for `laporan.out':
-(rerunfilecheck)             Before: D2E516E36E4CEA69782FDEC2A5E1224C;863
-(rerunfilecheck)             After:  56E2240C7E6CEEABA8C3B0FDA9E64917;414.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
  ) 
 Here is how much of TeX's memory you used:
- 9228 strings out of 495000
- 135142 string characters out of 6181169
- 231260 words of memory out of 5000000
- 12193 multiletter control sequences out of 15000+600000
- 20599 words of font info for 49 fonts, out of 8000000 for 9000
+ 9249 strings out of 495000
+ 135484 string characters out of 6181169
+ 234015 words of memory out of 5000000
+ 12201 multiletter control sequences out of 15000+600000
+ 21613 words of font info for 51 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
- 44i,6n,45p,225b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section.1.2} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.1} has been referenced but does not exist
-, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on laporan.pdf (7 pages, 54934 bytes).
+ 44i,6n,45p,467b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on laporan.pdf (8 pages, 72270 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 145 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
