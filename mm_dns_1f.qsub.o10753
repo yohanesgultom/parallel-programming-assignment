@@ -1,0 +1,17 @@
+[H[Jmpicc -c -o common.o common.c
+mpicc -o cannon cannon.c lu1d.c lu2d.c common.o
+mpicc -o dns dns.c lu1d.c lu2d.c common.o
+[compute-0-1:03914] *** Process received signal ***
+[compute-0-1:03914] Signal: Segmentation fault (11)
+[compute-0-1:03914] Signal code: Address not mapped (1)
+[compute-0-1:03914] Failing at address: 0x2b8651a1b040
+[compute-0-1:03914] [ 0] /lib64/libpthread.so.0() [0x380120f710]
+[compute-0-1:03914] [ 1] dns(LU_decomp_1d+0x174) [0x402ab4]
+[compute-0-1:03914] [ 2] dns(lu1d_determinant+0x255) [0x402f71]
+[compute-0-1:03914] [ 3] dns(main+0x298) [0x4025aa]
+[compute-0-1:03914] [ 4] /lib64/libc.so.6(__libc_start_main+0xfd) [0x3800a1ed5d]
+[compute-0-1:03914] [ 5] dns() [0x401b19]
+[compute-0-1:03914] *** End of error message ***
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 0 with PID 3914 on node compute-0-1.local exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

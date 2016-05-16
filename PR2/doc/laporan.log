@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.11)  16 MAY 2016 17:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  17 MAY 2016 00:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **laporan.tex
 (./laporan.tex
-LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 2 languages loaded.
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 2 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -80,7 +80,7 @@ Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
@@ -161,10 +161,10 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 57.
 \bigstrutjot=\dimen107
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
@@ -172,7 +172,7 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -328,63 +328,44 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 \f@ncyO@orf=\skip55
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2015/06/15 v0.4y Insert pages of external PDF documents (AM)
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count115
 \calc@Bcount=\count116
 \calc@Adimen=\dimen134
 \calc@Bdimen=\dimen135
 \calc@Askip=\skip56
 \calc@Bskip=\skip57
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count117
 \calc@Cskip=\skip58
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2015/04/20 v2.0e eso-pic (RN)
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
 
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
-Package xcolor Info: Model `RGB' extended on input line 1353.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+Package color Info: Driver file: pdftex.def on input line 130.
 ))
-\AM@pagewidth=\dimen136
-\AM@pageheight=\dimen137
-
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2015/06/15 v0.4y Pdfpages driver for pdfTeX (AM)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
-Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-)
-Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box28
 \AM@toc@title=\toks21
 \c@AM@survey=\count118
 \AM@templatesizebox=\box29
-) (./fncychap.sty
+)
+(./fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \RW=\skip59
 \mylen=\skip60
@@ -395,11 +376,10 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \pxx=\skip65
 ) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen138
-\extrarowheight=\dimen139
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen136
+\extrarowheight=\dimen137
 \NC@list=\toks22
 \extratabsurround=\skip66
 \backup@length=\skip67
@@ -416,24 +396,23 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \c@tracingmulticols=\count120
 \mult@box=\box32
-\multicol@leftmargin=\dimen140
+\multicol@leftmargin=\dimen138
 \c@unbalance=\count121
 \c@collectmore=\count122
 \doublecol@number=\count123
 \multicoltolerance=\count124
 \multicolpretolerance=\count125
-\full@width=\dimen141
-\page@free=\dimen142
-\premulticols=\dimen143
-\postmulticols=\dimen144
+\full@width=\dimen139
+\page@free=\dimen140
+\premulticols=\dimen141
+\postmulticols=\dimen142
 \multicolsep=\skip69
 \multicolbaselineskip=\skip70
 \partial@page=\box33
 \last@line=\box34
-\maxbalancingoverflow=\dimen145
 \mult@rightbox=\box35
 \mult@grightbox=\box36
 \mult@gfirstbox=\box37
@@ -457,12 +436,12 @@ Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \@tempa=\box55
 \c@columnbadness=\count126
 \c@finalcolumnbadness=\count127
-\last@try=\dimen146
-\multicolovershoot=\dimen147
-\multicolundershoot=\dimen148
+\last@try=\dimen143
+\multicolovershoot=\dimen144
+\multicolundershoot=\dimen145
 \mult@nat@firstbox=\box56
 \colbreak@box=\box57
-\mc@col@check@num=\count128
+\multicol@sort@counter=\count128
 )
 (/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
@@ -475,25 +454,25 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \lst@gtempboxa=\box58
 \lst@token=\toks26
 \lst@length=\count130
-\lst@currlwidth=\dimen149
+\lst@currlwidth=\dimen146
 \lst@column=\count131
 \lst@pos=\count132
-\lst@lostspace=\dimen150
-\lst@width=\dimen151
+\lst@lostspace=\dimen147
+\lst@width=\dimen148
 \lst@newlines=\count133
 \lst@lineno=\count134
-\lst@maxwidth=\dimen152
+\lst@maxwidth=\dimen149
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 \c@lstnumber=\count135
 \lst@skipnumbers=\count136
 \lst@framebox=\box59
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2015/06/04 1.6 listings configuration
+File: listings.cfg 2013/08/26 1.5b listings configuration
 ))
-Package: listings 2015/06/04 1.6 (Carsten Heinz)
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
 )
 (./laporan_setting.tex)
 \@input{hype.indonesia.aux}
@@ -546,13 +525,13 @@ LaTeX Info: Redefining \nameref on input line 30.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count138
-\scratchdimen=\dimen153
+\scratchdimen=\dimen150
 \scratchbox=\box61
 \nofMPsegments=\count139
 \nofMParguments=\count140
 \everyMPshowfont=\toks27
 \MPscratchCnt=\count141
-\MPscratchDim=\dimen154
+\MPscratchDim=\dimen151
 \MPnumerator=\count142
 \makeMPintoPDFobject=\count143
 \everyMPtoPDFconversion=\toks28
@@ -612,7 +591,7 @@ Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count144
 \openout2 = `sampul.aux'.
 
-(./sampul.tex <pics/makara.png, id=109, 154.86429pt x 154.34807pt>
+(./sampul.tex <pics/makara.png, id=125, 154.86429pt x 154.34807pt>
 File: pics/makara.png Graphic file (type png)
 
 <use pics/makara.png>
@@ -663,25 +642,34 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
 Missing character: There is no ¬ in font ptmr7t!
 Missing character: There is no ∑ in font ptmr7t!
-)
-\tf@toc=\write4
-\openout4 = `laporan.toc'.
-
  [2
 
 
-] (./laporan.lof)
+])
+\tf@toc=\write4
+\openout4 = `laporan.toc'.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+[3] (./laporan.lof)
 \tf@lof=\write5
 \openout5 = `laporan.lof'.
 
-[3
+ [4
 
 
 ] (./laporan.lot)
 \tf@lot=\write6
 \openout6 = `laporan.lot'.
 
- [4
+ [5
 
 
 ]
@@ -719,25 +707,254 @@ BAB 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmri7t!
+Missing character: There is no ≠ in font ptmri7t!
 [2
 
 
 
 ]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
+ <./pics/instal.png, id=295, 457.71pt x 305.14pt>
+File: ./pics/instal.png Graphic file (type png)
+ <use ./pics/instal.png>
+Package pdftex.def Info: ./pics/instal.png used on input line 42.
+(pdftex.def)             Requested size: 278.83578pt x 185.89766pt.
 
-Underfull \hbox (badness 1590) in paragraph at lines 43--44
-\OT1/ptm/m/n/12 Untuk Ba-hasa R pada Win-dows, Silahkan down-load file in-sta-l
-asi pada si-
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3 <./pics/instal.png (PNG copy)>]
+Overfull \hbox (37.59996pt too wide) in paragraph at lines 64--76
+[][] 
  []
 
+<./pics/instalpackage.png, id=307, 580.1675pt x 367.3725pt>
+File: ./pics/instalpackage.png Graphic file (type png)
+
+<use ./pics/instalpackage.png>
+Package pdftex.def Info: ./pics/instalpackage.png used on input line 82.
+(pdftex.def)             Requested size: 278.83578pt x 176.56662pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4] <./pics/importpackage.png, id=312, 585.18625pt x 172.645pt>
+File: ./pics/importpackage.png Graphic file (type png)
+
+<use ./pics/importpackage.png>
+Package pdftex.def Info: ./pics/importpackage.png used on input line 89.
+(pdftex.def)             Requested size: 278.83578pt x 82.26538pt.
+
+<./pics/daftarpackage.png, id=313, 780.9175pt x 289.08pt>
+File: ./pics/daftarpackage.png Graphic file (type png)
+
+<use ./pics/daftarpackage.png>
+Package pdftex.def Info: ./pics/daftarpackage.png used on input line 96.
+(pdftex.def)             Requested size: 278.83578pt x 103.21739pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5 <./pics/instalpackage.png> <./pics/importpackage.png> <./pics/daftarpackage.
+png>] <./pics/parallelpackage.png, id=318, 754.82pt x 499.8675pt>
+File: ./pics/parallelpackage.png Graphic file (type png)
+
+<use ./pics/parallelpackage.png>
+Package pdftex.def Info: ./pics/parallelpackage.png used on input line 110.
+(pdftex.def)             Requested size: 278.83578pt x 184.6506pt.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+
+Overfull \hbox (37.59996pt too wide) in paragraph at lines 120--135
+[][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6 <./pics/parallelpackage.png>]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 151.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptm.fd
+File: omlptm.fd 
+)
+LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 151.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7]
+Underfull \hbox (badness 1292) in paragraph at lines 173--174
+[]\OT1/ptm/m/n/12 Prinsip kerja kom-putasi par-alel, mem-bagi masalah men-jadi 
+sub-masalah,
+ []
+
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 182.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8] <./pics/perbandingan.png, id=384, 534.49687pt x 272.51813pt>
+File: ./pics/perbandingan.png Graphic file (type png)
+
+<use ./pics/perbandingan.png>
+Package pdftex.def Info: ./pics/perbandingan.png used on input line 216.
+(pdftex.def)             Requested size: 278.83578pt x 142.1718pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9 <./pics/perbandingan.png>]
+<./pics/skemaaksesgpu.png, id=396, 1107.13625pt x 442.65375pt>
+File: ./pics/skemaaksesgpu.png Graphic file (type png)
+
+<use ./pics/skemaaksesgpu.png>
+Package pdftex.def Info: ./pics/skemaaksesgpu.png used on input line 238.
+(pdftex.def)             Requested size: 278.83578pt x 111.48042pt.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+
+Overfull \hbox (25.19997pt too wide) in paragraph at lines 248--264
+[][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <./pics/skemaaksesgpu.png>]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -750,35 +967,31 @@ Missing character: There is no ù in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
+
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
-[3]
+[14] <./pics/hasileksperimen.png, id=514, 626.34pt x 337.26pt>
+File: ./pics/hasileksperimen.png Graphic file (type png)
+
+<use ./pics/hasileksperimen.png>
+Package pdftex.def Info: ./pics/hasileksperimen.png used on input line 422.
+(pdftex.def)             Requested size: 278.83578pt x 150.14455pt.
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no Æ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no Æ in font ptmr7t!
+)
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4])
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[5]
+[15 <./pics/hasileksperimen.png>]
 \openout2 = `topik2.aux'.
 
  (./topik2.tex
@@ -796,7 +1009,7 @@ Missing character: There is no ã in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ã in font ptmr7t!
-[6
+[16
 
 
 
@@ -807,25 +1020,19 @@ Missing character: There is no ã in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ã in font ptmr7t!
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
 
 Underfull \hbox (badness 2529) in paragraph at lines 55--56
 \OT1/ptm/m/n/12 versi 7.5 un-tuk Ubuntu 15.04 (*.deb) di []$https : / / develop
 er . nvidia . com /
  []
 
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 59.
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
+[17]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ã in font ptmr7t!
@@ -839,7 +1046,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8]
+[18]
 Missing character: There is no ¬ in font ptmri7t!
 Missing character: There is no ∑ in font ptmri7t!
 
@@ -865,7 +1072,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9]
+[19]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ã in font ptmr7t!
@@ -888,7 +1095,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]
+[20]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ã in font ptmr7t!
@@ -903,7 +1110,7 @@ Missing character: There is no ã in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ã in font ptmr7t!
- <pics/clblas_sgemm.png, id=331, 769.87625pt x 795.97375pt>
+ <pics/clblas_sgemm.png, id=616, 769.87625pt x 795.97375pt>
 File: pics/clblas_sgemm.png Graphic file (type png)
 
 <use pics/clblas_sgemm.png>
@@ -916,15 +1123,15 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
+[21]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12 <./pics/clblas_sgemm.png>]
-<pics/opencl_blas_performance.png, id=352, 602.25pt x 396.48125pt>
+[22 <./pics/clblas_sgemm.png>]
+<pics/opencl_blas_performance.png, id=637, 602.25pt x 396.48125pt>
 File: pics/opencl_blas_performance.png Graphic file (type png)
 
 <use pics/opencl_blas_performance.png>
@@ -937,7 +1144,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--261
 ogramming-[]assignment / blob / master / PR2 / opencl /
  []
 
-<pics/device_query.png, id=359, 714.67pt x 233.87375pt>
+<pics/device_query.png, id=643, 714.67pt x 233.87375pt>
 File: pics/device_query.png Graphic file (type png)
 
 <use pics/device_query.png>
@@ -950,7 +1157,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13 <./pics/opencl_blas_performance.png>]
+[23 <./pics/opencl_blas_performance.png>]
 Missing character: There is no ¬ in font ptmb7t!
 Missing character: There is no ∑ in font ptmb7t!
 Missing character: There is no ¬ in font ptmri7t!
@@ -967,7 +1174,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--275
 ogramming-[]assignment / blob / master / PR2 / opencl /
  []
 
-<pics/saxpy.png, id=374, 1065.9825pt x 725.71124pt>
+<pics/saxpy.png, id=658, 1065.9825pt x 725.71124pt>
 File: pics/saxpy.png Graphic file (type png)
  <use pics/saxpy.png>
 Package pdftex.def Info: pics/saxpy.png used on input line 280.
@@ -979,7 +1186,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14 <./pics/device_query.png>]
+[24 <./pics/device_query.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 287--287
 [][][]$\OT1/ptm/m/n/10 https : / / github . com / yohanesgultom / parallel-[]pr
 ogramming-[]assignment / blob / master / PR2 / opencl /
@@ -997,7 +1204,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--287
 ogramming-[]assignment / blob / master / PR2 / opencl /
  []
 
-<pics/mmul_opencl_cuda.png, id=395, 562.1pt x 381.425pt>
+<pics/mmul_opencl_cuda.png, id=678, 562.1pt x 381.425pt>
 File: pics/mmul_opencl_cuda.png Graphic file (type png)
 
 <use pics/mmul_opencl_cuda.png>
@@ -1010,7 +1217,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <./pics/saxpy.png>] <pics/blur_result.png, id=412, 401.5pt x 190.311pt>
+[25 <./pics/saxpy.png>] <pics/blur_result.png, id=693, 401.5pt x 190.311pt>
 File: pics/blur_result.png Graphic file (type png)
 
 <use pics/blur_result.png>
@@ -1028,8 +1235,8 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16 <./pics/mmul_opencl_cuda.png (PNG copy)> <./pics/blur_result.png>]
-<pics/gaussian_blur_cpu_gpu.png, id=426, 483.8075pt x 366.36874pt>
+[26 <./pics/mmul_opencl_cuda.png (PNG copy)> <./pics/blur_result.png>]
+<pics/gaussian_blur_cpu_gpu.png, id=708, 483.8075pt x 366.36874pt>
 File: pics/gaussian_blur_cpu_gpu.png Graphic file (type png)
 
 <use pics/gaussian_blur_cpu_gpu.png>
@@ -1043,7 +1250,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17 <./pics/gaussian_blur_cpu_gpu.png (PNG copy)>]
+[27 <./pics/gaussian_blur_cpu_gpu.png (PNG copy)>]
 \openout2 = `kontribusi.aux'.
 
  (./kontribusi.tex
@@ -1057,7 +1264,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) [18
+) [28
 
 
 
@@ -1065,25 +1272,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 \openout2 = `pustaka.aux'.
 
  (./pustaka.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Missing character: There is no ¬ in font ptmri7t!
+Missing character: There is no † in font ptmri7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ü in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 \OT1/ptm/m/it/12 drivers?\OT1/ptm/m/n/12 . 10 Ok-to-ber 2014. []$http : / / ask
 ubuntu . com / questions / 541114 /
  []
 
 
-Underfull \hbox (badness 3428) in paragraph at lines 14--15
+Underfull \hbox (badness 3428) in paragraph at lines 32--33
 []\OT1/ptm/m/n/12 Zaius. \OT1/ptm/m/it/12 Ma-trix Mul-ti-pli-ca-tion 1 (OpenCL)
 \OT1/ptm/m/n/12 . 22 Septem-ber 2009. []$http : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 []\OT1/ptm/m/n/12 Stackoverflow. \OT1/ptm/m/it/12 What is the right way to call
  clGet-Plat-formInfo?\OT1/ptm/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 \OT1/ptm/m/n/12 21 Juni 2013. []$http : / / stackover^^Mow . com / questions / 
 17240071 /
  []
@@ -1094,20 +1306,22 @@ Missing character: There is no ã in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ã in font ptmr7t!
-
-Underfull \hbox (badness 1102) in paragraph at lines 29--30
-[]\OT1/ptm/m/n/12 Wikipedia. \OT1/ptm/m/it/12 Ba-sic Lin-ear Al-ge-bra Sub-pro-
-grams\OT1/ptm/m/n/12 . 10 Mei 2016. []$https : / / en .
- []
-
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ã in font ptmr7t!
-) [19
+[29
 
 
 
 ]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+)
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
  (./laporan.aux (./sampul.aux) (./lingkungan.aux) (./topik1.aux)
@@ -1115,17 +1329,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
 Package rerunfilecheck Info: File `laporan.out' has not changed.
-(rerunfilecheck)             Checksum: FF5D8C5F66B969127D2043A139C26F07;1976.
+(rerunfilecheck)             Checksum: 3EC2C0B0D269A0F1D18A439965DE2208;2357.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
  ) 
 Here is how much of TeX's memory you used:
- 10787 strings out of 495000
- 158460 string characters out of 6181169
- 289338 words of memory out of 5000000
- 13589 multiletter control sequences out of 15000+600000
- 44057 words of font info for 97 fonts, out of 8000000 for 9000
+ 10624 strings out of 495028
+ 157864 string characters out of 6181496
+ 357781 words of memory out of 5000000
+ 13206 multiletter control sequences out of 15000+600000
+ 45193 words of font info for 98 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
- 44i,13n,45p,784b,1065s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,13n,45p,785b,1687s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1158,10 +1372,10 @@ pe1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbo
 l/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on laporan.pdf (23 pages, 687058 bytes).
+Output written on laporan.pdf (35 pages, 1238762 bytes).
 PDF statistics:
- 529 PDF objects out of 1000 (max. 8388607)
- 478 compressed objects within 5 object streams
- 127 named destinations out of 1000 (max. 500000)
- 257 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 860 PDF objects out of 1000 (max. 8388607)
+ 782 compressed objects within 8 object streams
+ 316 named destinations out of 1000 (max. 500000)
+ 329 words of extra memory for PDF output out of 10000 (max. 10000000)
 

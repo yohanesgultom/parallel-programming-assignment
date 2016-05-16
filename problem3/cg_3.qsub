@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+#$ -cwd
+#$ -j y
+#$ -S /bin/bash
+#
+exe="mpi_conjugate_gradient"
+data="data2048"
+out="pcg.2048.nbcr.result"
+clear &&
+mpiexec -n 2 $exe 2048 0.000001 1000 'n' < $data >> $out &&
+mpiexec -n 3 $exe 2048 0.000001 1000 'n' < $data >> $out &&
+mpiexec -n 4 $exe 2048 0.000001 1000 'n' < $data >> $out &&
+mpiexec -n 5 $exe 2048 0.000001 1000 'n' < $data >> $out &&
+mpiexec -n 6 $exe 2048 0.000001 1000 'n' < $data >> $out &&
+mpiexec -n 7 $exe 2048 0.000001 1000 'n' < $data >> $out &&
+mpiexec -n 8 $exe 2048 0.000001 1000 'n' < $data >> $out

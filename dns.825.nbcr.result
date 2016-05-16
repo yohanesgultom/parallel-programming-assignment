@@ -1,0 +1,40 @@
+processors: 8
+matrix size: 512
+power: 2
+determinant: inf
+data loading time: 0.006960
+matrix multiplication time: 0.162476
+communication time: 0.003875
+computation time: 0.147007
+LU time: 0.205645
+total time: 0.375111
+processors: 8
+matrix size: 1024
+power: 2
+determinant: inf
+data loading time: 0.030814
+matrix multiplication time: 1.382166
+communication time: 0.010773
+computation time: 1.363936
+LU time: 1.652449
+total time: 3.065464
+processors: 8
+matrix size: 2048
+power: 2
+determinant: inf
+data loading time: 0.108641
+matrix multiplication time: 12.880823
+communication time: 0.038122
+computation time: 12.816052
+LU time: 12.907668
+total time: 25.897170
+processors: 8
+matrix size: 4096
+power: 2
+determinant: inf
+data loading time: 0.431070
+matrix multiplication time: 268.161457
+communication time: 1.037361
+computation time: 265.267079
+LU time: 102.885725
+total time: 371.478298

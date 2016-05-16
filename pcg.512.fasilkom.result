@@ -1,0 +1,42 @@
+Enter the matrix A & vector b
+
+The total number of iterations for the Parallel Conjugate Gradient Method was 4.
+The Parallel Conjugate Gradient Method completed in 2.74801254272461e-03 seconds.
+The norm of the residual calculated by the Conjugate Gradient Method was 0.000517.
+The norm of the residual calculated directly by the definition of residual is 0.000517.
+Enter the matrix A & vector b
+
+The total number of iterations for the Parallel Conjugate Gradient Method was 18.
+The Parallel Conjugate Gradient Method completed in 8.90898704528809e-03 seconds.
+The norm of the residual calculated by the Conjugate Gradient Method was -nan.
+The norm of the residual calculated directly by the definition of residual is -nan.
+Enter the matrix A & vector b
+
+The total number of iterations for the Parallel Conjugate Gradient Method was 4.
+The Parallel Conjugate Gradient Method completed in 1.56593322753906e-03 seconds.
+The norm of the residual calculated by the Conjugate Gradient Method was 0.000517.
+The norm of the residual calculated directly by the definition of residual is 0.000517.
+Enter the matrix A & vector b
+
+The total number of iterations for the Parallel Conjugate Gradient Method was 1000.
+The Parallel Conjugate Gradient Method completed in 3.47815990447998e-01 seconds.
+The norm of the residual calculated by the Conjugate Gradient Method was 52514337632213336064.000000.
+The norm of the residual calculated directly by the definition of residual is 52517137858083979264.000000.
+Enter the matrix A & vector b
+
+The total number of iterations for the Parallel Conjugate Gradient Method was 1000.
+The Parallel Conjugate Gradient Method completed in 2.99086093902588e-01 seconds.
+The norm of the residual calculated by the Conjugate Gradient Method was 155090806465315471360.000000.
+The norm of the residual calculated directly by the definition of residual is 154995369644385468416.000000.
+Enter the matrix A & vector b
+
+The total number of iterations for the Parallel Conjugate Gradient Method was 8.
+The Parallel Conjugate Gradient Method completed in 3.68213653564453e-03 seconds.
+The norm of the residual calculated by the Conjugate Gradient Method was -nan.
+The norm of the residual calculated directly by the definition of residual is -nan.
+Enter the matrix A & vector b
+
+The total number of iterations for the Parallel Conjugate Gradient Method was 4.
+The Parallel Conjugate Gradient Method completed in 1.03592872619629e-03 seconds.
+The norm of the residual calculated by the Conjugate Gradient Method was 0.000517.
+The norm of the residual calculated directly by the definition of residual is 0.000517.

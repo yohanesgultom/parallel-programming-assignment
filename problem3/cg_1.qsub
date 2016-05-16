@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+#$ -cwd
+#$ -j y
+#$ -S /bin/bash
+#
+exe="mpi_conjugate_gradient"
+data="data512"
+out="pcg.512.nbcr.result"
+clear &&
+mpiexec -n 2 $exe 512 0.000001 1000 < $data >> $out &&
+mpiexec -n 3 $exe 512 0.000001 1000 < $data >> $out &&
+mpiexec -n 4 $exe 512 0.000001 1000 < $data >> $out &&
+mpiexec -n 5 $exe 512 0.000001 1000 < $data >> $out &&
+mpiexec -n 6 $exe 512 0.000001 1000 < $data >> $out &&
+mpiexec -n 7 $exe 512 0.000001 1000 < $data >> $out &&
+mpiexec -n 8 $exe 512 0.000001 1000 < $data >> $out

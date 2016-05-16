@@ -1,0 +1,30 @@
+#!/bin/bash
+#
+#$ -cwd
+#$ -j y
+#$ -S /bin/bash
+#
+name="dns"
+exe="$name.o"
+out="$name.nbcr.result"
+clear && make &&
+mpiexec -np 4 $exe 500 2 10 50 100 500 >> $out &&
+mpiexec -np 4 $exe 500 2 10 50 100 500 >> $out &&
+mpiexec -np 4 $exe 500 2 10 50 100 500 >> $out &&
+mpiexec -np 4 $exe 500 2 10 50 100 500 >> $out &&
+mpiexec -np 4 $exe 500 2 10 50 100 500 >> $out &&
+mpiexec -np 2 $exe 4000 2 10 50 100 500 >> $out &&
+mpiexec -np 2 $exe 4000 2 10 50 100 500 >> $out &&
+mpiexec -np 2 $exe 4000 2 10 50 100 500 >> $out &&
+mpiexec -np 2 $exe 4000 2 10 50 100 500 >> $out &&
+mpiexec -np 2 $exe 4000 2 10 50 100 500 >> $out &&
+mpiexec -np 4 $exe 4000 2 10 50 100 500 >> $out &&
+mpiexec -np 4 $exe 4000 2 10 50 100 500 >> $out &&
+mpiexec -np 4 $exe 4000 2 10 50 100 500 >> $out &&
+mpiexec -np 4 $exe 4000 2 10 50 100 500 >> $out &&
+mpiexec -np 4 $exe 4000 2 10 50 100 500 >> $out &&
+mpiexec -np 8 $exe 4000 2 10 50 100 500 >> $out &&
+mpiexec -np 8 $exe 4000 2 10 50 100 500 >> $out &&
+mpiexec -np 8 $exe 4000 2 10 50 100 500 >> $out &&
+mpiexec -np 8 $exe 4000 2 10 50 100 500 >> $out &&
+mpiexec -np 8 $exe 4000 2 10 50 100 500 >> $out
