@@ -10,6 +10,26 @@ OpenCL \textit{Open Computing Language} merupakan \textit{library General Purpos
 
 OpenCL merupakan \textit{library} yang dapat berjalan di kebanyakan sistem karena \textit{kernel} bahasanya merupakan subset dari C++ 14. Selain itu, OpenCL juga telah memiliki \textit{language binding} dari bahasa pemrograman \textit{high-level} seperti Microsoft.Net (NOpenCL dan OpenCL.Net), Erlang dan Python (PyOpenCL).
 
+OpenCL saat ini sudah mencapai versi 2.0 dengan sejarah pengembangan \cite{ opencl.mukherjee} sebagai berikut:
+
+\begin{itemize}
+	\item OpenCL 1.0​
+	\begin{itemize}
+		\item Model pemrograman dasar
+	\end{itemize}
+	\item OpenCL 1.1 and 1.2​
+	\begin{itemize}
+		\item Teknik manajemen \textit{memory}
+		\item Kontrol \textit{resources} yang lebih baik
+	\end{itemize}
+	\item OpenCL 2.0​
+	\begin{itemize}
+		\item Memaksimalkan penggunaan kapabilitas baru \textit{hardware}
+		\item API pemrograman yang lebih baik
+		\item Kontrol \textit{resources} yang lebih baik
+	\end{itemize}
+\end{itemize}
+
 %-----------------------------------------------------------------------------%
 \subsection{Instalasi}
 %-----------------------------------------------------------------------------%
@@ -22,7 +42,7 @@ Salah satu kelebihan yang dimiliki OpenCL dibanding \textit{hardware-specific li
 	\item NVIDIA \url{https://developer.nvidia.com/opencl}
 \end{itemize}
 
-Contoh langkah-langkah instalasi OpenCL SDK pada Ubuntu 15.10 64-bit dengan NVIDIA 940M adalah sebagai berikut:
+Contoh langkah-langkah instalasi OpenCL SDK pada Ubuntu 15.10 64-bit dengan NVIDIA 940M \cite{opencl.howto} adalah sebagai berikut:
 
 \begin{enumerate}
 	\item Instal \textit{driver} yang disarankan oleh versi Ubuntu 15.10 yaitu NVIDIA \textit{driver} versi 352. Instalasi dapat dilakukan melalui menu \textit{Additional Drivers} atau dengan mengetikkan perintah pada terminal:
@@ -106,3 +126,77 @@ Contoh program sederhana OpenCL \textit{Single-Precision A·X Plus Y} (SAXPY) da
 	\item Program utama \url{https://github.com/yohanesgultom/parallel-programming-assignment/blob/master/PR2/opencl/saxpy.c}
 	\item Kernel \url{https://github.com/yohanesgultom/parallel-programming-assignment/blob/master/PR2/opencl/saxpy.cl}
 \end{itemize}
+
+%-----------------------------------------------------------------------------%
+\subsection{Perbandingan Terminologi dengan CUDA}
+%-----------------------------------------------------------------------------%
+
+Bagi programmer yang sudah terbiasa dengan CUDA, bada bagian ini akan dipaparkan tabel-tabel konversi terminologi antara CUDA dan OpenCL
+
+\begin{table}
+	\centering
+	\caption{Terminologi Perangkat Keras}
+	\label{tab:terminologi_perangkat_keras}
+	\begin{tabular}{|c|c|}
+		\rowcolor[gray]{.9} \hline \rule[-2ex]{0pt}{5.5ex} CUDA & OpenCL \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} Stream Multiprocessor (SM) & CU (Compute Unit) \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} Thread & Work-item \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} Block & Work-group \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} Global Memory & Global Memory \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} Constant Memory & Constant Memory \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} Shared Memory & Local Memory \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} Local Memory & Private Memory \\ 
+		\hline 
+	\end{tabular} 
+\end{table}
+
+\begin{table}
+	\centering
+	\caption{Qualifiers untuk fungsi Kernel}
+	\label{tab:qualifiers_untuk_fungsi_kernel}
+	\begin{tabular}{|c|c|}
+		\rowcolor[gray]{.9} \hline \rule[-2ex]{0pt}{5.5ex} CUDA & OpenCL \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|_global__ function|​ & \verb|__kernel function| \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|__device__ function| & N/A \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|__constant__ variable|​ & \verb|__constant variable| \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|__device__ variable| & \verb|__global variable| \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|__shared__ variable| & \verb|__local variable| \\ 
+		\hline 
+	\end{tabular} 
+\end{table}
+
+
+\begin{table}
+	\centering
+	\caption{Indeks pada Kernel}
+	\label{tab:indeks_pada_kernel}
+	\begin{tabular}{|c|c|}
+		\rowcolor[gray]{.9} \hline \rule[-2ex]{0pt}{5.5ex} CUDA & OpenCL \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|gridDim|​ & \verb|get_num_groups()| \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|blockDim| & \verb|get_local_size()​| \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|blockIdx|​ & \verb|get_group_id()| \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|threadIdx| & \verb|get_local_id()| \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|blockIdx * blockDim + threadIdx| & \verb|get_global_id()| \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|gridDim * blockDim| & \verb|get_global_size()| \\ 		
+		\hline 
+	\end{tabular} 
+\end{table}
+
+\begin{table}
+	\centering
+	\caption{Pemanggilan API}
+	\label{tab:pemanggilan_api}
+	\begin{tabular}{|c|c|}
+		\rowcolor[gray]{.9} \hline \rule[-2ex]{0pt}{5.5ex} CUDA & OpenCL \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|cudaGetDeviceProperties()|​ & \verb|clGetDeviceInfo()| \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|cudaMalloc()| & \verb|clCreateBuffer()| \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|cudaMemcpy()|​ & \verb|clEnqueueReadBuffer()​ dan clEnqueueWriteBuffer()| \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|cudaFree()| & \verb|clReleaseMemObj()| \\ 
+		\hline \rule[-2ex]{0pt}{5.5ex} \verb|kernel<<<...>>>()| & \verb|clEnqueueNDRangeKernel()| \\ 
+		\hline 
+	\end{tabular} 
+\end{table}
+
+%-----------------------------------------------------------------------------%
+\subsection{Eksperimen}
+%-----------------------------------------------------------------------------%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.11)  16 MAY 2016 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.11)  16 MAY 2016 13:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -610,7 +610,7 @@ Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count144
 \openout2 = `sampul.aux'.
 
-(./sampul.tex <pics/makara.png, id=78, 154.86429pt x 154.34807pt>
+(./sampul.tex <pics/makara.png, id=82, 154.86429pt x 154.34807pt>
 File: pics/makara.png Graphic file (type png)
 
 <use pics/makara.png>
@@ -782,24 +782,32 @@ Missing character: There is no ‹ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ‹ in font ptmr7t!
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
-
-Underfull \hbox (badness 2529) in paragraph at lines 35--36
-\OT1/ptm/m/n/12 versi 7.5 un-tuk Ubuntu 15.04 (*.deb) di []$https : / / develop
-er . nvidia . com /
- []
-
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ‹ in font ptmr7t!
 [6
 
 
 
 ]
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 39.
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ‹ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ‹ in font ptmr7t!
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
 
+Underfull \hbox (badness 2529) in paragraph at lines 55--56
+\OT1/ptm/m/n/12 versi 7.5 un-tuk Ubuntu 15.04 (*.deb) di []$https : / / develop
+er . nvidia . com /
+ []
+
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 59.
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
@@ -813,20 +821,7 @@ Missing character: There is no ‹ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ‹ in font ptmr7t!
-Missing character: There is no Â in font ptmri7t!
-Missing character: There is no · in font ptmri7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
-[]\OT1/ptm/m/n/12 Program utama []$https : / / github . com / yohanesgultom /
- []
-
-
-Overfull \hbox (0.51567pt too wide) in paragraph at lines 107--108
-[]\OT1/ptm/m/n/12 Kernel []$https : / / github . com / yohanesgultom / parallel
--[]programming-[]assignment /
- []
-
-)
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
@@ -834,6 +829,69 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
+Missing character: There is no Â in font ptmri7t!
+Missing character: There is no · in font ptmri7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+[]\OT1/ptm/m/n/12 Program utama []$https : / / github . com / yohanesgultom /
+ []
+
+
+Overfull \hbox (0.51567pt too wide) in paragraph at lines 127--128
+[]\OT1/ptm/m/n/12 Kernel []$https : / / github . com / yohanesgultom / parallel
+-[]programming-[]assignment /
+ []
+
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ‹ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ‹ in font ptmr7t!
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ‹ in font ptmr7t!
+Missing character: There is no â in font pcrr7tn!
+Missing character: There is no € in font pcrr7tn!
+Missing character: There is no ‹ in font pcrr7tn!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ‹ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ‹ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ‹ in font ptmr7t!
+Missing character: There is no â in font pcrr7tn!
+Missing character: There is no € in font pcrr7tn!
+Missing character: There is no ‹ in font pcrr7tn!
+
+Overfull \hbox (76.61992pt too wide) in paragraph at lines 189--198
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10])
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
 \openout2 = `kontribusi.aux'.
 
  (./kontribusi.tex
@@ -847,7 +905,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) [9
+) [12
 
 
 
@@ -887,7 +945,7 @@ Missing character: There is no ‹ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ‹ in font ptmr7t!
-) [10
+) [13
 
 
 
@@ -904,19 +962,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
 (./topik1.aux) (./topik2.aux) (./kontribusi.aux) (./pustaka.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
-Package rerunfilecheck Info: File `laporan.out' has not changed.
-(rerunfilecheck)             Checksum: 92F4708AF8E4630D47484E81DD426CC9;1272.
 
+
+Package rerunfilecheck Warning: File `laporan.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `laporan.out':
+(rerunfilecheck)             Before: 7E15A337B117B3C4F16586570384F157;1368
+(rerunfilecheck)             After:  E70C07CDD77DF9D77FD1D8A95643F48A;1438.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
  ) 
 Here is how much of TeX's memory you used:
- 10642 strings out of 495000
- 155901 string characters out of 6181169
- 297747 words of memory out of 5000000
- 13512 multiletter control sequences out of 15000+600000
+ 10659 strings out of 495000
+ 156192 string characters out of 6181169
+ 288970 words of memory out of 5000000
+ 13520 multiletter control sequences out of 15000+600000
  35282 words of font info for 82 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
  44i,11n,45p,611b,1065s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -925,10 +989,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on laporan.pdf (13 pages, 98000 bytes).
+Output written on laporan.pdf (16 pages, 108515 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 86 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 327 PDF objects out of 1000 (max. 8388607)
+ 299 compressed objects within 3 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 

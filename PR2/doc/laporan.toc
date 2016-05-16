@@ -14,6 +14,8 @@
 \contentsline {chapter}{\numberline {3}\uppercase {OpenCL}}{6}{chapter.3}
 \contentsline {section}{\numberline {3.1}Pendahuluan}{6}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Instalasi}{6}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Struktur Program}{7}{subsection.3.1.2}
-\contentsline {chapter}{\numberline {4}\uppercase {Kontribusi}}{9}{chapter.4}
-\contentsline {chapter}{Daftar Referensi}{10}{chapter.4}
+\contentsline {subsection}{\numberline {3.1.2}Struktur Program}{8}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Perbandingan Terminologi dengan CUDA}{9}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Eksperimen}{11}{subsection.3.1.4}
+\contentsline {chapter}{\numberline {4}\uppercase {Kontribusi}}{12}{chapter.4}
+\contentsline {chapter}{Daftar Referensi}{13}{chapter.4}
