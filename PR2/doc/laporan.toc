@@ -3,7 +3,17 @@
 \contentsline {chapter}{\numberline {1}\uppercase {Lingkungan Percobaan}}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}\uppercase {R}}{2}{chapter.2}
 \contentsline {section}{\numberline {2.1}Pendahuluan}{2}{section.2.1}
-\contentsline {chapter}{\numberline {3}\uppercase {OpenCL}}{3}{chapter.3}
-\contentsline {section}{\numberline {3.1}Pendahuluan}{3}{section.3.1}
-\contentsline {chapter}{\numberline {4}\uppercase {Kontribusi}}{4}{chapter.4}
-\contentsline {chapter}{Daftar Referensi}{5}{chapter.4}
+\contentsline {section}{\numberline {2.2}Fitur Bahasa R}{2}{section.2.2}
+\contentsline {section}{\numberline {2.3}Instalasi Bahasa R}{3}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Instalasi Bahasa R pada Linux}{3}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Instalasi Bahasa R pada Windows}{3}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Instalasi Package Bahasa R}{3}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Komputasi Paralel pada Bahasa R}{4}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Komputasi Paralel dengan GPU pada Bahasa R}{4}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}CUDA pada Bahasa R}{4}{subsection.2.4.2}
+\contentsline {chapter}{\numberline {3}\uppercase {OpenCL}}{6}{chapter.3}
+\contentsline {section}{\numberline {3.1}Pendahuluan}{6}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Instalasi}{6}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Struktur Program}{7}{subsection.3.1.2}
+\contentsline {chapter}{\numberline {4}\uppercase {Kontribusi}}{9}{chapter.4}
+\contentsline {chapter}{Daftar Referensi}{10}{chapter.4}

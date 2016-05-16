@@ -9,3 +9,100 @@
 OpenCL \textit{Open Computing Language} merupakan \textit{library General Purpose Graphics Processing Unit} Computing (GPGPU) yang dikembangkan oleh Khronos (yang disponsori oleh Apple). OpenCL juga disebut sebagai sebuah \textit{open standard} untuk pemrograman paralel pada sistem heterogen karena mendukung berbagai vendor GPU (\textit{integrated} maupun \textit{dedicated}) seperti Intel, AMD, NVIDIA, Apple dan ARM.
 
 OpenCL merupakan \textit{library} yang dapat berjalan di kebanyakan sistem karena \textit{kernel} bahasanya merupakan subset dari C++ 14. Selain itu, OpenCL juga telah memiliki \textit{language binding} dari bahasa pemrograman \textit{high-level} seperti Microsoft.Net (NOpenCL dan OpenCL.Net), Erlang dan Python (PyOpenCL).
+
+%-----------------------------------------------------------------------------%
+\subsection{Instalasi}
+%-----------------------------------------------------------------------------%
+
+Salah satu kelebihan yang dimiliki OpenCL dibanding \textit{hardware-specific library} seperti NVIDIA CUDA adalah dukungan ke banyak vendor \textit{hardware}. Untuk mencapai hal ini, OpenCL beradaptasi dengan karakteristik instalasi masing-masing vendor sehingga setiap vendor memiliki prosedur instalasi OpenCL yang berbeda. Berikut daftar tautan panduan instalasi untuk beberapa vendor ternama:
+
+\begin{itemize}
+	\item AMD \url{http://developer.amd.com/tools-and-sdks/opencl-zone​}
+	\item Intel \url{https://software.intel.com/en-us/intel-opencl​}
+	\item NVIDIA \url{https://developer.nvidia.com/opencl}
+\end{itemize}
+
+Contoh langkah-langkah instalasi OpenCL SDK pada Ubuntu 15.10 64-bit dengan NVIDIA 940M adalah sebagai berikut:
+
+\begin{enumerate}
+	\item Instal \textit{driver} yang disarankan oleh versi Ubuntu 15.10 yaitu NVIDIA \textit{driver} versi 352. Instalasi dapat dilakukan melalui menu \textit{Additional Drivers} atau dengan mengetikkan perintah pada terminal:
+	
+	\begin{lstlisting}
+		
+	$ sudo apt-get install nvidia-352
+	\end{lstlisting}
+	
+	\item Setelah itu, instal CUDA dengan mengunduh \textit{repository} CUDA Toolkit versi 7.5 untuk Ubuntu 15.04 (*.deb) di \url{https://developer.nvidia.com/cuda-downloads} dan menjalankan perintah berikut di \textit{terminal}:  
+	
+	\begin{lstlisting}
+	
+		$ sudo dpkg -i cuda-repo-ubuntu1504-7-5-*_amd64.deb
+		$ sudo apt-get update
+		$ sudo apt-get install cuda-toolkit
+	\end{lstlisting}
+	Pastikan juga baris-baris ini ada di dalam file \verb|~/.bashrc| (baris terbawah):
+	
+	\begin{lstlisting}
+	
+		export CUDA_HOME=/usr/local/cuda-7.5 
+		export LD_LIBRARY_PATH=${CUDA_HOME}/lib64 
+		PATH=${CUDA_HOME}/bin:${PATH} 
+		export PATH	
+	\end{lstlisting}
+	
+	Untuk memastikan bahwa driver dan CUDA sudah terinstal sempurna nama GPU (contoh NVIDIA 940M) harus terlihat ketika 2 kelompok perintah ini dipanggil:
+	
+	Pertama:
+	
+	\begin{lstlisting}
+	
+		$ nvidia-smi
+	\end{lstlisting}
+	
+	Kedua:
+	
+	\begin{lstlisting}
+	
+		$ cd $CUDA_HOME/samples/1_Utilities/deviceQuery
+		$ sudo make run		
+	\end{lstlisting}
+	
+	\item Terakhir, instal header OpenCL dengan perintah:
+	
+	\begin{lstlisting}
+	
+	$ sudo apt-get install nvidia-352-dev nvidia-prime nvidia-modprobe nvidia-opencl-dev
+	\end{lstlisting}
+	
+\end{enumerate}
+
+%-----------------------------------------------------------------------------%
+\subsection{Struktur Program}
+%-----------------------------------------------------------------------------%
+
+Struktur program OpenCL cukup berbeda dengan struktur program CUDA. Perbedaan mendasar adalah adanya proses kompilasi kernel di dalam program OpenCL di mana untuk CUDA proses tersebut tidak perlu dilakukan secara eksplisit pada program. Oleh karena itu, kernel pada program OpenCL biasanya diletakkan di file terpisah dengan ekstensi \verb|*.cl|.
+
+Struktur umum atau langkah-langkah pada program OpenCL adalah sebagai berikut:
+
+\begin{enumerate}
+		\item Memilih \textit{platform} yang tersedia
+		\item Memilih \textit{device} pada \textit{platform} yang tersedia
+		\item Membuat \textit{Context} ​
+		\item Membuat \textit{command queue}
+		\item Membuat \textit{memory objects} ​
+		\item Membaca file \textit{kernel}
+		\item Membuat \textit{program object}
+		\item Mengkompilasi \textit{kernel}
+		\item Membuat \textit{kernel object}
+		\item Memasukkan \textit{kernel arguments}
+		\item Menjalankan \textit{kernel}
+		\item Membaca \textit{memory object} (hasil proses \textit{kernel})
+		\item \textit{Free memory objects}
+\end{enumerate}
+
+Contoh program sederhana OpenCL \textit{Single-Precision A·X Plus Y} (SAXPY) dapat dilihat pada tautan berikut:
+
+\begin{itemize}
+	\item Program utama \url{https://github.com/yohanesgultom/parallel-programming-assignment/blob/master/PR2/opencl/saxpy.c}
+	\item Kernel \url{https://github.com/yohanesgultom/parallel-programming-assignment/blob/master/PR2/opencl/saxpy.cl}
+\end{itemize}
