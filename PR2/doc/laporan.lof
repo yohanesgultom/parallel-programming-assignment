@@ -1,4 +1,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Cara pemanggilan clblasSgemm pada clBLAS\relax }}{12}{figure.caption.6}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Kinerja library BLAS pada OpenCL\relax }}{13}{figure.caption.7}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Program untuk mendapatkan informasi platform dan device OpenCL\relax }}{14}{figure.caption.8}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Program SAXPY 1024 elemen\relax }}{15}{figure.caption.9}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Perbandingan perkalian matriks bujursangkar OpenCL dengan CUDA\relax }}{16}{figure.caption.10}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Proses Gaussian Filter Blurring pada gambar\relax }}{16}{figure.caption.11}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Kinerja Gaussian Blurring CPU vs GPU\relax }}{17}{figure.caption.12}
 \addvspace {10\p@ }

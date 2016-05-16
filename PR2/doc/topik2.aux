@@ -8,6 +8,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Instalasi}{6}{subsection.3.1.1}}
 \citation{opencl.howto}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Struktur Program}{8}{subsection.3.1.2}}
+\citation{opencl.cuda.porting}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Perbandingan Terminologi dengan CUDA}{9}{subsection.3.1.3}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Terminologi Perangkat Keras\relax }}{9}{table.caption.2}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
@@ -16,35 +17,65 @@
 \newlabel{tab:qualifiers_untuk_fungsi_kernel}{{3.2}{10}{Qualifiers untuk fungsi Kernel\relax }{table.caption.3}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Indeks pada Kernel\relax }}{10}{table.caption.4}}
 \newlabel{tab:indeks_pada_kernel}{{3.3}{10}{Indeks pada Kernel\relax }{table.caption.4}{}}
+\citation{blas.wiki}
+\citation{blas.netlib}
+\citation{opencl.clblas}
 \@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Pemanggilan API\relax }}{11}{table.caption.5}}
 \newlabel{tab:pemanggilan_api}{{3.4}{11}{Pemanggilan API\relax }{table.caption.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Eksperimen}{11}{subsection.3.1.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Library BLAS}{11}{subsection.3.1.4}}
+\citation{opencl.mygemm}
+\citation{opencl.clblas.tutorial}
+\citation{opencl.clblas.tutorial}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Cara pemanggilan clblasSgemm pada clBLAS\relax }}{12}{figure.caption.6}}
+\newlabel{fig:clblas_sgemm}{{3.1}{12}{Cara pemanggilan clblasSgemm pada clBLAS\relax }{figure.caption.6}{}}
+\citation{opencl.ebook}
+\citation{opencl.clgetplatforminfo}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Kinerja library BLAS pada OpenCL\relax }}{13}{figure.caption.7}}
+\newlabel{fig:opencl_blas_performance}{{3.2}{13}{Kinerja library BLAS pada OpenCL\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Eksperimen}{13}{subsection.3.1.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.5.1}Device Query}{13}{subsubsection.3.1.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Program untuk mendapatkan informasi platform dan device OpenCL\relax }}{14}{figure.caption.8}}
+\newlabel{fig:device_query}{{3.3}{14}{Program untuk mendapatkan informasi platform dan device OpenCL\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.5.2}Single-Precision A·X Plus Y (SAXPY)}{14}{subsubsection.3.1.5.2}}
+\citation{opencl.mmul}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Program SAXPY 1024 elemen\relax }}{15}{figure.caption.9}}
+\newlabel{fig:saxpy}{{3.4}{15}{Program SAXPY 1024 elemen\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.5.3}Perkalian Matriks Bujursangkar}{15}{subsubsection.3.1.5.3}}
+\citation{opencl.gaussianblur}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Perbandingan perkalian matriks bujursangkar OpenCL dengan CUDA\relax }}{16}{figure.caption.10}}
+\newlabel{fig:mmul_opencl_cuda}{{3.5}{16}{Perbandingan perkalian matriks bujursangkar OpenCL dengan CUDA\relax }{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.5.4}Gaussian Filter Blurring pada Gambar Bitmap}{16}{subsubsection.3.1.5.4}}
+\newlabel{eq:gaussian}{{3.1}{16}{Gaussian Filter Blurring pada Gambar Bitmap}{equation.3.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Proses Gaussian Filter Blurring pada gambar\relax }}{16}{figure.caption.11}}
+\newlabel{fig:blur_result}{{3.6}{16}{Proses Gaussian Filter Blurring pada gambar\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Kinerja Gaussian Blurring CPU vs GPU\relax }}{17}{figure.caption.12}}
+\newlabel{fig:gaussian_blur_cpu_gpu}{{3.7}{17}{Kinerja Gaussian Blurring CPU vs GPU\relax }{figure.caption.12}{}}
 \@setckpt{topik2}{
-\setcounter{page}{12}
-\setcounter{equation}{0}
-\setcounter{enumi}{13}
+\setcounter{page}{18}
+\setcounter{equation}{1}
+\setcounter{enumi}{2}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
-\setcounter{footnote}{0}
+\setcounter{footnote}{8}
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{3}
 \setcounter{section}{1}
-\setcounter{subsection}{4}
-\setcounter{subsubsection}{0}
+\setcounter{subsection}{5}
+\setcounter{subsubsection}{4}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{0}
+\setcounter{figure}{7}
 \setcounter{table}{4}
-\setcounter{Item}{16}
-\setcounter{Hfootnote}{0}
-\setcounter{bookmark@seq@number}{19}
+\setcounter{Item}{18}
+\setcounter{Hfootnote}{8}
+\setcounter{bookmark@seq@number}{25}
 \setcounter{ContinuedFloat}{0}
 \setcounter{parentequation}{0}
 \setcounter{AM@survey}{0}
 \setcounter{float@type}{8}
 \setcounter{lstnumber}{4}
-\setcounter{section@level}{2}
+\setcounter{section@level}{3}
 \setcounter{lstlisting}{0}
 }

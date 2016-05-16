@@ -1,5 +1,6 @@
 \contentsline {chapter}{Daftar Isi}{ii}{figure.caption.1}
 \contentsline {chapter}{Daftar Gambar}{iii}{figure.caption.1}
+\contentsline {chapter}{Daftar Tabel}{iv}{figure.caption.1}
 \contentsline {chapter}{\numberline {1}\uppercase {Lingkungan Percobaan}}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}\uppercase {R}}{2}{chapter.2}
 \contentsline {section}{\numberline {2.1}Pendahuluan}{2}{section.2.1}
@@ -16,6 +17,11 @@
 \contentsline {subsection}{\numberline {3.1.1}Instalasi}{6}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Struktur Program}{8}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Perbandingan Terminologi dengan CUDA}{9}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Eksperimen}{11}{subsection.3.1.4}
-\contentsline {chapter}{\numberline {4}\uppercase {Kontribusi}}{12}{chapter.4}
-\contentsline {chapter}{Daftar Referensi}{13}{chapter.4}
+\contentsline {subsection}{\numberline {3.1.4}Library BLAS}{11}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Eksperimen}{13}{subsection.3.1.5}
+\contentsline {subsubsection}{\numberline {3.1.5.1}Device Query}{13}{subsubsection.3.1.5.1}
+\contentsline {subsubsection}{\numberline {3.1.5.2}Single-Precision A·X Plus Y (SAXPY)}{14}{subsubsection.3.1.5.2}
+\contentsline {subsubsection}{\numberline {3.1.5.3}Perkalian Matriks Bujursangkar}{15}{subsubsection.3.1.5.3}
+\contentsline {subsubsection}{\numberline {3.1.5.4}Gaussian Filter Blurring pada Gambar Bitmap}{16}{subsubsection.3.1.5.4}
+\contentsline {chapter}{\numberline {4}\uppercase {Kontribusi}}{18}{chapter.4}
+\contentsline {chapter}{Daftar Referensi}{19}{chapter.4}

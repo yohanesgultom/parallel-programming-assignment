@@ -145,6 +145,9 @@
 % Multi column
 \usepackage{multicol}
 
+% Nice fraction
+\usepackage{nicefrac}
+
 % Source code
 \usepackage{listings}
 
@@ -171,6 +174,9 @@
 
 \lstset{style=mystyle}
 
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 %-----------------------------------------------------------------------------%
 % Konfigurasi
