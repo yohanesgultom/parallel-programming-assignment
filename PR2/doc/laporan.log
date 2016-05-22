@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  17 MAY 2016 00:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.11)  17 MAY 2016 11:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **laporan.tex
 (./laporan.tex
-LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 2 languages loaded.
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 2 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -80,7 +80,7 @@ Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
@@ -161,10 +161,10 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 57.
 \bigstrutjot=\dimen107
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
@@ -172,7 +172,7 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -328,44 +328,63 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 \f@ncyO@orf=\skip55
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
+Package: pdfpages 2015/06/15 v0.4y Insert pages of external PDF documents (AM)
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count115
 \calc@Bcount=\count116
 \calc@Adimen=\dimen134
 \calc@Bdimen=\dimen135
 \calc@Askip=\skip56
 \calc@Bskip=\skip57
-LaTeX Info: Redefining \setlength on input line 76.
-LaTeX Info: Redefining \addtolength on input line 77.
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count117
 \calc@Cskip=\skip58
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+Package: eso-pic 2015/04/20 v2.0e eso-pic (RN)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ))
+\AM@pagewidth=\dimen136
+\AM@pageheight=\dimen137
+
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2015/06/15 v0.4y Pdfpages driver for pdfTeX (AM)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
 \AM@pagebox=\box28
 \AM@toc@title=\toks21
 \c@AM@survey=\count118
 \AM@templatesizebox=\box29
-)
-(./fncychap.sty
+) (./fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \RW=\skip59
 \mylen=\skip60
@@ -376,10 +395,11 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \pxx=\skip65
 ) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen136
-\extrarowheight=\dimen137
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen138
+\extrarowheight=\dimen139
 \NC@list=\toks22
 \extratabsurround=\skip66
 \backup@length=\skip67
@@ -396,23 +416,24 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \c@tracingmulticols=\count120
 \mult@box=\box32
-\multicol@leftmargin=\dimen138
+\multicol@leftmargin=\dimen140
 \c@unbalance=\count121
 \c@collectmore=\count122
 \doublecol@number=\count123
 \multicoltolerance=\count124
 \multicolpretolerance=\count125
-\full@width=\dimen139
-\page@free=\dimen140
-\premulticols=\dimen141
-\postmulticols=\dimen142
+\full@width=\dimen141
+\page@free=\dimen142
+\premulticols=\dimen143
+\postmulticols=\dimen144
 \multicolsep=\skip69
 \multicolbaselineskip=\skip70
 \partial@page=\box33
 \last@line=\box34
+\maxbalancingoverflow=\dimen145
 \mult@rightbox=\box35
 \mult@grightbox=\box36
 \mult@gfirstbox=\box37
@@ -436,12 +457,12 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box55
 \c@columnbadness=\count126
 \c@finalcolumnbadness=\count127
-\last@try=\dimen143
-\multicolovershoot=\dimen144
-\multicolundershoot=\dimen145
+\last@try=\dimen146
+\multicolovershoot=\dimen147
+\multicolundershoot=\dimen148
 \mult@nat@firstbox=\box56
 \colbreak@box=\box57
-\multicol@sort@counter=\count128
+\mc@col@check@num=\count128
 )
 (/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
@@ -454,25 +475,25 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \lst@gtempboxa=\box58
 \lst@token=\toks26
 \lst@length=\count130
-\lst@currlwidth=\dimen146
+\lst@currlwidth=\dimen149
 \lst@column=\count131
 \lst@pos=\count132
-\lst@lostspace=\dimen147
-\lst@width=\dimen148
+\lst@lostspace=\dimen150
+\lst@width=\dimen151
 \lst@newlines=\count133
 \lst@lineno=\count134
-\lst@maxwidth=\dimen149
+\lst@maxwidth=\dimen152
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count135
 \lst@skipnumbers=\count136
 \lst@framebox=\box59
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2013/08/26 1.5b listings configuration
+File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
-Package: listings 2013/08/26 1.5b (Carsten Heinz)
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
 )
 (./laporan_setting.tex)
 \@input{hype.indonesia.aux}
@@ -525,13 +546,13 @@ LaTeX Info: Redefining \nameref on input line 30.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count138
-\scratchdimen=\dimen150
+\scratchdimen=\dimen153
 \scratchbox=\box61
 \nofMPsegments=\count139
 \nofMParguments=\count140
 \everyMPshowfont=\toks27
 \MPscratchCnt=\count141
-\MPscratchDim=\dimen151
+\MPscratchDim=\dimen154
 \MPnumerator=\count142
 \makeMPintoPDFobject=\count143
 \everyMPtoPDFconversion=\toks28
@@ -1333,13 +1354,13 @@ Package rerunfilecheck Info: File `laporan.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
  ) 
 Here is how much of TeX's memory you used:
- 10624 strings out of 495028
- 157864 string characters out of 6181496
- 357781 words of memory out of 5000000
- 13206 multiletter control sequences out of 15000+600000
+ 11057 strings out of 495000
+ 162937 string characters out of 6181169
+ 368357 words of memory out of 5000000
+ 13657 multiletter control sequences out of 15000+600000
  45193 words of font info for 98 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
- 43i,13n,45p,785b,1687s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,13n,45p,785b,1687s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1372,7 +1393,7 @@ pe1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbo
 l/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on laporan.pdf (35 pages, 1238762 bytes).
+Output written on laporan.pdf (35 pages, 1238751 bytes).
 PDF statistics:
  860 PDF objects out of 1000 (max. 8388607)
  782 compressed objects within 8 object streams
