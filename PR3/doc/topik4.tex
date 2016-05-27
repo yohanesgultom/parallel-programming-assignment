@@ -35,36 +35,27 @@ Percobaan dilakukan dengan menjalankan 6 buah eksperimen yang disediakan pada AM
 	\item \verb|Cellulose Production NVE| (408,609 atoms, 5.000 nsteps)	
 \end{enumerate}
 
-Pada eksperimen ini kami mengamati hubungan antara jumlah atom dan nsteps dengan kecepatan proses (\verb|ns/day|). Jika kecepatan proses meningkat seiring bertambahnya prosesor (CPU) yang digunakan berarti terjadi \speedup. Sebaliknya, jika tidak terjadi pertambahan maka tidak terjadi \speedup.
+Pada eksperimen ini kami mengamati kecepatan proses (\verb|ns/day|) pada mesin yang berbeda, yaitu:
 
-\begin{figure}
-	\centering
-	\includegraphics[width=1\textwidth]
-	{pics/amber_all}
-	\caption{Eksperimen AMBER di cluster UCSD}
-	\label{fig:amber_all}
-\end{figure}  
+\begin{enumerate}
+	\item UCSD cluster 32 CPU + OpenMPI (nbcr-233.ucsd.edu)
+	\item GTX 980 + CUDA 7.0 (Fasilkom UI)
+	\item GTX 970 + CUDA 7.0 (Fasilkom UI)
+	\item GT 940M + CUDA 7.5 (PC/\textit{notebook})
+\end{enumerate}
 
-Hasil yang kami peroleh ditujukkan pada grafik gambar \ref{fig:amber_all}, yaitu \speedup hanya terjadi pada \verb|Cellulose_production_NVE| (CPU 8-16) dan \verb|Nucleosome|. Peningkatan kecepatan proses dapat lebih jelas lagi diamati pada gambar \ref{fig:amber_nucleosome} di mana grafik \verb|Nucleosome| dipisahkan tersendiri.
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=1\textwidth]
+%	{pics/amber_all}
+%	\caption{Eksperimen AMBER di cluster UCSD}
+%	\label{fig:amber_all}
+%\end{figure}  
 
-\begin{figure}
-	\centering
-	\includegraphics[width=1\textwidth]
-	{pics/amber_nucleosome}
-	\caption{Eksperimen AMBER Nucleosome di cluster UCSD}
-	\label{fig:amber_nucleosome}
-\end{figure}  
-
+\todo{}
 
 %-----------------------------------------------------------------------------%
 \section{Kesimpulan}
 %-----------------------------------------------------------------------------%
 
-Berdasarkan eksperimen ini, kami menarik beberapa kesimpulan:
-
-\begin{itemize}
-	\item AMBER dapat berjalan secara paralel di atas MPI
-	\item AMBER dapat melakukan prediksi kecepatan proses (dan durasi) sebelum percobaan selesai (dengan opsi \verb|mdinfo|)
-	\item Kecepatan proses (\verb|ns/day|) bergantung pada jumlah atom dan nsteps
-	\item Seperti halnya pada topik sebelumnya, \speedup terlihat jika proses dinamika molekuler membutuhkan banyak resource (jumlah atom besar dan nsteps kecil)
-\end{itemize}
+\todo{}

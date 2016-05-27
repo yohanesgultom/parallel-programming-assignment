@@ -2,9 +2,60 @@
 \chapter{\lingkungan}
 %-----------------------------------------------------------------------------%
 
-\section{Lingkungan \f{Cluster}}
+\section{Lingkungan Pengembangan}
 
-Dalam eksperimen yang dilakukan, kelompok kami menggunakan empat buah lingkungan yaitu \cluster Rocks University of California San Diego (UCSD), \cluster Fasilkom Universitas Indonesia (UI) dan \cluster Rocks pada \f{laptop}.
+Program paralel yang digunakan di dalam eksperimen ini dibuat menggunakan bahasa C yang di-\f{compile} menggunakan pustaka OpenMPI pada sistem operasi Linux Ubuntu dan Mint.
+
+Kode program-program dan laporan eksperimen ini kami simpan menggunakan layanan GitHub di alamat \f{https://github.com/yohanesgultom/parallel-programming-assignment}. Hal ini kami lakukan untuk mempermudah kolaborasi dalam pembuatan program dan laporan.
+
+\section{Lingkungan Percobaan}
+
+Dalam eksperimen yang dilakukan, kelompok kami menggunakan mesin-mesin dengan GPU NVIDIA dan \cluster CPU Rocks University of California San Diego (UCSD).
+
+%-----------------------------------------------------------------------------%
+\subsection{Server GPU Fasilkom Universitas Indonesia (UI)}
+%-----------------------------------------------------------------------------%
+\textit{Server} dengan GPU NVIDIA merupakan lingkungan utama percobaan ini. Kelompok kami melakukan percobaan di 2 buah server Fasilkom UI:
+
+\begin{enumerate}
+	\item Server GTX 980 (152.118.31.27)
+	\begin{itemize}
+		\item NVIDIA GTX 980 2048 CUDA Cores 4 GB GRAM
+		\item Intel(R) Core(TM) i7-3770 CPU 4 cores @ 3.40GHz 
+		\item RAM 2x8 GB DDR3 1600 Mhz
+		\item SSD SAMSUNG MZ7TD128 128 GB		
+		\item OS Debian 7 Wheezy x64
+		\item CUDA 7.0
+		\item Amber 14 dan Amber Tools 15
+	\end{itemize}
+	\item Server GTX 970 (152.118.31.34)
+	\begin{itemize}
+		\item NVIDIA GTX 970 1664 CUDA Cores 4 GB GRAM
+		\item Intel(R) Core(TM) i7-3770 CPU 4 cores @ 3.40GHz
+		\item RAM 2x8 GB DDR3 1600 Mhz
+		\item SSD SAMSUNG MZ7TD128 128 GB		
+		\item OS Debian 7 Wheezy x64
+		\item CUDA 7.0
+		\item Amber 14 dan Amber Tools 15
+	\end{itemize}
+\end{enumerate}
+
+Semua \textit{server} ini dapat diakses dari jaringan Fasilkom menggunakan protokol \textit{SSH} dan \textit{credential Single Sign On} (SSO) UI. Sedangkan dari luar jaringan UI, semua \textit{server} ini dapat diakses dengan masuk lebih dahulu ke \url{kawung.cs.ui.ac.id} menggunakan protokol SSH juga.
+
+%-----------------------------------------------------------------------------%
+\subsection{Personal Computer (Laptop)}
+%-----------------------------------------------------------------------------%
+
+Sebagai bahan perbandingan, kami juga menggunakan PC (\textit{notebook}) yang juga menggunakan GPU NVIDIA yang mendukung CUDA:
+\begin{itemize}
+	\item NVIDIA 940M 384 CUDA Cores 2 GB GRAM
+	\item Intel(R) Core(TM) i7-5500U CPU 2 cores @ 3.40GHz
+	\item RAM 8 GB DDR3 1600 Mhz
+	\item SSD Crucial 250 GB		
+	\item OS Ubuntu 15.10 x64
+	\item CUDA 7.5
+	\item Amber 14 dan Amber Tools 15
+\end{itemize}
 
 %-----------------------------------------------------------------------------%
 \subsection{Cluster Rocks University of California San Diego (UCSD)}
@@ -12,32 +63,3 @@ Dalam eksperimen yang dilakukan, kelompok kami menggunakan empat buah lingkungan
 \Cluster Rocks\footnote{www.rocksclusters.org} milik University of California San Diego (UCSD) ini dapat diakses pada alamat \f{nbcr-233.ucsd.edu} menggunakan protokol SSH dari komputer yang telah didaftarkan \f{public key} nya. Berdasarkan informasi dari aplikasi \f{monitoring} Ganglia \footnote{http://nbcr-233.ucsd.edu/ganglia}, cluster ini terdiri 10 \nodes dengan total 80 prosesor. 
 
 Pada \cluster ini sudah terpasang pustaka komputasi paralel OpenMPI\footnote{https://www.open-mpi.org/} dan MPICH\footnote{https://www.mpich.org/} serta paket dinamika molekular AMBER. Program paralel MPI dan eksperimen AMBER dijalankan mekanisme antrian \f{batch-jobs} untuk menjamin ketersediaan sumberdaya komputasi (\f{computing nodes}) saat program dieksekusi. Pengaturan eksekusi program paralel ini ditangani oleh \f{Sun Grid Engine}\footnote{http://www.rocksclusters.org/roll-documentation/sge/5.4/} yang juga tersedia dalam paket Rocks.
-
-
-%-----------------------------------------------------------------------------%
-\subsection{Cluster Fasilkom Universitas Indonesia (UI)}
-%-----------------------------------------------------------------------------%
-\Cluster milik Fakultas Ilmu Komputer (Fasilkom) UI ini berada di jaringan lokal yang tidak bisa diakses langsung dari luar. \Cluster ini berbasis Linux dan terdiri dari empat buah \nodes dengan total 32 prosesor. 
-
-Pada \cluster ini sudah tersedia pustaka OpenMPI untuk menjalankan program paralel. Program dijalankan langsung tanpa mekanisme \f{batch-jobs} seperti pada \cluster UCSD dengan menjalankan program dari direktori khusus (supaya dapat direplikasi ke seluruh \nodes pada \cluster).
-
-%-----------------------------------------------------------------------------%
-\subsection{Cluster Rocks pada Laptop}
-%-----------------------------------------------------------------------------%
-Rocks merupakan distribusi Linux CentOS yang dikustomisasi untuk membangun \cluster \f{high performance computing (HPC)} yang bersifat \f{opensource}. Rocks menyediakan berbagai macam paket (\f{rolls}) yang digunakan dalam berbagai \f{task} HPC.
-
-Dalam eksperimen ini Rocks 6.2 Sidewinder dipakai untuk membangun \cluster dengan dua buah \f{virtual machine (VM)} VirtualBox\footnote{https://www.virtualbox.org/} pada \f{laptop} dengan sistem operasi Ubuntu (Prosesor Intel Core i7-3610QM dengan memori DDR3 8 GB serta penyimpanan HDD 1 TB). Konfigurasi \nodes pada \cluster ini adalah sbb:
-
-\begin{enumerate}
-	\item \f{Front-end Node} (1 CPU, 1GB RAM, 30GB HDD) \\
-	\Node ini memiliki GUI (\f{Graphical User Interface}) berperan sebagai antarmuka pengguna dan manajer dari \f{compute node}. Program HPC idealnya tidak menggunakan sumberdaya dari \node ini karena digunakan untuk menjalankan berbagai program antarmuka dan manajemen \cluster.
-	\item \f{Compute Node}: 4 CPU, 1GB RAM, 30GB HDD \\
-	\Node ini tidak memiliki GUI dan berperan khusus sebagai sumberdaya komputasi program HPC.
-	
-\end{enumerate}
-
-\section{Lingkungan Pengembangan}
-
-Program paralel yang digunakan di dalam eksperimen ini dibuat menggunakan bahasa C yang di-\f{compile} menggunakan pusaka OpenMPI pada sistem operasi Linux Ubuntu dan Mint.
-
-Kode program-program dan laporan eksperimen ini kami simpan menggunakan layanan GitHub di alamat \f{https://github.com/yohanesgultom/parallel-programming-assignment}. Hal ini kami lakukan untuk mempermudah kolaborasi dalam pembuatan program dan laporan.

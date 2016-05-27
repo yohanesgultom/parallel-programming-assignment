@@ -1,39 +1,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Perkalian matriks-vektor Row-Wise Decomposition\relax }}{3}{figure.caption.2}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Perkalian matriks-vektor Column-Wise Decomposition\relax }}{4}{figure.caption.3}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Perkalian matriks-vektor Checkerboard Decomposition\relax }}{5}{figure.caption.4}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Perkalian matriks bujursangkar Row-Wise Decomposition\relax }}{5}{figure.caption.5}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Perkalian matriks bujursangkar Cannon\relax }}{6}{figure.caption.6}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Perkalian matriks bujursangkar Fox\relax }}{6}{figure.caption.7}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Perkalian matriks bujursangkar DNS iterasi 1\relax }}{7}{figure.caption.8}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Perkalian matriks bujursangkar DNS iterasi 2\relax }}{8}{figure.caption.9}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Grafik hasil eksperimen Row-Wise Decomposition cluster UCSD\relax }}{9}{figure.caption.10}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Grafik hasil eksperimen Row-Wise Decomposition cluster Fasilkom UI\relax }}{9}{figure.caption.11}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Grafik hasil eksperimen Column-Wise Decomposition cluster UCSD\relax }}{10}{figure.caption.12}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Grafik hasil eksperimen Column-Wise Decomposition cluster Fasilkom UI\relax }}{11}{figure.caption.13}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Grafik hasil eksperimen Checkerboard cluster UCSD\relax }}{12}{figure.caption.14}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Grafik hasil eksperimen Checkerboard cluster Fasilkom UI\relax }}{12}{figure.caption.15}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Grafik hasil eksperimen di cluster Rocks\relax }}{13}{figure.caption.16}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Grafik hasil eksperimen Row-Wise Decomposition cluster UCSD\relax }}{14}{figure.caption.17}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Grafik hasil eksperimen Row-Wise Decomposition cluster Fasilkom UI\relax }}{15}{figure.caption.18}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Grafik hasil eksperimen algoritma Cannon cluster UCSD\relax }}{16}{figure.caption.19}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Grafik hasil eksperimen algoritma Fox cluster UCSD\relax }}{17}{figure.caption.20}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Grafik perbandingan algoritma pada cluster Rocks\relax }}{18}{figure.caption.21}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Grafik hasil eksperimen algoritma DNS degan 8 prosesor cluster UCSD\relax }}{19}{figure.caption.22}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Grafik hasil eksperimen algoritma DNS degan 27 prosesor cluster UCSD\relax }}{19}{figure.caption.23}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Grafik hasil eksperimen algoritma DNS degan 8 prosesor cluster Fasilkom UI\relax }}{20}{figure.caption.24}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Contoh eksekusi program demo proses topologi\relax }}{22}{figure.caption.25}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Eksperimen waktu pembuatan topologi kartesian di cluster UCSD\relax }}{23}{figure.caption.26}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Grafik hasil eksperimen algoritma Cannon cluster UCSD\relax }}{24}{figure.caption.27}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Contoh eksekusi program dynamic process generation\relax }}{25}{figure.caption.28}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Eksperimen waktu dynamic process generation di PC multicore\relax }}{25}{figure.caption.29}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Algoritma Conjugate Gradient Method.\relax }}{27}{figure.caption.30}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Hasil eksperimen paralel CG pada cluster Fasilkom.\relax }}{28}{figure.caption.31}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Hasil eksperimen paralel CG pada cluster nbcr-233.ucsd.edu.\relax }}{28}{figure.caption.32}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Algoritma Conjugate Gradient Method.\relax }}{8}{figure.caption.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Eksperimen AMBER di cluster UCSD\relax }}{30}{figure.caption.33}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Eksperimen AMBER Nucleosome di cluster UCSD\relax }}{31}{figure.caption.34}
 \addvspace {10\p@ }
