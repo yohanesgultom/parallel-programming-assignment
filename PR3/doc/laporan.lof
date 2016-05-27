@@ -17,4 +17,5 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Algoritma Conjugate Gradient Method.\relax }}{19}{figure.caption.15}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Eksperimen AMBER pada GPU (CUDA) dan CPU \textit {cluster} (MPI)\relax }}{22}{figure.caption.16}
 \addvspace {10\p@ }

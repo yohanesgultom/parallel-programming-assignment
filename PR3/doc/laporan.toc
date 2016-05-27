@@ -34,5 +34,5 @@
 \contentsline {chapter}{\numberline {5}\uppercase {Molecular Dynamics: AMBER}}{21}{chapter.5}
 \contentsline {section}{\numberline {5.1}Pendahuluan}{21}{section.5.1}
 \contentsline {section}{\numberline {5.2}Eksperimen}{21}{section.5.2}
-\contentsline {section}{\numberline {5.3}Kesimpulan}{22}{section.5.3}
-\contentsline {chapter}{\numberline {6}\uppercase {Daftar Kontribusi Anggota}}{23}{chapter.6}
+\contentsline {section}{\numberline {5.3}Kesimpulan}{23}{section.5.3}
+\contentsline {chapter}{\numberline {6}\uppercase {Daftar Kontribusi Anggota}}{24}{chapter.6}

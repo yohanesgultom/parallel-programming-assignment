@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.11)  27 MAY 2016 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.11)  27 MAY 2016 20:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -820,14 +820,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7] <pics/seq_cuda_mv_940.png, id=392, 889.3225pt x 499.8675pt>
+[7] <pics/seq_cuda_mv_940.png, id=395, 889.3225pt x 499.8675pt>
 File: pics/seq_cuda_mv_940.png Graphic file (type png)
 
 <use pics/seq_cuda_mv_940.png>
 Package pdftex.def Info: pics/seq_cuda_mv_940.png used on input line 80.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/seq_cuda_mm_940.png, id=394, 889.3225pt x 499.8675pt>
+<pics/seq_cuda_mm_940.png, id=397, 889.3225pt x 499.8675pt>
 File: pics/seq_cuda_mm_940.png Graphic file (type png)
 
 <use pics/seq_cuda_mm_940.png>
@@ -867,14 +867,14 @@ Underfull \hbox (badness 1259) in paragraph at lines 112--113
 \OT1/ptm/m/it/12 grid \OT1/ptm/m/n/12 akan bergan-tung pada
  []
 
-<pics/block_grid_mv.png, id=422, 889.3225pt x 499.8675pt>
+<pics/block_grid_mv.png, id=425, 889.3225pt x 499.8675pt>
 File: pics/block_grid_mv.png Graphic file (type png)
 
 <use pics/block_grid_mv.png>
 Package pdftex.def Info: pics/block_grid_mv.png used on input line 125.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/block_grid_mm.png, id=424, 889.3225pt x 499.8675pt>
+<pics/block_grid_mm.png, id=427, 889.3225pt x 499.8675pt>
 File: pics/block_grid_mm.png Graphic file (type png)
 
 <use pics/block_grid_mm.png>
@@ -938,14 +938,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12] <pics/shared_cuda_mv_940.png, id=483, 889.3225pt x 499.8675pt>
+[12] <pics/shared_cuda_mv_940.png, id=486, 889.3225pt x 499.8675pt>
 File: pics/shared_cuda_mv_940.png Graphic file (type png)
 
 <use pics/shared_cuda_mv_940.png>
 Package pdftex.def Info: pics/shared_cuda_mv_940.png used on input line 202.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/shared_cuda_mv_970.png, id=486, 889.3225pt x 499.8675pt>
+<pics/shared_cuda_mv_970.png, id=489, 889.3225pt x 499.8675pt>
 File: pics/shared_cuda_mv_970.png Graphic file (type png)
 
 <use pics/shared_cuda_mv_970.png>
@@ -959,7 +959,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [13 <./pics/shared_cuda_mv_940.png (PNG copy)>]
-<pics/shared_cuda_mv_980.png, id=491, 889.3225pt x 499.8675pt>
+<pics/shared_cuda_mv_980.png, id=494, 889.3225pt x 499.8675pt>
 File: pics/shared_cuda_mv_980.png Graphic file (type png)
 
 <use pics/shared_cuda_mv_980.png>
@@ -973,14 +973,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14 <./pics/shared_cuda_mv_970.png (PNG copy)> <./pics/shared_cuda_mv_980.png (
-PNG copy)>] <pics/all_mm_940.png, id=498, 889.3225pt x 499.8675pt>
+PNG copy)>] <pics/all_mm_940.png, id=501, 889.3225pt x 499.8675pt>
 File: pics/all_mm_940.png Graphic file (type png)
 
 <use pics/all_mm_940.png>
 Package pdftex.def Info: pics/all_mm_940.png used on input line 230.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/all_shared_cublas_mm_940.png, id=499, 889.3225pt x 499.8675pt>
+<pics/all_shared_cublas_mm_940.png, id=502, 889.3225pt x 499.8675pt>
 File: pics/all_shared_cublas_mm_940.png Graphic file (type png)
 
 <use pics/all_shared_cublas_mm_940.png>
@@ -995,14 +995,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [15 <./pics/all_mm_940.png (PNG copy)> <./pics/all_shared_cublas_mm_940.png (PN
-G copy)>] <pics/all_mm_970.png, id=507, 889.3225pt x 499.8675pt>
+G copy)>] <pics/all_mm_970.png, id=510, 889.3225pt x 499.8675pt>
 File: pics/all_mm_970.png Graphic file (type png)
 
 <use pics/all_mm_970.png>
 Package pdftex.def Info: pics/all_mm_970.png used on input line 248.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/all_mm_980.png, id=508, 889.3225pt x 499.8675pt>
+<pics/all_mm_980.png, id=511, 889.3225pt x 499.8675pt>
 File: pics/all_mm_980.png Graphic file (type png)
 
 <use pics/all_mm_980.png>
@@ -1016,7 +1016,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [16 <./pics/all_mm_970.png (PNG copy)> <./pics/all_mm_980.png (PNG copy)>]
-<pics/all_shared_cublas_mm_970.png, id=517, 889.3225pt x 499.8675pt>
+<pics/all_shared_cublas_mm_970.png, id=520, 889.3225pt x 499.8675pt>
 File: pics/all_shared_cublas_mm_970.png Graphic file (type png)
 
 <use pics/all_shared_cublas_mm_970.png>
@@ -1024,7 +1024,7 @@ Package pdftex.def Info: pics/all_shared_cublas_mm_970.png used on input line 2
 66.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/all_shared_cublas_mm_980.png, id=518, 889.3225pt x 499.8675pt>
+<pics/all_shared_cublas_mm_980.png, id=521, 889.3225pt x 499.8675pt>
 File: pics/all_shared_cublas_mm_980.png Graphic file (type png)
 
 <use pics/all_shared_cublas_mm_980.png>
@@ -1055,7 +1055,7 @@ BAB 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/cg_par.png, id=532, 557.08125pt x 393.47pt>
+<pics/cg_par.png, id=535, 557.08125pt x 393.47pt>
 File: pics/cg_par.png Graphic file (type png)
  <use pics/cg_par.png>
 Package pdftex.def Info: pics/cg_par.png used on input line 15.
@@ -1103,25 +1103,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
-]
-Overfull \hbox (16.19841pt too wide) in paragraph at lines 55--56
-[][]
- []
+] <pics/amber_mpi_cuda.png, id=562, 772.8875pt x 553.06625pt>
+File: pics/amber_mpi_cuda.png Graphic file (type png)
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 61--98
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--98
-
- []
+<use pics/amber_mpi_cuda.png>
+Package pdftex.def Info: pics/amber_mpi_cuda.png used on input line 49.
+(pdftex.def)             Requested size: 398.3386pt x 285.04749pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -1129,7 +1116,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]
+[22 <./pics/amber_mpi_cuda.png (PNG copy)>])
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23]
 \openout2 = `kontribusi.aux'.
 
  (./kontribusi.tex
@@ -1143,7 +1137,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) [23
+) [24
 
 
 
@@ -1159,10 +1153,10 @@ Package rerunfilecheck Info: File `laporan.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
  ) 
 Here is how much of TeX's memory you used:
- 10768 strings out of 495000
- 158358 string characters out of 6181169
- 311849 words of memory out of 5000000
- 13508 multiletter control sequences out of 15000+600000
+ 10779 strings out of 495000
+ 158552 string characters out of 6181169
+ 311941 words of memory out of 5000000
+ 13513 multiletter control sequences out of 15000+600000
  43668 words of font info for 96 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
  44i,11n,45p,876b,1010s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1219,10 +1213,10 @@ pe1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on laporan.pdf (27 pages, 517487 bytes).
+Output written on laporan.pdf (28 pages, 539317 bytes).
 PDF statistics:
- 645 PDF objects out of 1000 (max. 8388607)
- 586 compressed objects within 6 object streams
- 180 named destinations out of 1000 (max. 500000)
- 380 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 659 PDF objects out of 1000 (max. 8388607)
+ 598 compressed objects within 6 object streams
+ 185 named destinations out of 1000 (max. 500000)
+ 385 words of extra memory for PDF output out of 10000 (max. 10000000)
 
