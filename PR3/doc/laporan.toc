@@ -19,20 +19,20 @@
 \contentsline {section}{\numberline {3.1}Eksperimen}{6}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Perbandingan Program Sekuensial dan CUDA}{6}{subsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.1.1}Deskripsi Program}{6}{subsubsection.3.1.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.2}Hasil Eksperimen}{6}{subsubsection.3.1.1.2}
-\contentsline {subsection}{\numberline {3.1.2}Program CUDA dengan Variasi ukuran \textit {Grid}/\textit {Block}}{6}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.2.1}Deskripsi Program}{7}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {3.1.2.2}Hasil Eksperimen}{7}{subsubsection.3.1.2.2}
-\contentsline {subsection}{\numberline {3.1.3}Program CUDA \textit {Shared Memory}, CUBLAS dan MPI}{7}{subsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.3.1}Deskripsi Program}{7}{subsubsection.3.1.3.1}
-\contentsline {subsubsection}{\numberline {3.1.3.2}Hasil Eksperimen}{7}{subsubsection.3.1.3.2}
-\contentsline {section}{\numberline {3.2}Kesimpulan}{7}{section.3.2}
-\contentsline {chapter}{\numberline {4}\uppercase {Conjugate Gradient Method}}{8}{chapter.4}
-\contentsline {section}{\numberline {4.1}Pendahuluan}{8}{section.4.1}
-\contentsline {section}{\numberline {4.2}Eksperimen}{9}{section.4.2}
-\contentsline {section}{\numberline {4.3}Kesimpulan}{9}{section.4.3}
-\contentsline {chapter}{\numberline {5}\uppercase {Molecular Dynamics: AMBER}}{10}{chapter.5}
-\contentsline {section}{\numberline {5.1}Pendahuluan}{10}{section.5.1}
-\contentsline {section}{\numberline {5.2}Eksperimen}{10}{section.5.2}
-\contentsline {section}{\numberline {5.3}Kesimpulan}{11}{section.5.3}
-\contentsline {chapter}{\numberline {6}\uppercase {Kontribusi}}{12}{chapter.6}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Hasil Eksperimen}{8}{subsubsection.3.1.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Program CUDA dengan Variasi ukuran \textit {Grid}/\textit {Block}}{9}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Deskripsi Program}{9}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Hasil Eksperimen}{10}{subsubsection.3.1.2.2}
+\contentsline {subsection}{\numberline {3.1.3}Program CUDA \textit {Shared Memory}, CUBLAS dan MPI}{11}{subsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.3.1}Deskripsi Program}{11}{subsubsection.3.1.3.1}
+\contentsline {subsubsection}{\numberline {3.1.3.2}Hasil Eksperimen}{13}{subsubsection.3.1.3.2}
+\contentsline {section}{\numberline {3.2}Kesimpulan}{17}{section.3.2}
+\contentsline {chapter}{\numberline {4}\uppercase {Conjugate Gradient Method}}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Pendahuluan}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Eksperimen}{20}{section.4.2}
+\contentsline {section}{\numberline {4.3}Kesimpulan}{20}{section.4.3}
+\contentsline {chapter}{\numberline {5}\uppercase {Molecular Dynamics: AMBER}}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Pendahuluan}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Eksperimen}{21}{section.5.2}
+\contentsline {section}{\numberline {5.3}Kesimpulan}{22}{section.5.3}
+\contentsline {chapter}{\numberline {6}\uppercase {Daftar Kontribusi Anggota}}{23}{chapter.6}

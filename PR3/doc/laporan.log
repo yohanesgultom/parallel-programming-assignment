@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.11)  27 MAY 2016 14:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.11)  27 MAY 2016 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -414,6 +414,40 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box30
 \@float@everytoks=\toks25
 \@floatcapt=\box31
+)
+(/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip69
+\L@UnitsRaiseTextstyle=\skip70
+\L@UnitsRaiseScriptstyle=\skip71
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count120
+\lst@gtempboxa=\box32
+\lst@token=\toks26
+\lst@length=\count121
+\lst@currlwidth=\dimen140
+\lst@column=\count122
+\lst@pos=\count123
+\lst@lostspace=\dimen141
+\lst@width=\dimen142
+\lst@newlines=\count124
+\lst@lineno=\count125
+\lst@maxwidth=\dimen143
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count126
+\lst@skipnumbers=\count127
+\lst@framebox=\box33
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 ))
 (./laporan_setting.tex)
 \@input{hype.indonesia.aux}
@@ -443,7 +477,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
-\AtBeginShipoutBox=\box32
+\AtBeginShipoutBox=\box34
 Package hyperref Info: Link coloring OFF on input line 30.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -451,7 +485,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count120
+\c@section@level=\count128
 )
 LaTeX Info: Redefining \ref on input line 30.
 LaTeX Info: Redefining \pageref on input line 30.
@@ -464,17 +498,17 @@ LaTeX Info: Redefining \nameref on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count121
-\scratchdimen=\dimen140
-\scratchbox=\box33
-\nofMPsegments=\count122
-\nofMParguments=\count123
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count124
-\MPscratchDim=\dimen141
-\MPnumerator=\count125
-\makeMPintoPDFobject=\count126
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count129
+\scratchdimen=\dimen144
+\scratchbox=\box35
+\nofMPsegments=\count130
+\nofMParguments=\count131
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen145
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
+\everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -526,7 +560,9 @@ e
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count135
 \openout2 = `sampul.aux'.
 
 (./sampul.tex <pics/makara.png, id=155, 154.86429pt x 154.34807pt>
@@ -751,55 +787,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
- []
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 38.
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
-
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[][][]$\OT1/ptm/m/n/10 https : / / github . com / yohanesgultom / parallel-[]pr
+ogramming-[]assignment / blob / master / PR3 /
  []
 
 [6
@@ -807,53 +797,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-[]
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[][][]$\OT1/ptm/m/n/10 https : / / github . com / yohanesgultom / parallel-[]pr
+ogramming-[]assignment / blob / master / PR3 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
+Underfull \hbox (badness 4429) in paragraph at lines 41--42
+[]\OT1/ptm/m/n/12 Program perkalian mariks-vektor/matriks bu-jur-sangkar par-al
+el de-ngan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 67--96
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--96
-
+Underfull \hbox (badness 1584) in paragraph at lines 65--66
+[]\OT1/ptm/m/n/12 Program []\OT1/pcr/m/n/12 mmul_cuda.cu \OT1/ptm/m/n/12 ini me
+mi-liki uku-ran \OT1/ptm/m/it/12 thread-s/block \OT1/ptm/m/n/12 tetap yaitu
  []
 
 
@@ -862,7 +820,233 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
+[7] <pics/seq_cuda_mv_940.png, id=392, 889.3225pt x 499.8675pt>
+File: pics/seq_cuda_mv_940.png Graphic file (type png)
+
+<use pics/seq_cuda_mv_940.png>
+Package pdftex.def Info: pics/seq_cuda_mv_940.png used on input line 80.
+(pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
+
+<pics/seq_cuda_mm_940.png, id=394, 889.3225pt x 499.8675pt>
+File: pics/seq_cuda_mm_940.png Graphic file (type png)
+
+<use pics/seq_cuda_mm_940.png>
+Package pdftex.def Info: pics/seq_cuda_mm_940.png used on input line 90.
+(pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8 <./pics/seq_cuda_mv_940.png (PNG copy)>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 95.
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--101
+[][][]$\OT1/ptm/m/n/10 https : / / github . com / yohanesgultom / parallel-[]pr
+ogramming-[]assignment / tree / master / PR3 /
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9 <./pics/seq_cuda_mm_940.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+\OT1/ptm/m/n/12 dan []\OT1/pcr/m/n/12 mmul_cuda_XX.cu \OT1/ptm/m/n/12 ini memi-
+liki uku-ran \OT1/ptm/m/it/12 thread-s/block \OT1/ptm/m/n/12 tetap yaitu
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 112--113
+[]\OT1/pcr/m/n/12 (TILE_WIDTH, TILE_WIDTH)\OT1/ptm/m/n/12 . Sedan-gkan uku-ran 
+\OT1/ptm/m/it/12 grid \OT1/ptm/m/n/12 akan bergan-tung pada
+ []
+
+<pics/block_grid_mv.png, id=422, 889.3225pt x 499.8675pt>
+File: pics/block_grid_mv.png Graphic file (type png)
+
+<use pics/block_grid_mv.png>
+Package pdftex.def Info: pics/block_grid_mv.png used on input line 125.
+(pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
+
+<pics/block_grid_mm.png, id=424, 889.3225pt x 499.8675pt>
+File: pics/block_grid_mm.png Graphic file (type png)
+
+<use pics/block_grid_mm.png>
+Package pdftex.def Info: pics/block_grid_mm.png used on input line 135.
+(pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <./pics/block_grid_mv.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[][][]$\OT1/ptm/m/n/10 https : / / github . com / yohanesgultom / parallel-[]pr
+ogramming-[]assignment / blob / master / PR3 /
+ []
+
+
+Underfull \hbox (badness 4429) in paragraph at lines 148--149
+[]\OT1/ptm/m/n/12 Program perkalian mariks-vektor/matriks bu-jur-sangkar par-al
+el de-ngan
+ []
+
+Missing character: There is no â in font pcrr7tn!
+Missing character: There is no € in font pcrr7tn!
+Missing character: There is no ‹ in font pcrr7tn!
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11 <./pics/block_grid_mm.png (PNG copy)>]
+Underfull \hbox (badness 1584) in paragraph at lines 162--163
+[]\OT1/ptm/m/n/12 Program []\OT1/pcr/m/n/12 mmul_cuda.cu \OT1/ptm/m/n/12 ini me
+mi-liki uku-ran \OT1/ptm/m/it/12 thread-s/block \OT1/ptm/m/n/12 tetap yaitu
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--168
+[][][]$\OT1/ptm/m/n/10 https : / / github . com / yohanesgultom / parallel-[]pr
+ogramming-[]assignment / blob / master / PR3 /
+ []
+
+
+Underfull \hbox (badness 4429) in paragraph at lines 168--169
+[]\OT1/ptm/m/n/12 Program perkalian mariks-vektor/matriks bu-jur-sangkar par-al
+el de-ngan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
+[][][]$\OT1/ptm/m/n/10 https : / / github . com / yohanesgultom / parallel-[]pr
+ogramming-[]assignment / blob / master / PR3 /
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12] <pics/shared_cuda_mv_940.png, id=483, 889.3225pt x 499.8675pt>
+File: pics/shared_cuda_mv_940.png Graphic file (type png)
+
+<use pics/shared_cuda_mv_940.png>
+Package pdftex.def Info: pics/shared_cuda_mv_940.png used on input line 202.
+(pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
+
+<pics/shared_cuda_mv_970.png, id=486, 889.3225pt x 499.8675pt>
+File: pics/shared_cuda_mv_970.png Graphic file (type png)
+
+<use pics/shared_cuda_mv_970.png>
+Package pdftex.def Info: pics/shared_cuda_mv_970.png used on input line 212.
+(pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13 <./pics/shared_cuda_mv_940.png (PNG copy)>]
+<pics/shared_cuda_mv_980.png, id=491, 889.3225pt x 499.8675pt>
+File: pics/shared_cuda_mv_980.png Graphic file (type png)
+
+<use pics/shared_cuda_mv_980.png>
+Package pdftex.def Info: pics/shared_cuda_mv_980.png used on input line 220.
+(pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14 <./pics/shared_cuda_mv_970.png (PNG copy)> <./pics/shared_cuda_mv_980.png (
+PNG copy)>] <pics/all_mm_940.png, id=498, 889.3225pt x 499.8675pt>
+File: pics/all_mm_940.png Graphic file (type png)
+
+<use pics/all_mm_940.png>
+Package pdftex.def Info: pics/all_mm_940.png used on input line 230.
+(pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
+
+<pics/all_shared_cublas_mm_940.png, id=499, 889.3225pt x 499.8675pt>
+File: pics/all_shared_cublas_mm_940.png Graphic file (type png)
+
+<use pics/all_shared_cublas_mm_940.png>
+Package pdftex.def Info: pics/all_shared_cublas_mm_940.png used on input line 2
+38.
+(pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15 <./pics/all_mm_940.png (PNG copy)> <./pics/all_shared_cublas_mm_940.png (PN
+G copy)>] <pics/all_mm_970.png, id=507, 889.3225pt x 499.8675pt>
+File: pics/all_mm_970.png Graphic file (type png)
+
+<use pics/all_mm_970.png>
+Package pdftex.def Info: pics/all_mm_970.png used on input line 248.
+(pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
+
+<pics/all_mm_980.png, id=508, 889.3225pt x 499.8675pt>
+File: pics/all_mm_980.png Graphic file (type png)
+
+<use pics/all_mm_980.png>
+Package pdftex.def Info: pics/all_mm_980.png used on input line 256.
+(pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <./pics/all_mm_970.png (PNG copy)> <./pics/all_mm_980.png (PNG copy)>]
+<pics/all_shared_cublas_mm_970.png, id=517, 889.3225pt x 499.8675pt>
+File: pics/all_shared_cublas_mm_970.png Graphic file (type png)
+
+<use pics/all_shared_cublas_mm_970.png>
+Package pdftex.def Info: pics/all_shared_cublas_mm_970.png used on input line 2
+66.
+(pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
+
+<pics/all_shared_cublas_mm_980.png, id=518, 889.3225pt x 499.8675pt>
+File: pics/all_shared_cublas_mm_980.png Graphic file (type png)
+
+<use pics/all_shared_cublas_mm_980.png>
+Package pdftex.def Info: pics/all_shared_cublas_mm_980.png used on input line 2
+74.
+(pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17 <./pics/all_shared_cublas_mm_970.png (PNG copy)> <./pics/all_shared_cublas_
+mm_980.png (PNG copy)>])
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18]
 \openout2 = `topik3.aux'.
 
  (./topik3.tex
@@ -871,7 +1055,7 @@ BAB 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/cg_par.png, id=302, 557.08125pt x 393.47pt>
+<pics/cg_par.png, id=532, 557.08125pt x 393.47pt>
 File: pics/cg_par.png Graphic file (type png)
  <use pics/cg_par.png>
 Package pdftex.def Info: pics/cg_par.png used on input line 15.
@@ -886,7 +1070,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[8
+[19
 
 
 
@@ -906,7 +1090,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9]
+[20]
 \openout2 = `topik4.aux'.
 
  (./topik4.tex
@@ -915,7 +1099,7 @@ BAB 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-[10
+[21
 
 
 
@@ -945,7 +1129,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
+[22]
 \openout2 = `kontribusi.aux'.
 
  (./kontribusi.tex
@@ -959,7 +1143,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) [12
+) [23
 
 
 
@@ -971,19 +1155,49 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
 Package rerunfilecheck Info: File `laporan.out' has not changed.
-(rerunfilecheck)             Checksum: 0C3D761913E16E8A08E286FDC5C4A04B;2927.
+(rerunfilecheck)             Checksum: F17366061FDC5688F9B947395CFE391E;2942.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
  ) 
 Here is how much of TeX's memory you used:
- 9385 strings out of 495000
- 137129 string characters out of 6181169
- 236225 words of memory out of 5000000
- 12262 multiletter control sequences out of 15000+600000
- 40872 words of font info for 90 fonts, out of 8000000 for 9000
+ 10768 strings out of 495000
+ 158358 string characters out of 6181169
+ 311849 words of memory out of 5000000
+ 13508 multiletter control sequences out of 15000+600000
+ 43668 words of font info for 96 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
- 44i,11n,45p,599b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exi
-st, replaced by a fixed one
+ 44i,11n,45p,876b,1010s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
 , replaced by a fixed one
@@ -1005,10 +1219,10 @@ pe1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on laporan.pdf (16 pages, 142405 bytes).
+Output written on laporan.pdf (27 pages, 517487 bytes).
 PDF statistics:
- 399 PDF objects out of 1000 (max. 8388607)
- 366 compressed objects within 4 object streams
- 79 named destinations out of 1000 (max. 500000)
- 315 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 645 PDF objects out of 1000 (max. 8388607)
+ 586 compressed objects within 6 object streams
+ 180 named destinations out of 1000 (max. 500000)
+ 380 words of extra memory for PDF output out of 10000 (max. 10000000)
 

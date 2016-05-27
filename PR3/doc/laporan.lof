@@ -1,7 +1,20 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Waktu eksekusi program matriks x vektor sekuensial dan CUDA\relax }}{8}{figure.caption.2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Waktu eksekusi program matriks x matriks sekuensial dan CUDA\relax }}{9}{figure.caption.3}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Waktu eksekusi program matriks x vektor CUDA dengan variasi ukuran \textit {block} dan \textit {grid}\relax }}{10}{figure.caption.4}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Waktu eksekusi program matriks bujursangkar CUDA dengan variasi ukuran \textit {block} dan \textit {grid}\relax }}{11}{figure.caption.5}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Waktu eksekusi program matriks x vektor \textit {global memory} dan \textit {shared memory} (940M)\relax }}{13}{figure.caption.6}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Waktu eksekusi program matriks x vektor \textit {global memory} dan \textit {shared memory} (GTX 970)\relax }}{14}{figure.caption.7}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Waktu eksekusi program matriks x vektor \textit {global memory} dan \textit {shared memory} (GTX 980)\relax }}{14}{figure.caption.8}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {global memory}, \textit {shared memory}, CUBLAS dan MPI (940M)\relax }}{15}{figure.caption.9}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {shared memory} dan CUBLAS (940M)\relax }}{15}{figure.caption.10}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {global memory}, \textit {shared memory}, CUBLAS dan MPI (GTX 970)\relax }}{16}{figure.caption.11}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {global memory}, \textit {shared memory}, CUBLAS dan MPI (GTX 980)\relax }}{16}{figure.caption.12}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {shared memory} dan CUBLAS (970)\relax }}{17}{figure.caption.13}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {shared memory} dan CUBLAS (980)\relax }}{17}{figure.caption.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Algoritma Conjugate Gradient Method.\relax }}{8}{figure.caption.2}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Algoritma Conjugate Gradient Method.\relax }}{19}{figure.caption.15}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
