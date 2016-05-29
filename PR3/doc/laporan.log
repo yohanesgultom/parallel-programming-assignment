@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.11)  27 MAY 2016 20:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  29 MAY 2016 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **laporan.tex
 (./laporan.tex
-LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 2 languages loaded.
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 2 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -80,7 +80,7 @@ Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
@@ -161,10 +161,10 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 57.
 \bigstrutjot=\dimen107
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
@@ -172,7 +172,7 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -328,63 +328,44 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 \f@ncyO@orf=\skip55
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2015/06/15 v0.4y Insert pages of external PDF documents (AM)
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count115
 \calc@Bcount=\count116
 \calc@Adimen=\dimen134
 \calc@Bdimen=\dimen135
 \calc@Askip=\skip56
 \calc@Bskip=\skip57
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count117
 \calc@Cskip=\skip58
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2015/04/20 v2.0e eso-pic (RN)
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
 
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
-Package xcolor Info: Model `RGB' extended on input line 1353.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+Package color Info: Driver file: pdftex.def on input line 130.
 ))
-\AM@pagewidth=\dimen136
-\AM@pageheight=\dimen137
-
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2015/06/15 v0.4y Pdfpages driver for pdfTeX (AM)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
-Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-)
-Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box28
 \AM@toc@title=\toks21
 \c@AM@survey=\count118
 \AM@templatesizebox=\box29
-) (./fncychap.sty
+)
+(./fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \RW=\skip59
 \mylen=\skip60
@@ -395,11 +376,10 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \pxx=\skip65
 ) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen138
-\extrarowheight=\dimen139
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen136
+\extrarowheight=\dimen137
 \NC@list=\toks22
 \extratabsurround=\skip66
 \backup@length=\skip67
@@ -426,25 +406,25 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \lst@gtempboxa=\box32
 \lst@token=\toks26
 \lst@length=\count121
-\lst@currlwidth=\dimen140
+\lst@currlwidth=\dimen138
 \lst@column=\count122
 \lst@pos=\count123
-\lst@lostspace=\dimen141
-\lst@width=\dimen142
+\lst@lostspace=\dimen139
+\lst@width=\dimen140
 \lst@newlines=\count124
 \lst@lineno=\count125
-\lst@maxwidth=\dimen143
+\lst@maxwidth=\dimen141
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 \c@lstnumber=\count126
 \lst@skipnumbers=\count127
 \lst@framebox=\box33
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2015/06/04 1.6 listings configuration
+File: listings.cfg 2013/08/26 1.5b listings configuration
 ))
-Package: listings 2015/06/04 1.6 (Carsten Heinz)
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
@@ -454,8 +434,20 @@ Package: courier 2005/04/12 PSNFSS-v9.2a (WaS)
 \openout2 = `hype.indonesia.aux'.
 
 (./hype.indonesia.tex) (./istilah.tex) (./laporan.aux (./sampul.aux)
-(./lingkungan.aux) (./topik1.aux) (./topik2.aux) (./topik3.aux) (./topik4.aux)
-(./kontribusi.aux))
+(./lingkungan.aux) (./topik1.aux
+
+LaTeX Warning: Label `fig:block_demo1' multiply defined.
+
+
+LaTeX Warning: Label `fig:block_demo2' multiply defined.
+
+
+LaTeX Warning: Label `fig:inc_demo1' multiply defined.
+
+
+LaTeX Warning: Label `fig:inc_demo1' multiply defined.
+
+) (./topik2.aux) (./topik3.aux) (./topik4.aux) (./kontribusi.aux))
 \openout1 = `laporan.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -467,7 +459,8 @@ LaTeX Font Info:    ... okay on input line 30.
 LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 30.
 LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 30
 .
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspzccm.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
 LaTeX Font Info:    ... okay on input line 30.
@@ -479,7 +472,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
 \AtBeginShipoutBox=\box34
 Package hyperref Info: Link coloring OFF on input line 30.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -499,13 +493,13 @@ LaTeX Info: Redefining \nameref on input line 30.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count129
-\scratchdimen=\dimen144
+\scratchdimen=\dimen142
 \scratchbox=\box35
 \nofMPsegments=\count130
 \nofMParguments=\count131
 \everyMPshowfont=\toks27
 \MPscratchCnt=\count132
-\MPscratchDim=\dimen145
+\MPscratchDim=\dimen143
 \MPnumerator=\count133
 \makeMPintoPDFobject=\count134
 \everyMPtoPDFconversion=\toks28
@@ -630,14 +624,21 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
-[3] (./laporan.lof)
+[3] (./laporan.lof [4
+
+
+])
 \tf@lof=\write5
 \openout5 = `laporan.lof'.
 
- [4
 
 
-]
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5]
 \openout2 = `lingkungan.aux'.
 
  (./lingkungan.tex
@@ -697,79 +698,21 @@ BAB 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
- []
-
 [4
 
 
 
-])
-Underfull \hbox (badness 10000) in paragraph at lines 54--95
-[]
- []
+] <pics/block1.png, id=386, 670.505pt x 495.8525pt>
+File: pics/block1.png Graphic file (type png)
+ <use pics/block1.png>
+Package pdftex.def Info: pics/block1.png used on input line 51.
+(pdftex.def)             Requested size: 398.3386pt x 294.57816pt.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--95
-
- []
+<pics/block2.png, id=388, 670.505pt x 495.8525pt>
+File: pics/block2.png Graphic file (type png)
+ <use pics/block2.png>
+Package pdftex.def Info: pics/block2.png used on input line 59.
+(pdftex.def)             Requested size: 398.3386pt x 294.57816pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -777,7 +720,83 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]
+[5 <./pics/block1.png>] <pics/grid1.png, id=397, 670.505pt x 495.8525pt>
+File: pics/grid1.png Graphic file (type png)
+
+<use pics/grid1.png>
+Package pdftex.def Info: pics/grid1.png used on input line 69.
+(pdftex.def)             Requested size: 398.3386pt x 294.57816pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6 <./pics/block2.png>] <pics/grid2.png, id=403, 670.505pt x 495.8525pt>
+File: pics/grid2.png Graphic file (type png)
+
+<use pics/grid2.png>
+Package pdftex.def Info: pics/grid2.png used on input line 77.
+(pdftex.def)             Requested size: 398.3386pt x 294.57816pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7 <./pics/grid1.png> <./pics/grid2.png>]
+<pics/incrementarray.png, id=410, 664.4825pt x 459.7175pt>
+File: pics/incrementarray.png Graphic file (type png)
+
+<use pics/incrementarray.png>
+Package pdftex.def Info: pics/incrementarray.png used on input line 99.
+(pdftex.def)             Requested size: 398.3386pt x 275.58711pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8] <pics/incarray_blockvar_1000.png, id=416, 670.505pt x 495.8525pt>
+File: pics/incarray_blockvar_1000.png Graphic file (type png)
+
+<use pics/incarray_blockvar_1000.png>
+Package pdftex.def Info: pics/incarray_blockvar_1000.png used on input line 111
+.
+(pdftex.def)             Requested size: 398.3386pt x 294.57816pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9 <./pics/incrementarray.png>]
+<pics/incarray_blockvar_1500.png, id=423, 670.505pt x 495.8525pt>
+File: pics/incarray_blockvar_1500.png Graphic file (type png)
+
+<use pics/incarray_blockvar_1500.png>
+Package pdftex.def Info: pics/incarray_blockvar_1500.png used on input line 119
+.
+(pdftex.def)             Requested size: 398.3386pt x 294.57816pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <./pics/incarray_blockvar_1000.png> <./pics/incarray_blockvar_1500.png>])
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
 \openout2 = `topik2.aux'.
 
  (./topik2.tex
@@ -792,7 +811,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--17
 ogramming-[]assignment / blob / master / PR3 /
  []
 
-[6
+[12
 
 
 
@@ -820,14 +839,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7] <pics/seq_cuda_mv_940.png, id=395, 889.3225pt x 499.8675pt>
+[13] <pics/seq_cuda_mv_940.png, id=483, 889.3225pt x 499.8675pt>
 File: pics/seq_cuda_mv_940.png Graphic file (type png)
 
 <use pics/seq_cuda_mv_940.png>
 Package pdftex.def Info: pics/seq_cuda_mv_940.png used on input line 80.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/seq_cuda_mm_940.png, id=397, 889.3225pt x 499.8675pt>
+<pics/seq_cuda_mm_940.png, id=485, 889.3225pt x 499.8675pt>
 File: pics/seq_cuda_mm_940.png Graphic file (type png)
 
 <use pics/seq_cuda_mm_940.png>
@@ -840,7 +859,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <./pics/seq_cuda_mv_940.png (PNG copy)>]
+[14 <./pics/seq_cuda_mv_940.png (PNG copy)>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 95.
 
@@ -855,7 +874,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9 <./pics/seq_cuda_mm_940.png (PNG copy)>]
+[15 <./pics/seq_cuda_mm_940.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
 \OT1/ptm/m/n/12 dan []\OT1/pcr/m/n/12 mmul_cuda_XX.cu \OT1/ptm/m/n/12 ini memi-
 liki uku-ran \OT1/ptm/m/it/12 thread-s/block \OT1/ptm/m/n/12 tetap yaitu
@@ -867,14 +886,14 @@ Underfull \hbox (badness 1259) in paragraph at lines 112--113
 \OT1/ptm/m/it/12 grid \OT1/ptm/m/n/12 akan bergan-tung pada
  []
 
-<pics/block_grid_mv.png, id=425, 889.3225pt x 499.8675pt>
+<pics/block_grid_mv.png, id=512, 889.3225pt x 499.8675pt>
 File: pics/block_grid_mv.png Graphic file (type png)
 
 <use pics/block_grid_mv.png>
 Package pdftex.def Info: pics/block_grid_mv.png used on input line 125.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/block_grid_mm.png, id=427, 889.3225pt x 499.8675pt>
+<pics/block_grid_mm.png, id=514, 889.3225pt x 499.8675pt>
 File: pics/block_grid_mm.png Graphic file (type png)
 
 <use pics/block_grid_mm.png>
@@ -887,7 +906,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <./pics/block_grid_mv.png (PNG copy)>]
+[16 <./pics/block_grid_mv.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 148--148
 [][][]$\OT1/ptm/m/n/10 https : / / github . com / yohanesgultom / parallel-[]pr
 ogramming-[]assignment / blob / master / PR3 /
@@ -908,7 +927,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11 <./pics/block_grid_mm.png (PNG copy)>]
+[17 <./pics/block_grid_mm.png (PNG copy)>]
 Underfull \hbox (badness 1584) in paragraph at lines 162--163
 []\OT1/ptm/m/n/12 Program []\OT1/pcr/m/n/12 mmul_cuda.cu \OT1/ptm/m/n/12 ini me
 mi-liki uku-ran \OT1/ptm/m/it/12 thread-s/block \OT1/ptm/m/n/12 tetap yaitu
@@ -938,14 +957,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12] <pics/shared_cuda_mv_940.png, id=486, 889.3225pt x 499.8675pt>
+[18] <pics/shared_cuda_mv_940.png, id=574, 889.3225pt x 499.8675pt>
 File: pics/shared_cuda_mv_940.png Graphic file (type png)
 
 <use pics/shared_cuda_mv_940.png>
 Package pdftex.def Info: pics/shared_cuda_mv_940.png used on input line 202.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/shared_cuda_mv_970.png, id=489, 889.3225pt x 499.8675pt>
+<pics/shared_cuda_mv_970.png, id=577, 889.3225pt x 499.8675pt>
 File: pics/shared_cuda_mv_970.png Graphic file (type png)
 
 <use pics/shared_cuda_mv_970.png>
@@ -958,8 +977,8 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13 <./pics/shared_cuda_mv_940.png (PNG copy)>]
-<pics/shared_cuda_mv_980.png, id=494, 889.3225pt x 499.8675pt>
+[19 <./pics/shared_cuda_mv_940.png (PNG copy)>]
+<pics/shared_cuda_mv_980.png, id=582, 889.3225pt x 499.8675pt>
 File: pics/shared_cuda_mv_980.png Graphic file (type png)
 
 <use pics/shared_cuda_mv_980.png>
@@ -972,15 +991,15 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14 <./pics/shared_cuda_mv_970.png (PNG copy)> <./pics/shared_cuda_mv_980.png (
-PNG copy)>] <pics/all_mm_940.png, id=501, 889.3225pt x 499.8675pt>
+[20 <./pics/shared_cuda_mv_970.png (PNG copy)> <./pics/shared_cuda_mv_980.png (
+PNG copy)>] <pics/all_mm_940.png, id=590, 889.3225pt x 499.8675pt>
 File: pics/all_mm_940.png Graphic file (type png)
 
 <use pics/all_mm_940.png>
 Package pdftex.def Info: pics/all_mm_940.png used on input line 230.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/all_shared_cublas_mm_940.png, id=502, 889.3225pt x 499.8675pt>
+<pics/all_shared_cublas_mm_940.png, id=591, 889.3225pt x 499.8675pt>
 File: pics/all_shared_cublas_mm_940.png Graphic file (type png)
 
 <use pics/all_shared_cublas_mm_940.png>
@@ -994,15 +1013,15 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <./pics/all_mm_940.png (PNG copy)> <./pics/all_shared_cublas_mm_940.png (PN
-G copy)>] <pics/all_mm_970.png, id=510, 889.3225pt x 499.8675pt>
+[21 <./pics/all_mm_940.png (PNG copy)> <./pics/all_shared_cublas_mm_940.png (PN
+G copy)>] <pics/all_mm_970.png, id=598, 889.3225pt x 499.8675pt>
 File: pics/all_mm_970.png Graphic file (type png)
 
 <use pics/all_mm_970.png>
 Package pdftex.def Info: pics/all_mm_970.png used on input line 248.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/all_mm_980.png, id=511, 889.3225pt x 499.8675pt>
+<pics/all_mm_980.png, id=599, 889.3225pt x 499.8675pt>
 File: pics/all_mm_980.png Graphic file (type png)
 
 <use pics/all_mm_980.png>
@@ -1015,8 +1034,8 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16 <./pics/all_mm_970.png (PNG copy)> <./pics/all_mm_980.png (PNG copy)>]
-<pics/all_shared_cublas_mm_970.png, id=520, 889.3225pt x 499.8675pt>
+[22 <./pics/all_mm_970.png (PNG copy)> <./pics/all_mm_980.png (PNG copy)>]
+<pics/all_shared_cublas_mm_970.png, id=607, 889.3225pt x 499.8675pt>
 File: pics/all_shared_cublas_mm_970.png Graphic file (type png)
 
 <use pics/all_shared_cublas_mm_970.png>
@@ -1024,7 +1043,7 @@ Package pdftex.def Info: pics/all_shared_cublas_mm_970.png used on input line 2
 66.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/all_shared_cublas_mm_980.png, id=521, 889.3225pt x 499.8675pt>
+<pics/all_shared_cublas_mm_980.png, id=608, 889.3225pt x 499.8675pt>
 File: pics/all_shared_cublas_mm_980.png Graphic file (type png)
 
 <use pics/all_shared_cublas_mm_980.png>
@@ -1038,7 +1057,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17 <./pics/all_shared_cublas_mm_970.png (PNG copy)> <./pics/all_shared_cublas_
+[23 <./pics/all_shared_cublas_mm_970.png (PNG copy)> <./pics/all_shared_cublas_
 mm_980.png (PNG copy)>])
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -1046,7 +1065,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18]
+[24]
 \openout2 = `topik3.aux'.
 
  (./topik3.tex
@@ -1055,7 +1074,7 @@ BAB 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/cg_par.png, id=535, 557.08125pt x 393.47pt>
+<pics/cg_par.png, id=622, 557.08125pt x 393.47pt>
 File: pics/cg_par.png Graphic file (type png)
  <use pics/cg_par.png>
 Package pdftex.def Info: pics/cg_par.png used on input line 15.
@@ -1070,7 +1089,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[19
+[25
 
 
 
@@ -1090,7 +1109,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]
+[26]
 \openout2 = `topik4.aux'.
 
  (./topik4.tex
@@ -1099,11 +1118,11 @@ BAB 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-[21
+[27
 
 
 
-] <pics/amber_mpi_cuda.png, id=562, 772.8875pt x 553.06625pt>
+] <pics/amber_mpi_cuda.png, id=650, 772.8875pt x 553.06625pt>
 File: pics/amber_mpi_cuda.png Graphic file (type png)
 
 <use pics/amber_mpi_cuda.png>
@@ -1116,14 +1135,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22 <./pics/amber_mpi_cuda.png (PNG copy)>])
+[28 <./pics/amber_mpi_cuda.png (PNG copy)>])
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23]
+[29]
 \openout2 = `kontribusi.aux'.
 
  (./kontribusi.tex
@@ -1137,7 +1156,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) [24
+) [30
 
 
 
@@ -1149,17 +1168,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
 Package rerunfilecheck Info: File `laporan.out' has not changed.
-(rerunfilecheck)             Checksum: F17366061FDC5688F9B947395CFE391E;2942.
+(rerunfilecheck)             Checksum: 2BA43081995F5D1A10914C3E31C702F7;2946.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
  ) 
 Here is how much of TeX's memory you used:
- 10779 strings out of 495000
- 158552 string characters out of 6181169
- 311941 words of memory out of 5000000
- 13513 multiletter control sequences out of 15000+600000
+ 10444 strings out of 495028
+ 155175 string characters out of 6181496
+ 302168 words of memory out of 5000000
+ 13117 multiletter control sequences out of 15000+600000
  43668 words of font info for 96 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
- 44i,11n,45p,876b,1010s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,11n,45p,876b,1683s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -1213,10 +1236,10 @@ pe1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on laporan.pdf (28 pages, 539317 bytes).
+Output written on laporan.pdf (35 pages, 823924 bytes).
 PDF statistics:
- 659 PDF objects out of 1000 (max. 8388607)
- 598 compressed objects within 6 object streams
- 185 named destinations out of 1000 (max. 500000)
- 385 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 756 PDF objects out of 1000 (max. 8388607)
+ 673 compressed objects within 7 object streams
+ 221 named destinations out of 1000 (max. 500000)
+ 420 words of extra memory for PDF output out of 10000 (max. 10000000)
 

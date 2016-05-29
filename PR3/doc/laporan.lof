@@ -1,21 +1,28 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Hasil eksperimen dengan variasi block 1\relax }}{5}{figure.caption.2}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Hasil eksperimen dengan variasi block 2\relax }}{6}{figure.caption.3}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Hasil eksperimen dengan variasi thread per block 1\relax }}{7}{figure.caption.4}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Hasil eksperimen dengan variasi thread per block 2\relax }}{7}{figure.caption.5}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Hasil eksperimen 1\relax }}{9}{figure.caption.6}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Hasil eksperimen 2a\relax }}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Hasil eksperimen 2b\relax }}{10}{figure.caption.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Waktu eksekusi program matriks x vektor sekuensial dan CUDA\relax }}{8}{figure.caption.2}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Waktu eksekusi program matriks x matriks sekuensial dan CUDA\relax }}{9}{figure.caption.3}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Waktu eksekusi program matriks x vektor CUDA dengan variasi ukuran \textit {block} dan \textit {grid}\relax }}{10}{figure.caption.4}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Waktu eksekusi program matriks bujursangkar CUDA dengan variasi ukuran \textit {block} dan \textit {grid}\relax }}{11}{figure.caption.5}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Waktu eksekusi program matriks x vektor \textit {global memory} dan \textit {shared memory} (940M)\relax }}{13}{figure.caption.6}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Waktu eksekusi program matriks x vektor \textit {global memory} dan \textit {shared memory} (GTX 970)\relax }}{14}{figure.caption.7}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Waktu eksekusi program matriks x vektor \textit {global memory} dan \textit {shared memory} (GTX 980)\relax }}{14}{figure.caption.8}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {global memory}, \textit {shared memory}, CUBLAS dan MPI (940M)\relax }}{15}{figure.caption.9}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {shared memory} dan CUBLAS (940M)\relax }}{15}{figure.caption.10}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {global memory}, \textit {shared memory}, CUBLAS dan MPI (GTX 970)\relax }}{16}{figure.caption.11}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {global memory}, \textit {shared memory}, CUBLAS dan MPI (GTX 980)\relax }}{16}{figure.caption.12}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {shared memory} dan CUBLAS (970)\relax }}{17}{figure.caption.13}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {shared memory} dan CUBLAS (980)\relax }}{17}{figure.caption.14}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Waktu eksekusi program matriks x vektor sekuensial dan CUDA\relax }}{14}{figure.caption.9}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Waktu eksekusi program matriks x matriks sekuensial dan CUDA\relax }}{15}{figure.caption.10}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Waktu eksekusi program matriks x vektor CUDA dengan variasi ukuran \textit {block} dan \textit {grid}\relax }}{16}{figure.caption.11}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Waktu eksekusi program matriks bujursangkar CUDA dengan variasi ukuran \textit {block} dan \textit {grid}\relax }}{17}{figure.caption.12}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Waktu eksekusi program matriks x vektor \textit {global memory} dan \textit {shared memory} (940M)\relax }}{19}{figure.caption.13}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Waktu eksekusi program matriks x vektor \textit {global memory} dan \textit {shared memory} (GTX 970)\relax }}{20}{figure.caption.14}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Waktu eksekusi program matriks x vektor \textit {global memory} dan \textit {shared memory} (GTX 980)\relax }}{20}{figure.caption.15}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {global memory}, \textit {shared memory}, CUBLAS dan MPI (940M)\relax }}{21}{figure.caption.16}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {shared memory} dan CUBLAS (940M)\relax }}{21}{figure.caption.17}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {global memory}, \textit {shared memory}, CUBLAS dan MPI (GTX 970)\relax }}{22}{figure.caption.18}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {global memory}, \textit {shared memory}, CUBLAS dan MPI (GTX 980)\relax }}{22}{figure.caption.19}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {shared memory} dan CUBLAS (970)\relax }}{23}{figure.caption.20}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {shared memory} dan CUBLAS (980)\relax }}{23}{figure.caption.21}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Algoritma Conjugate Gradient Method.\relax }}{19}{figure.caption.15}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Algoritma Conjugate Gradient Method.\relax }}{25}{figure.caption.22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Eksperimen AMBER pada GPU (CUDA) dan CPU \textit {cluster} (MPI)\relax }}{22}{figure.caption.16}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Eksperimen AMBER pada GPU (CUDA) dan CPU \textit {cluster} (MPI)\relax }}{28}{figure.caption.23}
 \addvspace {10\p@ }
