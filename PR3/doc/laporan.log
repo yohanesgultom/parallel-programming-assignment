@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  29 MAY 2016 15:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.22)  30 MAY 2016 01:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -702,13 +702,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
-] <pics/block1.png, id=386, 670.505pt x 495.8525pt>
+] <pics/block1.png, id=405, 670.505pt x 495.8525pt>
 File: pics/block1.png Graphic file (type png)
  <use pics/block1.png>
 Package pdftex.def Info: pics/block1.png used on input line 51.
 (pdftex.def)             Requested size: 398.3386pt x 294.57816pt.
 
-<pics/block2.png, id=388, 670.505pt x 495.8525pt>
+<pics/block2.png, id=407, 670.505pt x 495.8525pt>
 File: pics/block2.png Graphic file (type png)
  <use pics/block2.png>
 Package pdftex.def Info: pics/block2.png used on input line 59.
@@ -720,7 +720,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5 <./pics/block1.png>] <pics/grid1.png, id=397, 670.505pt x 495.8525pt>
+[5 <./pics/block1.png>] <pics/grid1.png, id=416, 670.505pt x 495.8525pt>
 File: pics/grid1.png Graphic file (type png)
 
 <use pics/grid1.png>
@@ -733,7 +733,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6 <./pics/block2.png>] <pics/grid2.png, id=403, 670.505pt x 495.8525pt>
+[6 <./pics/block2.png>] <pics/grid2.png, id=422, 670.505pt x 495.8525pt>
 File: pics/grid2.png Graphic file (type png)
 
 <use pics/grid2.png>
@@ -747,7 +747,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7 <./pics/grid1.png> <./pics/grid2.png>]
-<pics/incrementarray.png, id=410, 664.4825pt x 459.7175pt>
+<pics/incrementarray.png, id=430, 664.4825pt x 459.7175pt>
 File: pics/incrementarray.png Graphic file (type png)
 
 <use pics/incrementarray.png>
@@ -760,7 +760,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8] <pics/incarray_blockvar_1000.png, id=416, 670.505pt x 495.8525pt>
+[8] <pics/incarray_blockvar_1000.png, id=436, 670.505pt x 495.8525pt>
 File: pics/incarray_blockvar_1000.png Graphic file (type png)
 
 <use pics/incarray_blockvar_1000.png>
@@ -775,7 +775,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9 <./pics/incrementarray.png>]
-<pics/incarray_blockvar_1500.png, id=423, 670.505pt x 495.8525pt>
+<pics/incarray_blockvar_1500.png, id=442, 670.505pt x 495.8525pt>
 File: pics/incarray_blockvar_1500.png Graphic file (type png)
 
 <use pics/incarray_blockvar_1500.png>
@@ -839,14 +839,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13] <pics/seq_cuda_mv_940.png, id=483, 889.3225pt x 499.8675pt>
+[13] <pics/seq_cuda_mv_940.png, id=502, 889.3225pt x 499.8675pt>
 File: pics/seq_cuda_mv_940.png Graphic file (type png)
 
 <use pics/seq_cuda_mv_940.png>
 Package pdftex.def Info: pics/seq_cuda_mv_940.png used on input line 80.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/seq_cuda_mm_940.png, id=485, 889.3225pt x 499.8675pt>
+<pics/seq_cuda_mm_940.png, id=504, 889.3225pt x 499.8675pt>
 File: pics/seq_cuda_mm_940.png Graphic file (type png)
 
 <use pics/seq_cuda_mm_940.png>
@@ -886,14 +886,14 @@ Underfull \hbox (badness 1259) in paragraph at lines 112--113
 \OT1/ptm/m/it/12 grid \OT1/ptm/m/n/12 akan bergan-tung pada
  []
 
-<pics/block_grid_mv.png, id=512, 889.3225pt x 499.8675pt>
+<pics/block_grid_mv.png, id=531, 889.3225pt x 499.8675pt>
 File: pics/block_grid_mv.png Graphic file (type png)
 
 <use pics/block_grid_mv.png>
 Package pdftex.def Info: pics/block_grid_mv.png used on input line 125.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/block_grid_mm.png, id=514, 889.3225pt x 499.8675pt>
+<pics/block_grid_mm.png, id=533, 889.3225pt x 499.8675pt>
 File: pics/block_grid_mm.png Graphic file (type png)
 
 <use pics/block_grid_mm.png>
@@ -957,14 +957,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18] <pics/shared_cuda_mv_940.png, id=574, 889.3225pt x 499.8675pt>
+[18] <pics/shared_cuda_mv_940.png, id=593, 889.3225pt x 499.8675pt>
 File: pics/shared_cuda_mv_940.png Graphic file (type png)
 
 <use pics/shared_cuda_mv_940.png>
 Package pdftex.def Info: pics/shared_cuda_mv_940.png used on input line 202.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/shared_cuda_mv_970.png, id=577, 889.3225pt x 499.8675pt>
+<pics/shared_cuda_mv_970.png, id=596, 889.3225pt x 499.8675pt>
 File: pics/shared_cuda_mv_970.png Graphic file (type png)
 
 <use pics/shared_cuda_mv_970.png>
@@ -978,7 +978,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [19 <./pics/shared_cuda_mv_940.png (PNG copy)>]
-<pics/shared_cuda_mv_980.png, id=582, 889.3225pt x 499.8675pt>
+<pics/shared_cuda_mv_980.png, id=601, 889.3225pt x 499.8675pt>
 File: pics/shared_cuda_mv_980.png Graphic file (type png)
 
 <use pics/shared_cuda_mv_980.png>
@@ -992,14 +992,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20 <./pics/shared_cuda_mv_970.png (PNG copy)> <./pics/shared_cuda_mv_980.png (
-PNG copy)>] <pics/all_mm_940.png, id=590, 889.3225pt x 499.8675pt>
+PNG copy)>] <pics/all_mm_940.png, id=609, 889.3225pt x 499.8675pt>
 File: pics/all_mm_940.png Graphic file (type png)
 
 <use pics/all_mm_940.png>
 Package pdftex.def Info: pics/all_mm_940.png used on input line 230.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/all_shared_cublas_mm_940.png, id=591, 889.3225pt x 499.8675pt>
+<pics/all_shared_cublas_mm_940.png, id=610, 889.3225pt x 499.8675pt>
 File: pics/all_shared_cublas_mm_940.png Graphic file (type png)
 
 <use pics/all_shared_cublas_mm_940.png>
@@ -1014,14 +1014,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21 <./pics/all_mm_940.png (PNG copy)> <./pics/all_shared_cublas_mm_940.png (PN
-G copy)>] <pics/all_mm_970.png, id=598, 889.3225pt x 499.8675pt>
+G copy)>] <pics/all_mm_970.png, id=617, 889.3225pt x 499.8675pt>
 File: pics/all_mm_970.png Graphic file (type png)
 
 <use pics/all_mm_970.png>
 Package pdftex.def Info: pics/all_mm_970.png used on input line 248.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/all_mm_980.png, id=599, 889.3225pt x 499.8675pt>
+<pics/all_mm_980.png, id=618, 889.3225pt x 499.8675pt>
 File: pics/all_mm_980.png Graphic file (type png)
 
 <use pics/all_mm_980.png>
@@ -1035,7 +1035,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22 <./pics/all_mm_970.png (PNG copy)> <./pics/all_mm_980.png (PNG copy)>]
-<pics/all_shared_cublas_mm_970.png, id=607, 889.3225pt x 499.8675pt>
+<pics/all_shared_cublas_mm_970.png, id=626, 889.3225pt x 499.8675pt>
 File: pics/all_shared_cublas_mm_970.png Graphic file (type png)
 
 <use pics/all_shared_cublas_mm_970.png>
@@ -1043,7 +1043,7 @@ Package pdftex.def Info: pics/all_shared_cublas_mm_970.png used on input line 2
 66.
 (pdftex.def)             Requested size: 398.3386pt x 223.89334pt.
 
-<pics/all_shared_cublas_mm_980.png, id=608, 889.3225pt x 499.8675pt>
+<pics/all_shared_cublas_mm_980.png, id=627, 889.3225pt x 499.8675pt>
 File: pics/all_shared_cublas_mm_980.png Graphic file (type png)
 
 <use pics/all_shared_cublas_mm_980.png>
@@ -1074,34 +1074,34 @@ BAB 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/cg_par.png, id=622, 557.08125pt x 393.47pt>
+<pics/cg_par.png, id=641, 557.08125pt x 393.47pt>
 File: pics/cg_par.png Graphic file (type png)
  <use pics/cg_par.png>
 Package pdftex.def Info: pics/cg_par.png used on input line 15.
 (pdftex.def)             Requested size: 298.75394pt x 211.01768pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-
- []
-
 [25
 
 
 
- <./pics/cg_par.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 31--97
-[]
- []
+ <./pics/cg_par.png>] <pics/code1.png, id=648, 722.7pt x 583.17876pt>
+File: pics/code1.png Graphic file (type png)
 
+<use pics/code1.png>
+Package pdftex.def Info: pics/code1.png used on input line 30.
+(pdftex.def)             Requested size: 398.3386pt x 321.4345pt.
+ <pics/code2.png, id=649, 724.7075pt x 131.49126pt>
+File: pics/code2.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--97
+<use pics/code2.png>
+Package pdftex.def Info: pics/code2.png used on input line 38.
+(pdftex.def)             Requested size: 398.3386pt x 72.27626pt.
+ <pics/cudacg_4096.png, id=650, 664.4825pt x 459.7175pt>
+File: pics/cudacg_4096.png Graphic file (type png)
 
- []
+<use pics/cudacg_4096.png>
+Package pdftex.def Info: pics/cudacg_4096.png used on input line 48.
+(pdftex.def)             Requested size: 398.3386pt x 275.58711pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -1109,7 +1109,47 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]
+[26 <./pics/code1.png> <./pics/code2.png>]
+<pics/cudacg_4096_2.png, id=656, 664.4825pt x 459.7175pt>
+File: pics/cudacg_4096_2.png Graphic file (type png)
+
+<use pics/cudacg_4096_2.png>
+Package pdftex.def Info: pics/cudacg_4096_2.png used on input line 56.
+(pdftex.def)             Requested size: 398.3386pt x 275.58711pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27 <./pics/cudacg_4096.png> <./pics/cudacg_4096_2.png>]
+<pics/cg_graph.png, id=663, 455.45157pt x 255.95625pt>
+File: pics/cg_graph.png Graphic file (type png)
+ <use pics/cg_graph.png>
+Package pdftex.def Info: pics/cg_graph.png used on input line 66.
+(pdftex.def)             Requested size: 398.3386pt x 223.86351pt.
+
+<pics/cg_nbcr.jpg, id=664, 607.26875pt x 341.275pt>
+File: pics/cg_nbcr.jpg Graphic file (type jpg)
+ <use pics/cg_nbcr.jpg>
+Package pdftex.def Info: pics/cg_nbcr.jpg used on input line 76.
+(pdftex.def)             Requested size: 398.3386pt x 223.86221pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28 <./pics/cg_graph.png (PNG copy)> <./pics/cg_nbcr.jpg>])
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29]
 \openout2 = `topik4.aux'.
 
  (./topik4.tex
@@ -1118,11 +1158,11 @@ BAB 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-[27
+[30
 
 
 
-] <pics/amber_mpi_cuda.png, id=650, 772.8875pt x 553.06625pt>
+] <pics/amber_mpi_cuda.png, id=689, 772.8875pt x 553.06625pt>
 File: pics/amber_mpi_cuda.png Graphic file (type png)
 
 <use pics/amber_mpi_cuda.png>
@@ -1135,14 +1175,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28 <./pics/amber_mpi_cuda.png (PNG copy)>])
+[31 <./pics/amber_mpi_cuda.png (PNG copy)>])
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29]
+[32]
 \openout2 = `kontribusi.aux'.
 
  (./kontribusi.tex
@@ -1156,7 +1196,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) [30
+) [33
 
 
 
@@ -1176,10 +1216,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
  ) 
 Here is how much of TeX's memory you used:
- 10444 strings out of 495028
- 155175 string characters out of 6181496
- 302168 words of memory out of 5000000
- 13117 multiletter control sequences out of 15000+600000
+ 10490 strings out of 495028
+ 155973 string characters out of 6181496
+ 302639 words of memory out of 5000000
+ 13147 multiletter control sequences out of 15000+600000
  43668 words of font info for 96 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
  43i,11n,45p,876b,1683s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1236,10 +1276,10 @@ pe1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on laporan.pdf (35 pages, 823924 bytes).
+Output written on laporan.pdf (38 pages, 1029568 bytes).
 PDF statistics:
- 756 PDF objects out of 1000 (max. 8388607)
- 673 compressed objects within 7 object streams
- 221 named destinations out of 1000 (max. 500000)
- 420 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 801 PDF objects out of 1000 (max. 8388607)
+ 706 compressed objects within 8 object streams
+ 230 named destinations out of 1000 (max. 500000)
+ 450 words of extra memory for PDF output out of 10000 (max. 10000000)
 

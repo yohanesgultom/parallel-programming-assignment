@@ -23,6 +23,12 @@
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Waktu eksekusi program perkalian matriks bujursangkar \textit {shared memory} dan CUBLAS (980)\relax }}{23}{figure.caption.21}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Algoritma Conjugate Gradient Method.\relax }}{25}{figure.caption.22}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Modifikasi nilai A\relax }}{26}{figure.caption.23}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Modifikasi nilai b\relax }}{26}{figure.caption.24}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Eksperimen 1 dengan ukuran array 4096\relax }}{27}{figure.caption.25}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Eksperimen 2 dengan ukuran array 4096\relax }}{27}{figure.caption.26}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Unjuk kerja Conjugate Gradient dengan CUDA\relax }}{28}{figure.caption.27}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Unjuk kerja Conjugate Gradient dengan MPI pada cluster NBCR dengan variasi jumlah processor dan ukuran array\relax }}{28}{figure.caption.28}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Eksperimen AMBER pada GPU (CUDA) dan CPU \textit {cluster} (MPI)\relax }}{28}{figure.caption.23}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Eksperimen AMBER pada GPU (CUDA) dan CPU \textit {cluster} (MPI)\relax }}{31}{figure.caption.29}
 \addvspace {10\p@ }
