@@ -1,7 +1,8 @@
 # Parallel Programming Assignment
 
 ## PR1
-Experiments on parallel programming using MPI
+MPI Programming
+
 * Problem 1: 
   * Matrix-vector multiplication: row-wise, column-wise, checkerboard decomposition algorithm
   * Square matrix multiplication: row-wise, Cannon, Fox, DNS algorithm
@@ -11,15 +12,27 @@ Experiments on parallel programming using MPI
 * Problem 3: 
   * Conjugate Gradient Method
 * Problem 4:
-  * Molecular dynamic with AMBER
+  * Basic molecular dynamic experiments with AMBER 14 (on CPU cluster)
 
 ## PR2
-Parallel programming experiments with:
-* OpenCL
-* R
+Gaussian Blur experiments with OpenCL vs CUDA
 
 ## PR3
-GPU programming. TODO
+CUDA programming
+
+* Problem 1: 
+  * Introduction to Block & Grid
+  * Array increment
+  
+* Problem 2:
+  * Matrix multiplication: basic & CUBLAS
+  * Matrix multiplication: GPU shared & global memory optimization
+  
+* Problem 3:
+  * Conjugate gradient descent
+  
+* Problem 4:
+  * Basic molecular dynamic experiments with AMBER 14: CPU cluster vs GPU
 
 ## Files ##
 * Presentation (Indonesian) http://1drv.ms/1THKxSy
