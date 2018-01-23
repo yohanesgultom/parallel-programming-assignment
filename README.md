@@ -15,7 +15,7 @@ MPI Programming
   * Basic molecular dynamic experiments with AMBER 14 (on CPU cluster)
 
 ## PR2
-Gaussian Blur experiments with OpenCL vs CUDA
+Gaussian Blur experiments with OpenCL
 
 ## PR3
 CUDA programming
